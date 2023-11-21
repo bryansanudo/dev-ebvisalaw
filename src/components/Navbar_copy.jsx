@@ -52,7 +52,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         }}
         className={`fixed w-full h-16 text-black  z-40 ${styles.paddingX} `}
       >
-        <div className="flex justify-end  md:gap-5 items-center max-w-screen-xl mx-auto  h-full">
+        <div className="flex justify-end  md:gap-5 items-center mx-auto  h-full">
           {isMenuShown ? (
             <img src={logoBlack} className="w-40 h-40 object-contain" alt="" />
           ) : (
