@@ -5,6 +5,11 @@ import logoWhite from "@/assets/law-logo-white.png";
 import Footer from "@/components/Footer";
 import styles from "../style";
 
+import { FaLinkedin } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+
 const Navbar = ({ darkMode, setDarkMode }) => {
   const [isMenuShown, setIsMenuShown] = useState(false);
   const links = [
@@ -50,7 +55,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         style={{
           backgroundImage: x,
         }}
-        className={`fixed w-full h-16 text-black  z-40 ${styles.paddingX} `}
+        className={`  fixed w-full h-16 text-black  z-40 ${styles.paddingX} `}
       >
         <div className="flex justify-end  md:gap-5 items-center mx-auto  h-full">
           {isMenuShown ? (
@@ -82,19 +87,20 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           backgroundImage:
             "url(https://i.ibb.co/17fW1fQ/13313353-v880-kul-11.jpg)",
         }}
-        className={`z-50 fixed w-full  text-black  flex flex-col  text-2xl duration-700 ${
+        className={`  z-50 fixed w-full h-screen justify-between text-black  flex flex-col   text-2xl duration-700 ${
           styles.paddingX
         }  ${isMenuShown ? "top-16 rounded-b-2xl  " : "top-[100%]"}`}
       >
-        <ul className="w-full flex flex-col justify-center items-end pt-10">
-          {links.map(({ id, link }) => (
-            <li
-              key={id}
-              className="py-2 capitalize cursor-pointer duration-300 hover:text-secondary"
-            >
-              {link}
-            </li>
-            /* <Link
+        <div className=" flex flex-col h-[90vh] justify-between  ">
+          <ul className="w-full flex flex-col justify-center items-end pt-10">
+            {links.map(({ id, link }) => (
+              <li
+                key={id}
+                className="py-2 capitalize cursor-pointer duration-300 hover:text-secondary"
+              >
+                {link}
+              </li>
+              /* <Link
               onClick={() => setIsMenuShown(!isMenuShown)}
               to={link}
               smooth
@@ -102,10 +108,38 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               key={id}
             >
             </Link> */
-          ))}
-        </ul>
-        <div className="my-12">
-          <Footer />
+            ))}
+          </ul>
+          <footer className="flex justify-between items-center">
+            <div className="grid grid-cols-4">
+              <div className="p-4 border-[1px] border-black cursor-pointer">
+                <FaLinkedin />
+              </div>
+              <div className=" p-4 border-[1px] border-black cursor-pointer">
+                <FaXTwitter />
+              </div>
+              <div className="p-4 border-[1px] border-black cursor-pointer">
+                <FaInstagram />
+              </div>
+              <div className="p-4 border-[1px] border-black cursor-pointer">
+                <FaYoutube />
+              </div>
+            </div>
+            <div className="flex gap-2 text-[12px]">
+              <p className="cursor-pointer hover:text-secondary duration-500">
+                About EB Visa Law
+              </p>
+              <span>/</span>
+              <p className="cursor-pointer hover:text-secondary duration-500">
+                Privacy & Disclaimers
+              </p>
+              <span>/</span>
+              <p className="cursor-pointer hover:text-secondary duration-500">
+                Attorney Advertising
+              </p>
+              <p className="ml-4">©2023 EB Visa Law</p>
+            </div>
+          </footer>
         </div>
       </div>
     </>
