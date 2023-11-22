@@ -13,6 +13,7 @@ import {
 } from "./components";
 
 import Navbar2 from "@/components/Navbar_copy";
+import Services from "@/components/Services";
 import { useState } from "react";
 
 const App = () => {
@@ -46,6 +47,7 @@ const App = () => {
             <Billing />
             <CardDeal />
             <Testimonials />
+            <Services />
             <Clients />
             <CTA />
           </div>
