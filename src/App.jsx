@@ -13,35 +13,46 @@ import {
 } from "./components";
 
 import Navbar2 from "@/components/Navbar_copy";
+import { useState } from "react";
 
-const App = () => (
-  <>
-    <div className="bg-primary w-full overflow-hidden ">
-      <div className="">
+const App = () => {
+  const [isMenuShown, setIsMenuShown] = useState(false);
+  return (
+    <>
+      <div className="bg-primary w-full overflow-hidden">
         <div className="">
-          <Navbar2 />
+          <div className="">
+            <Navbar2
+              isMenuShown={isMenuShown}
+              setIsMenuShown={setIsMenuShown}
+            />
+          </div>
         </div>
-      </div>
 
-      <div className={`bg-primary ${styles.flexStart} `}>
-        <div className={`${styles.boxWidth}`}>
-          <Hero />
+        <div className={`bg-primary ${styles.flexStart} `}>
+          <div className={`${styles.boxWidth}`}>
+            <Hero />
+          </div>
         </div>
-      </div>
 
-      <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
-        <div className={`${styles.boxWidth}`}>
-          <Stats />
-          <Business />
-          <Billing />
-          <CardDeal />
-          <Testimonials />
-          <Clients />
-          <CTA />
+        <div
+          className={`bg-primary  ${isMenuShown ? "hidden" : ""}  ${
+            styles.paddingX
+          } ${styles.flexCenter}`}
+        >
+          <div className={`${styles.boxWidth}`}>
+            <Stats />
+            <Business />
+            <Billing />
+            <CardDeal />
+            <Testimonials />
+            <Clients />
+            <CTA />
+          </div>
         </div>
       </div>
-    </div>
-  </>
-);
+    </>
+  );
+};
 
 export default App;

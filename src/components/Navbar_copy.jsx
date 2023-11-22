@@ -10,8 +10,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 
-const Navbar = ({ darkMode, setDarkMode }) => {
-  const [isMenuShown, setIsMenuShown] = useState(false);
+const Navbar = ({ isMenuShown, setIsMenuShown }) => {
   const links = [
     {
       id: 1,
@@ -55,9 +54,9 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         style={{
           backgroundImage: x,
         }}
-        className={`  fixed w-full h-16 text-black  z-40 ${styles.paddingX} `}
+        className={`fixed w-full h-16 text-black  z-40 ${styles.paddingX} `}
       >
-        <div className="flex justify-end  md:gap-5 items-center mx-auto  h-full">
+        <div className="flex justify-end  gap-5 items-center mx-auto  h-full">
           {isMenuShown ? (
             <img src={logoBlack} className="w-40 h-40 object-contain" alt="" />
           ) : (
@@ -73,7 +72,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                 <FaTimes size={30} className="text-black " />
               </div>
             ) : (
-              <div className="flex flex-col items-center  justify-between mt-2">
+              <div className="flex flex-col items-center   justify-between mt-2">
                 <FaBars size={30} className="text-white " />
                 <p className="text-[16px] text-white ">Menu</p>
               </div>
