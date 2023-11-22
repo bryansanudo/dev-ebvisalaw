@@ -16,7 +16,7 @@ import Navbar2 from "@/components/Navbar_copy";
 
 const App = () => (
   <>
-    <div className="bg-primary w-full ">
+    <div className="bg-primary w-full overflow-hidden ">
       <div className="">
         <div className="">
           <Navbar2 />
