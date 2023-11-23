@@ -56,7 +56,7 @@ const Services = () => (
             className=" p-6 flex flex-col gap-6  rounded-xl feedback-card "
           >
             <div
-              className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}
+              className={`w-[64px] h-[64px] mask mask-hexagon ${styles.flexCenter} bg-dimBlue`}
             >
               <img
                 src={logo}

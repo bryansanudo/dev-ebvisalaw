@@ -61,9 +61,9 @@ const Practices = () => (
         {cards.map(({ id, img, title, subtitle }) => (
           <div
             key={id}
-            className=" flex  items-center justify-center  gap-4 bg-black-gradient-2 rounded-[20px] box-shadow   "
+            className=" flex  items-center justify-center  gap-4 bg-black-gradient-2 rounded-[20px] box-shadow "
           >
-            <div className="w-1/2 hidden sm:block ">
+            <div className="w-1/2 hidden sm:block  ">
               <img
                 src={img}
                 alt="star"

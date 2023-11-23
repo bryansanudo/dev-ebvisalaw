@@ -15,6 +15,7 @@ import {
 import Navbar2 from "@/components/Navbar_copy";
 import Services from "@/components/Services";
 import Practices from "@/components/Practices";
+import Advantages from "@/components/Advantages";
 import { useState } from "react";
 
 const App = () => {
@@ -50,6 +51,7 @@ const App = () => {
             <Testimonials />
             <Practices />
             <Services />
+            <Advantages />
             <Clients />
             <CTA />
           </div>
