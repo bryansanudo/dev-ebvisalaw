@@ -23,5 +23,31 @@ module.exports = {
       xl: "1700px",
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: [
+      {
+        mytheme: {
+          primary: "#94171A",
+
+          secondary: "#263D72",
+
+          accent: "#000000",
+
+          neutral: "#000000",
+
+          "base-100": "#FFFFFF",
+
+          info: "#94171A",
+
+          success: "#00f6ff",
+
+          warning: "#94171A",
+
+          error: "#F87272",
+          black: "#ffffff",
+        },
+      },
+    ],
+  },
 };

@@ -4,6 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  html {
+      font-family: 'Poppins', sans-serif;
+  }
+ 
+}
+
 :root {
   --black-gradient: linear-gradient(
     144.39deg,
