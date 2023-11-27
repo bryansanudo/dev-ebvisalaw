@@ -16,6 +16,7 @@ import Navbar2 from "@/components/Navbar_copy";
 import Services from "@/components/Services";
 import Practices from "@/components/Practices";
 import Advantages from "@/components/Advantages";
+import Timeline from "@/components/Timeline";
 import { useState } from "react";
 
 const App = () => {
@@ -52,6 +53,15 @@ const App = () => {
             <Practices />
             <Services />
             <Advantages />
+          </div>
+        </div>
+        <Timeline />
+        <div
+          className={`bg-primary  ${isMenuShown ? "hidden" : ""}  ${
+            styles.paddingX
+          } ${styles.flexCenter}`}
+        >
+          <div className={`${styles.boxWidth}`}>
             <Clients />
             <CTA />
           </div>

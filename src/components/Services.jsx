@@ -53,7 +53,7 @@ const Services = () => (
         {cards.map(({ id, logo, title }) => (
           <div
             key={id}
-            className=" p-6 flex flex-col gap-6  rounded-xl feedback-card "
+            className=" p-6 flex flex-col gap-6  rounded-xl feedback-card box-shadow "
           >
             <div
               className={`w-[64px] h-[64px] mask mask-hexagon ${styles.flexCenter} bg-dimBlue`}
