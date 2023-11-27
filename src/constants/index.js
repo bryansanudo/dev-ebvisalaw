@@ -1,4 +1,19 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import {
+  people01,
+  people02,
+  people03,
+  facebook,
+  instagram,
+  linkedin,
+  twitter,
+  airbnb,
+  binance,
+  coinbase,
+  dropbox,
+  send,
+  shield,
+  star,
+} from "../assets";
 
 export const navLinks = [
   {
@@ -23,23 +38,23 @@ export const features = [
   {
     id: "feature-1",
     icon: star,
-    title: "Rewards",
+    title: "Expertise Rewards",
     content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+      "Unlock tantalizing combinations of legal promotions and professional rewards with our buffet of expert legal services.",
   },
   {
     id: "feature-2",
     icon: shield,
-    title: "100% Secured",
+    title: "100% Legal Security",
     content:
-      "We take proactive steps make sure your information and transactions are secure.",
+      "We proactively ensure the security of your confidential information and legal transactions, providing you with a shield against any legal concerns.",
   },
   {
     id: "feature-3",
     icon: send,
-    title: "Balance Transfer",
+    title: "Case Transfer Assistance",
     content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+      "Effortlessly transfer your legal cases to us for expert handling. Our streamlined process can save you time and resources in managing legal matters.",
   },
 ];
 
@@ -47,7 +62,7 @@ export const feedback = [
   {
     id: "feedback-1",
     content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
+      "Exceptional legal expertise! Our firm's success is a testament to the unparalleled support provided by this legal buffet. They navigate the complexities of the legal world with precision and dedication.",
     name: "Herman Jensen",
     title: "Founder & Leader",
     img: people01,
@@ -55,7 +70,7 @@ export const feedback = [
   {
     id: "feedback-2",
     content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
+      "The legal buffet has made our journey smoother. Legal intricacies are handled with ease, allowing us to focus on our clients. Grateful for the expertise and professionalism.",
     name: "Steve Mark",
     title: "Founder & Leader",
     img: people02,
@@ -63,7 +78,7 @@ export const feedback = [
   {
     id: "feedback-3",
     content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
+      "In the legal realm, having the right partners is crucial. This legal buffet's rich experience in finance and international trade sets them apart. A valuable asset to any legal practice.",
     name: "Kenn Gallagher",
     title: "Founder & Leader",
     img: people03,
@@ -73,17 +88,17 @@ export const feedback = [
 export const stats = [
   {
     id: "stats-1",
-    title: "User Active",
+    title: "Clients",
     value: "3800+",
   },
   {
     id: "stats-2",
-    title: "Trusted by Company",
+    title: "Law Firms",
     value: "230+",
   },
   {
     id: "stats-3",
-    title: "Transaction",
+    title: "Transaction Insights",
     value: "$230M+",
   },
 ];

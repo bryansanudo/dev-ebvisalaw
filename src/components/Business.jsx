@@ -28,13 +28,15 @@ const Business = () => (
   <section id="features" className={layout.section}>
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
-        You do the business, <br className="sm:block hidden" /> we’ll handle the
-        money.
+        You focus on your practice, we'll
+        <br className="sm:block hidden" />
+        manage the finances.
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        With the right credit card, you can improve your financial life by
-        building credit, earning rewards and saving money. But with hundreds of
-        credit cards on the market.
+        Elevate your legal practice with our financial management services. With
+        the right legal support, you can enhance your firm's financial standing,
+        streamline transactions, and optimize savings. Navigate the legal
+        landscape with confidence and leave the financial intricacies to us.
       </p>
 
       <Button styles={`mt-10`} />

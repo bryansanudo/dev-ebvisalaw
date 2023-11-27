@@ -53,15 +53,7 @@ const App = () => {
             <Practices />
             <Services />
             <Advantages />
-          </div>
-        </div>
-        <Timeline />
-        <div
-          className={`bg-primary  ${isMenuShown ? "hidden" : ""}  ${
-            styles.paddingX
-          } ${styles.flexCenter}`}
-        >
-          <div className={`${styles.boxWidth}`}>
+            <Timeline />
             <Clients />
             <CTA />
           </div>

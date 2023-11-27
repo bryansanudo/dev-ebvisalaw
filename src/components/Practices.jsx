@@ -48,16 +48,16 @@ const Practices = () => (
       <h2 className={styles.heading2}>
         Featured Practice <br className="sm:block hidden" /> Areas
       </h2>
-      <div className="w-full md:mt-0 mt-6">
+      {/*  <div className="w-full md:mt-0 mt-6">
         <p className={`${styles.paragraph} text-left max-w-[450px]`}>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab esse
           suscipit ipsum laudantium cupiditate voluptatibus
         </p>
-      </div>
+      </div> */}
     </div>
 
     <div className="flex flex-wrap sm:justify-start justify-center w-full  relative z-[1]">
-      <div className="grid md:grid-cols-2 grid-cols-1  w-full gap-6 ">
+      <div className="grid md:grid-cols-2 grid-cols-1  w-full md:gap-20 gap-6 ">
         {cards.map(({ id, img, title, subtitle }) => (
           <div
             key={id}
