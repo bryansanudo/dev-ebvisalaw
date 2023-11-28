@@ -54,13 +54,21 @@ const Navbar = ({ isMenuShown, setIsMenuShown }) => {
         style={{
           backgroundImage: x,
         }}
-        className={`fixed w-full h-16 text-black  z-40 ${styles.paddingX} `}
+        className={` flex items-center justify-end fixed   h-16 text-black nav z-40  w-full ${styles.paddingX} `}
       >
-        <div className="flex justify-end  gap-5 items-center mx-auto  h-full">
+        <div className="   flex justify-end  gap-5 items-center   h-full">
           {isMenuShown ? (
-            <img src={logoBlack} className="w-40 h-40 object-contain" alt="" />
+            <img
+              src={logoBlack}
+              className="w-40 h-40 object-contain p-4 "
+              alt=""
+            />
           ) : (
-            <img src={logoWhite} className="w-40 h-40 object-contain" alt="" />
+            <img
+              src={logoWhite}
+              className="w-40 h-40 object-contain p-4"
+              alt=""
+            />
           )}
 
           <div
@@ -79,6 +87,7 @@ const Navbar = ({ isMenuShown, setIsMenuShown }) => {
             )}
           </div>
         </div>
+        {/* <div className="w-0 sm:w-6 lg:w-60"></div> */}
       </div>
 
       <div
@@ -90,7 +99,7 @@ const Navbar = ({ isMenuShown, setIsMenuShown }) => {
           styles.paddingX
         }  ${isMenuShown ? "top-16 rounded-b-2xl  " : "top-[100%]"}`}
       >
-        <div className=" flex flex-col h-[90vh] justify-between  ">
+        <div className=" flex flex-col h-[90vh] justify-between ">
           <ul className="w-full flex flex-col justify-center items-end pt-10">
             {links.map(({ id, link }) => (
               <li
@@ -99,6 +108,7 @@ const Navbar = ({ isMenuShown, setIsMenuShown }) => {
               >
                 {link}
               </li>
+
               /* <Link
               onClick={() => setIsMenuShown(!isMenuShown)}
               to={link}

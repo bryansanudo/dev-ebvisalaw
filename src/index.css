@@ -25,6 +25,23 @@
   scroll-behavior: smooth;
 }
 
+.nav {
+  
+
+  animation: enhance-header linear both;
+  animation-timeline: scroll(root block);
+  animation-range: 100px 800px;
+
+}
+
+@keyframes enhance-header {
+  to{
+    background: rgba(255,255,255,.4);
+    backdrop-filter: blur(5px);
+    
+  }
+}
+
 .text-gradient {
   background: radial-gradient(
     64.18% 64.18% at 71.16% 35.69%,
