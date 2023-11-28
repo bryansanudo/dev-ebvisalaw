@@ -17,6 +17,7 @@ import Services from "@/components/Services";
 import Practices from "@/components/Practices";
 import Advantages from "@/components/Advantages";
 import Timeline from "@/components/Timeline";
+import Contact from "@/components/Contact";
 import { useState } from "react";
 
 const App = () => {
@@ -54,6 +55,7 @@ const App = () => {
             <Services />
             <Advantages />
             <Timeline />
+            <Contact />
             <Clients />
             <CTA />
           </div>
