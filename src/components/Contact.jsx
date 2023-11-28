@@ -68,7 +68,7 @@ const Contact = () => (
         </p>
       </div> */}
     </div>
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  rounded-[20px] box-shadow   md:gap-10 gap-4  xl:w-[1080px] lg:w-[900px] md:w-[700px] sm:w-[400px] w-full mb-6 ">
+    <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-4  rounded-[20px] box-shadow   md:gap-10 gap-4  xl:w-[1080px] lg:w-[900px] md:w-[700px] sm:w-[400px] w-full mb-6 ">
       {/* 1 */}
       <div className="flex flex-col feedback-card rounded-[20px] items-center justify-start text-center p-4">
         <div
@@ -194,7 +194,7 @@ const Contact = () => (
         </div>
 
         <button
-          className={`btn btn-outline hover:text-black bg-blue-gradient  capitalize w-1/5 mx-auto leading-[32px] font-semibold text-[18px] text-primary `}
+          className={`btn btn-outline hover:text-black bg-blue-gradient  capitalize lg:w-1/5 w-1/2 md:w-1/3  mx-auto leading-[32px] font-semibold text-[18px] text-primary `}
         >
           Submit
         </button>
