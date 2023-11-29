@@ -1,5 +1,7 @@
 import React from "react";
-import styles from "@/style";
+import bill from "@/assets/bill.png";
+import style from "@/style";
+
 import {
   Billing,
   Business,
@@ -20,26 +22,53 @@ import Advantages from "@/components/Advantages";
 import Timeline from "@/components/Timeline";
 import Contact from "@/components/Contact";
 import Faq from "@/components/Faq";
+import Section from "@/components/common/Section";
+import ImgContent from "@/components/common/ImgContent";
+import ImgContent2 from "@/components/common/ImgContent2";
+import opencompany from "@/assets/services/opencompany.webp";
+import opencompany2 from "@/assets/services/opencompany2.jpg";
 
 const OpenCompany = ({ isMenuShown }) => {
   return (
     <>
-      <div
-        className={`bg-primary  ${isMenuShown ? "hidden" : ""}  ${
-          styles.paddingX
-        } ${styles.flexCenter}`}
-      >
-        <div className={`${styles.boxWidth}`}>
-          <Testimonials />
-          <Practices />
-          <Services />
-          <Advantages />
-          <Timeline />
-          <Contact />
-          <Faq />
-          <Clients />
+      <Section isMenuShown={isMenuShown}>
+        <h2 className="font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] text-gradient mb-20">
+          Open a Company
+        </h2>
+        <div className="flex flex-col items-center justify-center mx-auto">
+          <p className={style.heading3}>
+            Tap on one of the topics below and get the information you need.
+          </p>
         </div>
-      </div>
+        <div className=" flex flex-col justify-center mx-auto max-w-[1000px]">
+          <ImgContent
+            img={opencompany}
+            title="Opening a business in the US is the #1 expansion move. #1 for today's entrepreneur"
+          >
+            <p className="font-poppins font-normal text-[16px] leading-[24px] text-dimWhite">
+              With our help, you can overcome trade barriers in your local
+              market while simultaneously expanding into the US market.
+            </p>
+            <p className="font-poppins font-normal text-[16px] leading-[24px] text-dimWhite">
+              Having a US-based company can generate new customers and increase
+              trustworthiness because it is perceived as more legitimate. We'll
+              guide you through the setup process every step of the way to make
+              sure everything works correctly.
+            </p>
+          </ImgContent>
+
+          <ImgContent2
+            img={opencompany2}
+            title="Learn to do all these things in a practical and technical way."
+          >
+            <p className="font-poppins font-normal text-[16px] leading-[24px] text-dimWhite">
+              With our team of experts, we will explain how to set up your
+              business quickly and easily step by step, saving you time and
+              money. Your focus and attention should be on running your business
+            </p>
+          </ImgContent2>
+        </div>
+      </Section>
     </>
   );
 };

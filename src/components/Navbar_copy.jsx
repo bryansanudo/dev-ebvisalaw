@@ -10,6 +10,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Navbar = ({ isMenuShown, setIsMenuShown }) => {
   const links = [
@@ -49,11 +50,6 @@ const Navbar = ({ isMenuShown, setIsMenuShown }) => {
     ? (x = "url(https://i.ibb.co/17fW1fQ/13313353-v880-kul-11.jpg)")
     : (x = "");
 
-  const [dropdown, setDropdown] = useState(true);
-  const handleDropdown = () => {
-    setDropdown(!dropdown);
-  };
-
   return (
     <>
       <div
@@ -64,17 +60,23 @@ const Navbar = ({ isMenuShown, setIsMenuShown }) => {
       >
         <div className="   flex justify-end  gap-5 items-center   h-full">
           {isMenuShown ? (
-            <img
-              src={logoBlack}
-              className="w-40 h-40 object-contain p-4 "
-              alt=""
-            />
+            <Link to="/">
+              <img
+                onClick={() => setIsMenuShown(false)}
+                src={logoBlack}
+                className="w-40 h-40 object-contain p-4 "
+                alt=""
+              />
+            </Link>
           ) : (
-            <img
-              src={logoWhite}
-              className="w-40 h-40 object-contain p-4"
-              alt=""
-            />
+            <Link to="/">
+              <img
+                onClick={() => setIsMenuShown(false)}
+                src={logoWhite}
+                className="w-40 h-40 object-contain p-4"
+                alt=""
+              />
+            </Link>
           )}
 
           <div
@@ -121,9 +123,14 @@ const Navbar = ({ isMenuShown, setIsMenuShown }) => {
                   </div>
                 </div>
                 <ul className="dropdown-content  z-[1]   shadow bg-base-100 w-52">
-                  <li className="hover:bg-success  w-full duration-300">
-                    <p className="px-4 text-[14px]">Open a Company</p>
-                  </li>
+                  <Link to="services/open_company">
+                    <li
+                      onClick={() => setIsMenuShown(!isMenuShown)}
+                      className="hover:bg-success cursor-pointer  w-full duration-300"
+                    >
+                      <p className="px-4 text-[14px]">Open a Company</p>
+                    </li>
+                  </Link>
                   <li className="hover:bg-success  w-full duration-300">
                     <p className="px-4 text-[14px]">EB1 VISA</p>
                   </li>
