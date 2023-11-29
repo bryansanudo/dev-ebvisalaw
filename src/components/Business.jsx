@@ -33,10 +33,10 @@ const Business = () => (
         manage the finances.
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Elevate your legal practice with our financial management services. With
-        the right legal support, you can enhance your firm's financial standing,
-        streamline transactions, and optimize savings. Navigate the legal
-        landscape with confidence and leave the financial intricacies to us.
+        Our team of skilled attorneys provides comprehensive legal consultation
+        and services. We specialize in areas such as contract law, intellectual
+        property, and litigation. Let us guide you through the complexities of
+        the legal landscape.
       </p>
 
       <Button styles={`mt-10`} />

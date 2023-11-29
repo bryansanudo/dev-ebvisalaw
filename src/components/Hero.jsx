@@ -25,22 +25,21 @@ const Hero = () => {
 
         <div className="flex flex-row justify-between items-center w-full">
           <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]">
-            Elevate <br className="sm:block hidden" />{" "}
-            <span className="text-gradient"> Your Legal Practice</span>{" "}
+            A Successful
+            <br className="sm:block hidden" />{" "}
+            <span className="text-gradient"> Future starts here</span>{" "}
           </h1>
           <div className="ss:flex hidden md:mr-4 mr-0">
             <GetStarted />
           </div>
         </div>
 
-        <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full">
+        {/*  <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full">
           With Expertise
-        </h1>
+        </h1> */}
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          Our team of skilled attorneys provides comprehensive legal
-          consultation and services. We specialize in areas such as contract
-          law, intellectual property, and litigation. Let us guide you through
-          the complexities of the legal landscape.
+          Your opportunity for success in the United States is closer than you
+          imagine.
         </p>
       </div>
 
