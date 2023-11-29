@@ -19,6 +19,11 @@ import Advantages from "@/components/Advantages";
 import Timeline from "@/components/Timeline";
 import Contact from "@/components/Contact";
 import Faq from "@/components/Faq";
+
+import Home from "@/components/Home";
+import OpenCompany from "@/components/services/OpenCompany";
+
+import { Routes, Route, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 const App = () => {
@@ -35,11 +40,13 @@ const App = () => {
           </div>
         </div>
 
-        <div className={`bg-primary ${styles.flexStart} `}>
-          <div className={`${styles.boxWidth}`}>
-            <Hero />
-          </div>
-        </div>
+        <Routes>
+          <Route path="/" element={<Home isMenuShown={isMenuShown} />} />
+          <Route
+            path="/services/open_company"
+            element={<OpenCompany isMenuShown={isMenuShown} />}
+          />
+        </Routes>
 
         <div
           className={`bg-primary  ${isMenuShown ? "hidden" : ""}  ${
@@ -47,18 +54,6 @@ const App = () => {
           } ${styles.flexCenter}`}
         >
           <div className={`${styles.boxWidth}`}>
-            <Stats />
-            <Business />
-            <Billing />
-            <CardDeal />
-            <Testimonials />
-            <Practices />
-            <Services />
-            <Advantages />
-            <Timeline />
-            <Contact />
-            <Faq />
-            <Clients />
             <CTA />
           </div>
         </div>
