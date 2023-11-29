@@ -31,16 +31,14 @@ import opencompany2 from "@/assets/services/opencompany2.jpg";
 const OpenCompany = ({ isMenuShown }) => {
   return (
     <>
-      <Section isMenuShown={isMenuShown}>
-        <h2 className="font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] text-gradient mb-20">
-          Open a Company
-        </h2>
-        <div className="flex flex-col items-center justify-center mx-auto">
-          <p className={style.heading3}>
-            Tap on one of the topics below and get the information you need.
-          </p>
-        </div>
-        <div className=" flex flex-col justify-center mx-auto max-w-[1000px]">
+      <Section
+        isMenuShown={isMenuShown}
+        title="Open a Company"
+        subtitle="What are the benefits of migrating or expanding your company to
+              one of the most attractive markets on the continent. We open your
+              company in the USA."
+      >
+        <div className=" flex flex-col justify-center   w-full">
           <ImgContent
             img={opencompany}
             title="Opening a business in the US is the #1 expansion move. #1 for today's entrepreneur"
