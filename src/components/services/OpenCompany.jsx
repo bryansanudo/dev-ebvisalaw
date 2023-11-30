@@ -1,30 +1,5 @@
-import React from "react";
-import bill from "@/assets/bill.png";
-import style from "@/style";
-
-import {
-  Billing,
-  Business,
-  CardDeal,
-  Clients,
-  CTA,
-  Footer,
-  Navbar,
-  Stats,
-  Testimonials,
-  Hero,
-} from "@/components";
-
-import Navbar2 from "@/components/Navbar_copy";
-import Services from "@/components/Services";
-import Practices from "@/components/Practices";
-import Advantages from "@/components/Advantages";
-import Timeline from "@/components/Timeline";
-import Contact from "@/components/Contact";
-import Faq from "@/components/Faq";
 import Section from "@/components/common/Section";
-import ImgContent from "@/components/common/ImgContent";
-import ImgContent2 from "@/components/common/ImgContent2";
+
 import opencompany from "@/assets/services/opencompany.webp";
 import opencompany2 from "@/assets/services/opencompany2.jpg";
 
@@ -40,7 +15,7 @@ const OpenCompany = ({ isMenuShown }) => {
       >
         <div className="w-full flex flex-col gap-6 md:gap-20 mb-20  ">
           <div className="flex flex-col md:flex-row gap-20">
-            <div className="w-full h-full  rounded-[20px] shadow-xl shadow-white ">
+            <div className="w-full h-full  rounded-[20px] shadow-lg shadow-white ">
               <img
                 src={opencompany}
                 className="object-contain rounded-[20px]"
@@ -94,7 +69,7 @@ font-poppins font-normal text-[16px] leading-[24px] text-dimWhite
                 </p>
               </div>
             </div>
-            <div className="w-full h-full  rounded-[20px] shadow-xl shadow-white   ">
+            <div className="w-full h-full  rounded-[20px] shadow-lg shadow-white   ">
               <img
                 src={opencompany2}
                 className="object-contain rounded-[20px]"

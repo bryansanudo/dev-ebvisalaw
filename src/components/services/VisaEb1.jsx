@@ -1,0 +1,334 @@
+import Section from "@/components/common/Section";
+
+import opencompany from "@/assets/services/opencompany.webp";
+import opencompany2 from "@/assets/services/opencompany2.jpg";
+import styles from "@/style";
+import { GoDot } from "react-icons/go";
+
+const OpenCompany = ({ isMenuShown }) => {
+  const eb1 = [
+    {
+      id: "1",
+      title: "a",
+      description:
+        "The EB-1 Visa is an immigrant visa to the US that is part of the employment-based Visa category. </br> The EB-1 is a preferential Visa that is open to foreign nationals with extraordinary abilities, outstanding professors and researchers, and certain multinational executives or managers.",
+    },
+    {
+      id: "2",
+      title: "c",
+      description: "d",
+    },
+    {
+      id: "3",
+      title: "e",
+      description: "f",
+    },
+  ];
+
+  return (
+    <>
+      <Section
+        isMenuShown={isMenuShown}
+        title="EB1 Visa"
+        subtitle="Details About the process. Tap on one of the topics below and get the information you need."
+      >
+        <div className="grid grid-cols-3 gap-20  ">
+          <img
+            src={opencompany}
+            className="object-contain rounded-[20px] shadow-lg shadow-white"
+            alt=""
+          />
+          <div className="col-span-2 flex  flex-col items-center justify-center w-full  ">
+            {/* 1 */}
+            <div
+              tabIndex={0}
+              className="collapse collapse-arrow feedback-card rounded-box w-full  "
+            >
+              <div
+                className={`${styles.sectionText} collapse-title font-poppins font-semibold text-[20px] leading-[32px] text-white `}
+              >
+                About the EB1 Visa
+              </div>
+              <div
+                className={`${styles.sectionText} collapse-content font-poppins font-normal text-[16px] leading-[24px] text-dimWhite mr-10 flex flex-col gap-2  `}
+              >
+                <div className="flex flex-col gap-4">
+                  <p>
+                    The EB-1 Visa is an immigrant visa to the US that is part of
+                    the employment-based Visa category.
+                  </p>
+                  <p>
+                    The EB-1 is a preferential Visa that is open to foreign
+                    nationals with extraordinary abilities, outstanding
+                    professors and researchers, and certain multinational
+                    executives or managers.
+                  </p>
+                  <p>
+                    The applicant must be able to demonstrate “sustained
+                    national or international recognition” in their particular
+                    field (which may include science, arts, education, business,
+                    or athletics).
+                  </p>
+                  <p>
+                    This type of Visa, also known as a Residence Card, grants
+                    you permanent residence. This means that whoever receives it
+                    can remain in the US indefinitely with their green card. If
+                    you want to apply for US citizenship, you can do so after 5
+                    years of continuous residence as a green card holder.
+                  </p>
+                  <p>
+                    The EB1-1 Visa is considered particularly desirable because
+                    the wait for acceptance can be much shorter than other
+                    immigrant entry routes, which can take years.
+                  </p>
+                  <p>
+                    In addition, it is not necessary for the applicant to have a
+                    labor certification. So in other words, US companies are not
+                    required to see if the role can be filled domestically
+                    first.
+                  </p>
+                </div>
+              </div>
+            </div>
+            {/* 2 */}
+            <div
+              tabIndex={0}
+              className="collapse collapse-arrow feedback-card rounded-box w-full  "
+            >
+              <div
+                className={`${styles.sectionText} collapse-title font-poppins font-semibold text-[20px] leading-[32px] text-white `}
+              >
+                At EB Visa Law we can help you obtain this visa. How will we do
+                it? Well, we guide you with:
+              </div>
+              <div
+                className={`${styles.sectionText} collapse-content font-poppins font-normal text-[16px] leading-[24px] text-dimWhite mr-10 `}
+              >
+                <div className="flex  gap-2 ">
+                  <div>
+                    <GoDot className="text-2xl" />
+                  </div>
+                  <p>Fast and effective advice from the first call</p>
+                </div>
+                <div className="flex  gap-2 ">
+                  <div>
+                    <GoDot className="text-2xl" />
+                  </div>
+                  <p>You apply from anywhere in the world</p>
+                </div>
+                <div className="flex  gap-2 ">
+                  <div>
+                    <GoDot className="text-2xl" />
+                  </div>
+                  <p>Attention in different channels: calls or emails</p>
+                </div>
+                <div className="flex  gap-2 ">
+                  <div>
+                    <GoDot className="text-2xl" />
+                  </div>
+                  <p>Expert, agile, fast, and safe support.</p>
+                </div>
+              </div>
+            </div>
+            {/* 3 */}
+            <div
+              tabIndex={0}
+              className="collapse collapse-arrow  feedback-card rounded-box w-full  "
+            >
+              <div
+                className={`${styles.sectionText} collapse-title font-poppins font-semibold text-[20px] leading-[32px] text-white `}
+              >
+                EB1 Visa Requirements
+              </div>
+              <div
+                className={`${styles.sectionText} collapse-content font-poppins font-normal text-[16px] leading-[24px] text-dimWhite mr-10 `}
+              >
+                <div className="my-2">
+                  To obtain an EB1A Visa, you must prove 3 things:
+                </div>
+                <div className="flex  gap-2 ">
+                  <div>
+                    <GoDot className="text-2xl" />
+                  </div>
+                  <p>
+                    That you have extraordinary ability in the sciences, arts,
+                    education, business or athletics.
+                  </p>
+                </div>
+                <div className="flex  gap-2 ">
+                  <div>
+                    <GoDot className="text-2xl" />
+                  </div>
+                  <p>
+                    That you come to the United States to continue working in
+                    your field of extraordinary ability.
+                  </p>
+                </div>
+                <div className="flex  gap-2 ">
+                  <div>
+                    <GoDot className="text-2xl" />
+                  </div>
+                  <p>
+                    That by entering the United States you substantially benefit
+                    this country.
+                  </p>
+                </div>
+
+                <div className="my-2">
+                  If you do not have an important national or international
+                  award or recognition, you must meet at least 3 of the
+                  following requirements:
+                </div>
+                <div className="flex gap-2 ">
+                  <div>
+                    <GoDot className="text-2xl" />
+                  </div>
+                  <p>
+                    Receipt of nationally or internationally recognized minor
+                    awards or awards for excellence in your field of activity.
+                  </p>
+                </div>
+                <div className="flex  gap-2 ">
+                  <div>
+                    <GoDot className="text-2xl" />
+                  </div>
+                  <div>
+                    Membership in associations in your field of activity, which
+                    require outstanding achievements of their members, as judged
+                    by recognized national or international experts in their
+                    disciplines or fields.
+                  </div>
+                </div>
+                <div className="flex  gap-2 ">
+                  <div>
+                    <GoDot className="text-2xl" />
+                  </div>
+                  <p>
+                    Material published about you, in major professional or trade
+                    publications or other relevant media, related to your work
+                    in your field of activity.
+                  </p>
+                </div>
+                <div className="flex  gap-2 ">
+                  <div>
+                    <GoDot className="text-2xl" />
+                  </div>
+                  <p>
+                    Participation, either as an individual or as part of a
+                    panel, as a judge of the work of others in the same or
+                    related field of expertise for which classification is
+                    sought.
+                  </p>
+                </div>
+                <div className="flex  gap-2 ">
+                  <div>
+                    <GoDot className="text-2xl" />
+                  </div>
+                  <p>
+                    Original scientific, academic, artistic, sporting or
+                    business-related contributions of great importance in your
+                    field of activity.
+                  </p>
+                </div>
+                <div className="flex  gap-2 ">
+                  <div>
+                    <GoDot className="text-2xl" />
+                  </div>
+                  <p>
+                    Authorship of academic articles in your field, in major
+                    professional or trade publications or other prominent media.
+                  </p>
+                </div>
+                <div className="flex  gap-2 ">
+                  <div>
+                    <GoDot className="text-2xl" />
+                  </div>
+                  <p>
+                    The exhibition of your work in art exhibitions or showcases.
+                  </p>
+                </div>
+                <div className="flex  gap-2 ">
+                  <div>
+                    <GoDot className="text-2xl" />
+                  </div>
+                  <p>
+                    Have played a leadership or critical role for organizations
+                    or establishments that have a distinguished reputation.
+                  </p>
+                </div>
+                <div className="flex gap-2 ">
+                  <div>
+                    <GoDot className="text-2xl" />
+                  </div>
+                  <p>
+                    Have earned a high salary or other significantly high
+                    compensation for services, relative to others in your field
+                  </p>
+                </div>
+
+                <div className="flex gap-2">
+                  <div>
+                    <GoDot className="text-2xl" />
+                  </div>
+                  Have achieved commercial success in the performing arts, as
+                  evidenced by box office receipts or sales of records,
+                  cassettes, compact discs, or videos.
+                </div>
+              </div>
+            </div>
+            {/* 4 */}
+            <div
+              tabIndex={0}
+              className="collapse collapse-arrow feedback-card rounded-box w-full  "
+            >
+              <div
+                className={`${styles.sectionText} collapse-title font-poppins font-semibold text-[20px] leading-[32px] text-white `}
+              >
+                How to apply for the EB1 Visa
+              </div>
+              <div
+                className={`${styles.sectionText} collapse-content font-poppins font-normal text-[16px] leading-[24px] text-dimWhite mr-10 flex flex-col gap-2  `}
+              >
+                <div className="flex flex-col gap-4">
+                  <p>
+                    The EB-1 Visa application process varies depending on the
+                    category in which you are applying.
+                  </p>
+                  <p>
+                    Those who apply as immigrants with extraordinary abilities
+                    can self-petition, meaning you can apply independently by
+                    filing Form I-140 (Petition for Foreign Worker).
+                  </p>
+                  <p>
+                    If you are an outstanding professor or researcher or are
+                    applying as a multinational executive or manager, your
+                    employer must file Form I-140 (Petition for Foreign Worker)
+                    on your behalf.
+                  </p>
+                  <p>
+                    During the application process, your US employer will need
+                    to demonstrate its continued ability to pay the offered
+                    salary as of the priority date.
+                  </p>
+                  <p>
+                    An annual report, federal income tax return, or audited
+                    financial statement can be used to demonstrate this.
+                  </p>
+                  <p>
+                    Again, the EB-1 Visa can be acquired much faster than most
+                    US Green Cards. This is because PERM Labor Certification
+                    from a US employer is not required. Most The other
+                    employment-based immigration visas require this, which can
+                    significantly increase processing time.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Section>
+    </>
+  );
+};
+
+export default OpenCompany;

@@ -22,6 +22,7 @@ import Faq from "@/components/Faq";
 
 import Home from "@/components/Home";
 import OpenCompany from "@/components/services/OpenCompany";
+import VisaEb1 from "@/components/services/VisaEb1";
 
 import { Routes, Route, useNavigate } from "react-router-dom";
 import { useState } from "react";
@@ -45,6 +46,10 @@ const App = () => {
           <Route
             path="/services/open_company"
             element={<OpenCompany isMenuShown={isMenuShown} />}
+          />
+          <Route
+            path="/services/visa_eb1"
+            element={<VisaEb1 isMenuShown={isMenuShown} />}
           />
         </Routes>
 

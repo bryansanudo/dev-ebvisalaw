@@ -6,10 +6,11 @@ const CTA = () => (
     className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} sm:flex-row flex-col bg-black-gradient-2 rounded-[20px] box-shadow`}
   >
     <div className="flex-1 flex flex-col">
-      <h2 className={styles.heading2}>Let’s try our service now!</h2>
+      <h2 className={styles.heading2}>Explore our Legal Hub Today!</h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Everything you need to accept card payments and grow anywhere on the
-        planet.
+        Unleash the full potential of your practice with a comprehensive suite
+        of tools. Navigate the legal realm seamlessly and expand your influence
+        across borders.
       </p>
     </div>
 
