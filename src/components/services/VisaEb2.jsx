@@ -81,8 +81,8 @@ const VisaEb2 = ({ isMenuShown }) => {
               <div
                 className={`${styles.sectionText} collapse-title font-poppins font-semibold text-[20px] leading-[32px] text-white `}
               >
-                At Amerigo we can help you obtain this visa. How will we do it?
-                Well, we guide you with:
+                At EB Visa Law we can help you obtain this visa. How will we do
+                it? Well, we guide you with:
               </div>
               <div
                 className={`${styles.sectionText} collapse-content font-poppins font-normal text-[16px] leading-[24px] text-dimWhite mr-10 `}
@@ -137,43 +137,178 @@ const VisaEb2 = ({ isMenuShown }) => {
               <div
                 className={`${styles.sectionText} collapse-title font-poppins font-semibold text-[20px] leading-[32px] text-white `}
               >
-                How to apply for the EB1 Visa
+                What is EB-2 with national interest exemption?
+              </div>
+              <div
+                className={`${styles.sectionText} collapse-content font-poppins font-normal text-[16px] leading-[24px] text-dimWhite mr-10 flex flex-col gap-2  `}
+              >
+                An EB2-NIW is an immigrant visa that grants a foreign national
+                permanent legal residence without the requirement of an offer of
+                employment. The job offer requirement does not apply if the
+                candidate can demonstrate that her permanent residence in the US
+                would be in the “national interest” and would benefit the
+                country.
+              </div>
+            </div>
+            {/* 5 */}
+            <div
+              tabIndex={0}
+              className="collapse collapse-arrow feedback-card rounded-box w-full  "
+            >
+              <div
+                className={`${styles.sectionText} collapse-title font-poppins font-semibold text-[20px] leading-[32px] text-white `}
+              >
+                Is there a difference between a regular EB2 and an EB2 with
+                national interest exemption?
               </div>
               <div
                 className={`${styles.sectionText} collapse-content font-poppins font-normal text-[16px] leading-[24px] text-dimWhite mr-10 flex flex-col gap-2  `}
               >
                 <div className="flex flex-col gap-4">
                   <p>
-                    The EB-1 Visa application process varies depending on the
-                    category in which you are applying.
+                    Yes, both are very different in terms of their requirements,
+                    processing times, and the documentation required for each.
+                    Generally, an EB2 visa or other employment-based visas
+                    require a formal offer of employment for an applicant to be
+                    eligible to apply. In addition, it requires a Labor
+                    Certification from the Department of Labor.
                   </p>
                   <p>
-                    Those who apply as immigrants with extraordinary abilities
-                    can self-petition, meaning you can apply independently by
-                    filing Form I-140 (Petition for Foreign Worker).
+                    An EB2 with NIW, on the other hand, does not require any
+                    offer of employment. The applicant is not required to go
+                    through the labor certification process with the Department
+                    of Labor. This is provided that the petitioner (applicant)
+                    can prove that her admission to the United States would be
+                    in the national benefit.
+                  </p>
+                </div>
+              </div>
+            </div>
+            {/* 6 */}
+            <div
+              tabIndex={0}
+              className="collapse collapse-arrow feedback-card rounded-box w-full  "
+            >
+              <div
+                className={`${styles.sectionText} collapse-title font-poppins font-semibold text-[20px] leading-[32px] text-white `}
+              >
+                Who can apply for an EB2-NIW?
+              </div>
+              <div
+                className={`${styles.sectionText} collapse-content font-poppins font-normal text-[16px] leading-[24px] text-dimWhite mr-10 flex flex-col gap-2  `}
+              >
+                <div className="flex flex-col gap-4">
+                  <p>
+                    Any foreign citizen can apply for an EB2-NIW visa. An
+                    immigration attorney can complete a solid application
+                    package that checks all requirements and presents the
+                    appropriate legal arguments. An applicant does not need an
+                    employer.
                   </p>
                   <p>
-                    If you are an outstanding professor or researcher or are
-                    applying as a multinational executive or manager, your
-                    employer must file Form I-140 (Petition for Foreign Worker)
-                    on your behalf.
+                    As mentioned above, one of the main benefits of the EB2
+                    national interest waiver is the ability to self-apply for
+                    your green card. Through the national interest waiver, the
+                    applicant does not need to go through the hassle of finding
+                    a U.S. employer willing to sponsor his or her immigrant
+                    petition. Another benefit is that through the national
+                    interest exemption, the labor certification process can be
+                    avoided entirely.
                   </p>
+                </div>
+              </div>
+            </div>
+            {/* 7 */}
+            <div
+              tabIndex={0}
+              className="collapse collapse-arrow feedback-card rounded-box w-full  "
+            >
+              <div
+                className={`${styles.sectionText} collapse-title font-poppins font-semibold text-[20px] leading-[32px] text-white `}
+              >
+                Speed ​​in the process
+              </div>
+              <div
+                className={`${styles.sectionText} collapse-content font-poppins font-normal text-[16px] leading-[24px] text-dimWhite mr-10 flex flex-col gap-2  `}
+              >
+                <div className="flex flex-col gap-4">
                   <p>
-                    During the application process, your US employer will need
-                    to demonstrate its continued ability to pay the offered
-                    salary as of the priority date.
+                    Another main benefit of the national interest exemption is
+                    the speed of the process. Through a traditional
+                    employer-sponsored green card, the process can be very
+                    lengthy. The employer must undergo various hiring activities
+                    and must also obtain an approved labor certification from
+                    the Department of Labor.
                   </p>
+                  <p>This process alone can take several months to complete.</p>
                   <p>
-                    An annual report, federal income tax return, or audited
-                    financial statement can be used to demonstrate this.
+                    However, the benefit of the EB2 national interest exemption
+                    is that you do not need to go through the labor
+                    certification process. The applicant can file his or her
+                    immigrant petition directly, saving him or her a tremendous
+                    amount of time.
                   </p>
+                </div>
+              </div>
+            </div>
+            {/* 8 */}
+            <div
+              tabIndex={0}
+              className="collapse collapse-arrow  feedback-card rounded-box w-full  "
+            >
+              <div
+                className={`${styles.sectionText} collapse-title font-poppins font-semibold text-[20px] leading-[32px] text-white `}
+              >
+                National interest exemption requirements
+              </div>
+              <div
+                className={`${styles.sectionText} collapse-content font-poppins font-normal text-[16px] leading-[24px] text-dimWhite mr-10 `}
+              >
+                <div className="my-2">
+                  There are 4 main requirements to qualify for EB2 NIW:
+                </div>
+                <div className="flex  gap-2 ">
+                  <div>
+                    <GoDot className="text-2xl" />
+                  </div>
+                  <p>You must qualify under the EB2 immigrant category.</p>
+                </div>
+                <div className="flex  gap-2 ">
+                  <div>
+                    <GoDot className="text-2xl" />
+                  </div>
                   <p>
-                    Again, the EB-1 Visa can be acquired much faster than most
-                    US Green Cards. This is because PERM Labor Certification
-                    from a US employer is not required. Most The other
-                    employment-based immigration visas require this, which can
-                    significantly increase processing time.
+                    Your proposed effort in the US must have substantial merit
+                    and national importance.
                   </p>
+                </div>
+                <div className="flex  gap-2 ">
+                  <div>
+                    <GoDot className="text-2xl" />
+                  </div>
+                  <p>
+                    You must be well positioned to advance the proposed effort.
+                  </p>
+                </div>
+
+                <div className="my-2">
+                  You must demonstrate that, on balance, it would be beneficial
+                  to the
+                </div>
+                <div className="flex gap-2 ">
+                  <div>
+                    <GoDot className="text-2xl" />
+                  </div>
+                  <p>
+                    United States to waive the requirement to have a job offer
+                    and for a U.S.
+                  </p>
+                </div>
+                <div className="flex  gap-2 ">
+                  <div>
+                    <GoDot className="text-2xl" />
+                  </div>
+                  <div>company to undergo the labor certification process.</div>
                 </div>
               </div>
             </div>
