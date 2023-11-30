@@ -23,6 +23,7 @@ const Section = ({ children, isMenuShown }) => {
               </p>
             </div>
           </div>
+
           {children}
         </div>
       </div>
