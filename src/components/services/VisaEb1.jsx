@@ -5,26 +5,7 @@ import opencompany2 from "@/assets/services/opencompany2.jpg";
 import styles from "@/style";
 import { GoDot } from "react-icons/go";
 
-const OpenCompany = ({ isMenuShown }) => {
-  const eb1 = [
-    {
-      id: "1",
-      title: "a",
-      description:
-        "The EB-1 Visa is an immigrant visa to the US that is part of the employment-based Visa category. </br> The EB-1 is a preferential Visa that is open to foreign nationals with extraordinary abilities, outstanding professors and researchers, and certain multinational executives or managers.",
-    },
-    {
-      id: "2",
-      title: "c",
-      description: "d",
-    },
-    {
-      id: "3",
-      title: "e",
-      description: "f",
-    },
-  ];
-
+const VisaEb1 = ({ isMenuShown }) => {
   return (
     <>
       <Section
@@ -32,13 +13,16 @@ const OpenCompany = ({ isMenuShown }) => {
         title="EB1 Visa"
         subtitle="Details About the process. Tap on one of the topics below and get the information you need."
       >
-        <div className="grid grid-cols-3 gap-20  ">
-          <img
-            src={opencompany}
-            className="object-contain rounded-[20px] shadow-lg shadow-white"
-            alt=""
-          />
-          <div className="col-span-2 flex  flex-col items-center justify-center w-full  ">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-20   ">
+          <div className=" flex items-center justify-center  ">
+            <img
+              src={opencompany}
+              className="object-contain rounded-[20px]  md:mx-0   shadow-lg shadow-white"
+              alt=""
+            />
+          </div>
+
+          <div className="md:col-span-2 flex  flex-col items-center justify-center w-full  ">
             {/* 1 */}
             <div
               tabIndex={0}
@@ -331,4 +315,4 @@ const OpenCompany = ({ isMenuShown }) => {
   );
 };
 
-export default OpenCompany;
+export default VisaEb1;

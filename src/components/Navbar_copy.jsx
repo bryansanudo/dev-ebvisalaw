@@ -139,9 +139,14 @@ const Navbar = ({ isMenuShown, setIsMenuShown }) => {
                       <p className="px-4 text-[14px]">EB1 VISA</p>
                     </li>
                   </Link>
-                  <li className="hover:bg-success  w-full duration-300">
-                    <p className="px-4 text-[14px]">EB2 VISA</p>
-                  </li>
+                  <Link to="services/visa_eb2">
+                    <li
+                      onClick={() => setIsMenuShown(!isMenuShown)}
+                      className="hover:bg-success  w-full duration-300"
+                    >
+                      <p className="px-4 text-[14px]">EB2 VISA</p>
+                    </li>
+                  </Link>
                   <li className="hover:bg-success  w-full duration-300">
                     <p className="px-4 text-[14px]">E2 VISA</p>
                   </li>

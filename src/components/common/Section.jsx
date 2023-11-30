@@ -5,7 +5,7 @@ const Section = ({ children, isMenuShown, title, subtitle }) => {
   return (
     <>
       <div
-        className={`bg-primary mt-40  ${isMenuShown ? "hidden" : ""}  ${
+        className={`bg-primary mt-28  ${isMenuShown ? "hidden" : ""}  ${
           styles.paddingX
         } ${styles.flexCenter}`}
       >
