@@ -24,6 +24,7 @@ import Home from "@/components/Home";
 import OpenCompany from "@/components/services/OpenCompany";
 import VisaEb1 from "@/components/services/VisaEb1";
 import VisaEb2 from "@/components/services/VisaEb2";
+import VisaE2 from "@/components/services/VisaE2";
 
 import { Routes, Route, useNavigate } from "react-router-dom";
 import { useState } from "react";
@@ -55,6 +56,10 @@ const App = () => {
           <Route
             path="/services/visa_eb2"
             element={<VisaEb2 isMenuShown={isMenuShown} />}
+          />
+          <Route
+            path="/services/visa_e2"
+            element={<VisaE2 isMenuShown={isMenuShown} />}
           />
         </Routes>
 

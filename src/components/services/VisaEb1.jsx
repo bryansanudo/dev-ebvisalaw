@@ -11,7 +11,7 @@ const VisaEb1 = ({ isMenuShown }) => {
       <Section
         isMenuShown={isMenuShown}
         title="EB1 Visa"
-        subtitle="Details About the process. Tap on one of the topics below and get the information you need."
+        subtitle="Residence Card for those with Extraordinary Abilities"
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-20   ">
           <div className=" flex items-center justify-center  ">
@@ -89,8 +89,8 @@ const VisaEb1 = ({ isMenuShown }) => {
                 className={`${styles.sectionText} collapse-content font-poppins font-normal text-[16px] leading-[24px] text-dimWhite mr-10 `}
               >
                 <div className="flex  gap-2 ">
-                  <div>
-                    <GoDot className="text-2xl" />
+                  <div className="flex gap-2">
+                    <GoDot className="text-2xl shadow-md " />
                   </div>
                   <p>Fast and effective advice from the first call</p>
                 </div>

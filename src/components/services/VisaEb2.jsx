@@ -11,7 +11,7 @@ const VisaEb2 = ({ isMenuShown }) => {
       <Section
         isMenuShown={isMenuShown}
         title="EB2 Visa"
-        subtitle="Details About the process. Tap on one of the topics below and get the information you need."
+        subtitle="National Interest Waiver, NIW OR National Interest Waiver:"
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-20   ">
           <div className=" flex items-center justify-center  ">
@@ -251,6 +251,7 @@ const VisaEb2 = ({ isMenuShown }) => {
                 </div>
               </div>
             </div>
+
             {/* 8 */}
             <div
               tabIndex={0}
