@@ -156,7 +156,7 @@ const Navbar = ({ isMenuShown, setIsMenuShown }) => {
                     </li>
                   </Link>
 
-                  <li className="hover:bg-success  w-full duration-300">
+                  {/*   <li className="hover:bg-success  w-full duration-300">
                     <p className="px-4 text-[14px]">L1 VISA</p>
                   </li>
                   <li className="hover:bg-success  w-full duration-300">
@@ -179,7 +179,7 @@ const Navbar = ({ isMenuShown, setIsMenuShown }) => {
                   </li>
                   <li className="hover:bg-success  w-full duration-300">
                     <p className="px-4 text-[14px]">EAD</p>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </li>
