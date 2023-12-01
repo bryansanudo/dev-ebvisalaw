@@ -5,6 +5,7 @@ import text from "@/assets/text.jpg";
 import Button from "@/components/Button";
 
 import shield from "@/assets/Shield.svg";
+import Section from "@/components/common/Section";
 
 const faq = {
   en: {
@@ -166,44 +167,42 @@ const questions = [
   },
 ];
 
-const Faq = () => (
-  <section
-    id="clients"
-    className={`${styles.paddingY} ${styles.flexCenter} flex-col relative `}
-  >
-    <div className="absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient bottom-40" />
+const Faq = ({ isMenuShown }) => (
+  <Section isMenuShown={isMenuShown} title="Frequent Questions">
+    <section id="clients" className={`${styles.flexCenter} flex-col relative `}>
+      <div className="absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient bottom-40" />
 
-    <div className="w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]">
-      <h2 className={styles.heading2}>Frequent questions</h2>
-      {/* <div className="w-full md:mt-0 mt-6">
+      <div className="w-full flex justify-between items-center md:flex-row flex-col  relative z-[1]">
+        {/* <div className="w-full md:mt-0 mt-6">
         <p className={`${styles.paragraph} text-left max-w-[450px]`}>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab esse
           suscipit ipsum laudantium cupiditate voluptatibus
         </p>
       </div> */}
-    </div>
+      </div>
 
-    <div className="flex flex-col items-center justify-center  my-10  w-full  ">
-      {questions.map(({ id, question, answer }) => (
-        <div
-          key={id}
-          tabIndex={0}
-          className="collapse collapse-arrow feedback-card rounded-box w-full  "
-        >
+      <div className="flex flex-col items-center justify-center  my-10  w-full  ">
+        {questions.map(({ id, question, answer }) => (
           <div
-            className={`${styles.sectionText} collapse-title font-poppins font-semibold text-[20px] leading-[32px] text-white `}
+            key={id}
+            tabIndex={0}
+            className="collapse collapse-arrow feedback-card rounded-box w-full  "
           >
-            {question}
+            <div
+              className={`${styles.sectionText} collapse-title font-poppins font-semibold text-[20px] leading-[32px] text-white `}
+            >
+              {question}
+            </div>
+            <div
+              className={`${styles.sectionText} collapse-content font-poppins font-normal text-[16px] leading-[24px] text-dimWhite mr-10 `}
+            >
+              <p>{answer}</p>
+            </div>
           </div>
-          <div
-            className={`${styles.sectionText} collapse-content font-poppins font-normal text-[16px] leading-[24px] text-dimWhite mr-10 `}
-          >
-            <p>{answer}</p>
-          </div>
-        </div>
-      ))}
-    </div>
-  </section>
+        ))}
+      </div>
+    </section>
+  </Section>
 );
 
 export default Faq;

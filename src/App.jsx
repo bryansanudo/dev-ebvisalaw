@@ -17,7 +17,7 @@ import Services from "@/components/Services";
 import Practices from "@/components/Practices";
 import Advantages from "@/components/Advantages";
 import Timeline from "@/components/Timeline";
-import Contact from "@/components/Contact";
+
 import Faq from "@/components/Faq";
 
 import Home from "@/components/Home";
@@ -25,6 +25,8 @@ import OpenCompany from "@/components/services/OpenCompany";
 import VisaEb1 from "@/components/services/VisaEb1";
 import VisaEb2 from "@/components/services/VisaEb2";
 import VisaE2 from "@/components/services/VisaE2";
+
+import Contact from "@/components/Contact";
 
 import { Routes, Route, useNavigate } from "react-router-dom";
 import { useState } from "react";
@@ -45,6 +47,13 @@ const App = () => {
 
         <Routes>
           <Route path="/" element={<Home isMenuShown={isMenuShown} />} />
+
+          <Route
+            path="/contact"
+            element={<Contact isMenuShown={isMenuShown} />}
+          />
+          <Route path="/faq" element={<Faq isMenuShown={isMenuShown} />} />
+
           <Route
             path="/services/open_company"
             element={<OpenCompany isMenuShown={isMenuShown} />}

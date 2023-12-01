@@ -45,8 +45,7 @@ const Home = ({ isMenuShown }) => {
           <Services />
           <Advantages />
           <Timeline />
-          <Contact />
-          <Faq />
+
           <Clients />
         </div>
       </div>

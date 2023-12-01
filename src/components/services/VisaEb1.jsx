@@ -15,6 +15,8 @@ const VisaEb1 = ({ isMenuShown }) => {
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-20   ">
           <div className=" flex items-center justify-center  ">
+            {/* <div className="absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full blue__gradient" /> */}
+            {/* <div className="absolute z-[0] w-[50%] h-[50%] -left-1/2 bottom-0 rounded-full pink__gradient" /> */}
             <img
               src={opencompany}
               className="object-contain rounded-[20px]  md:mx-0   shadow-lg shadow-white"

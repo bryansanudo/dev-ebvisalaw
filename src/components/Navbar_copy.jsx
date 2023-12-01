@@ -16,31 +16,13 @@ const Navbar = ({ isMenuShown, setIsMenuShown }) => {
   const links = [
     {
       id: 1,
-      link: "Professionals",
+      name: "Contact",
+      link: "/contact",
     },
     {
       id: 2,
-      link: "Services",
-    },
-    {
-      id: 3,
-      link: "Social Commitment",
-    },
-    {
-      id: 4,
-      link: "Careers",
-    },
-    {
-      id: 5,
-      link: "New & Insights",
-    },
-    {
-      id: 6,
-      link: "Locations",
-    },
-    {
-      id: 7,
-      link: "Alumni",
+      name: "Frequent Questions",
+      link: "/faq",
     },
   ];
 
@@ -183,12 +165,13 @@ const Navbar = ({ isMenuShown, setIsMenuShown }) => {
                 </ul>
               </div>
             </li>
-            {links.map(({ id, link }) => (
+            {links.map(({ id, name, link }) => (
               <li
                 key={id}
+                onClick={() => setIsMenuShown(!isMenuShown)}
                 className="py-2 capitalize cursor-pointer duration-300 hover:text-secondary"
               >
-                {link}
+                <Link to={link}>{name}</Link>
               </li>
 
               /* <Link
