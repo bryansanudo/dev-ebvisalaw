@@ -14,19 +14,19 @@ const CardDeal = () => (
       <h2 className={styles.heading2}>
         Who will help You <br className="sm:block hidden" />
       </h2>
-      <p className={`${styles.paragraph} max-w-[700px] mt-5`}>
+      <p className={`${styles.paragraph} max-w-[450px] mt-5`}>
         Founding partner of EB Visa Law, which manages the corporate immigration
         law firm. He brings significant immigration law experience to the firm,
         allowing him to create unique approaches to achieve our clients'
         objectives.
       </p>
-      <p className={`${styles.paragraph} max-w-[700px] mt-5`}>
+      <p className={`${styles.paragraph} max-w-[450px] mt-5`}>
         He has unique experience representing internationally recognized
         individuals seeking legal permanent residence in the United States and
         seeking the EB-1 visa intended for those with extraordinary abilities in
         science, arts, education, business or athletics.
       </p>
-      <p className={`${styles.paragraph} max-w-[700px] mt-5`}>
+      <p className={`${styles.paragraph} max-w-[450px] mt-5`}>
         Joaquin knows and understands the ups and downs of this process, having
         himself emigrated to the US from Panama, and therefore knows social
         diversity and its characteristics, which gives him the ability to relate
@@ -34,9 +34,9 @@ const CardDeal = () => (
         during your immigration process.
       </p>
 
-      <button className={`${styles.button}`}>
-        <Link to="/contact">Get Started</Link>
-      </button>
+      <Link to="/contact">
+        <button className={`${styles.button}`}>Get Started</button>
+      </Link>
     </div>
 
     <div className={layout.sectionImg}>

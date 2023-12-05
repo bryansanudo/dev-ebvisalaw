@@ -42,9 +42,9 @@ const Business = ({ darkMode }) => (
         the legal landscape.
       </p>
 
-      <button className={`${styles.button}`}>
-        <Link to="/contact">Get Started</Link>
-      </button>
+      <Link to="/contact">
+        <button className={`${styles.button}`}>Get Started</button>
+      </Link>
     </div>
 
     <div className={`${layout.sectionImg} flex-col`}>

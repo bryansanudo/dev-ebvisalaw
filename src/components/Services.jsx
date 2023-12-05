@@ -47,9 +47,9 @@ const Services = ({ darkMode }) => (
         we can help you reach new horizons in the United States.
       </p>
 
-      <button className={`${styles.button}`}>
-        <Link to="/contact">Get Started</Link>
-      </button>
+      <Link to="/contact">
+        <button className={`${styles.button}`}>Get Started</button>
+      </Link>
     </div>
 
     <div className={layout.sectionImg}>

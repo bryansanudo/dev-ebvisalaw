@@ -27,16 +27,17 @@ const VisaE2 = ({ isMenuShown, darkMode }) => {
             {/* 1 */}
             <div
               tabIndex={0}
-              className="collapse collapse-arrow  feedback-card rounded-box w-full  "
+              className={`collapse collapse-arrow ${
+                darkMode
+                  ? "shadow-sm shadow-white feedback-card "
+                  : "shadow-md shadow-black "
+              }
+   rounded-box w-full  `}
             >
-              <div
-                className={`${styles.sectionText} collapse-title font-poppins font-semibold text-[20px] leading-[32px] text-white `}
-              >
+              <div className={`${styles.title} collapse-title  `}>
                 Requirements to apply for the E-2 Visa
               </div>
-              <div
-                className={`${styles.sectionText} collapse-content font-poppins font-normal text-[16px] leading-[24px] text-dimWhite mr-10 `}
-              >
+              <div className={`${styles.subtitle} collapse-content   `}>
                 <div className="my-2">
                   To qualify for an E-2 visa, the treaty investor must:
                 </div>
@@ -102,16 +103,17 @@ const VisaE2 = ({ isMenuShown, darkMode }) => {
             {/* 2 */}
             <div
               tabIndex={0}
-              className="collapse collapse-arrow  feedback-card rounded-box w-full  "
+              className={`collapse collapse-arrow ${
+                darkMode
+                  ? "shadow-sm shadow-white feedback-card "
+                  : "shadow-md shadow-black "
+              }
+   rounded-box w-full  `}
             >
-              <div
-                className={`${styles.sectionText} collapse-title font-poppins font-semibold text-[20px] leading-[32px] text-white `}
-              >
+              <div className={`${styles.title} collapse-title  `}>
                 The evidence must include:
               </div>
-              <div
-                className={`${styles.sectionText} collapse-content font-poppins font-normal text-[16px] leading-[24px] text-dimWhite mr-10 `}
-              >
+              <div className={`${styles.subtitle} collapse-content   `}>
                 <div className="flex  gap-2 ">
                   <div>
                     <GoDot className="text-2xl" />
@@ -311,16 +313,17 @@ const VisaE2 = ({ isMenuShown, darkMode }) => {
             {/* 3 */}
             <div
               tabIndex={0}
-              className="collapse collapse-arrow  feedback-card rounded-box w-full  "
+              className={`collapse collapse-arrow ${
+                darkMode
+                  ? "shadow-sm shadow-white feedback-card "
+                  : "shadow-md shadow-black "
+              }
+   rounded-box w-full  `}
             >
-              <div
-                className={`${styles.sectionText} collapse-title font-poppins font-semibold text-[20px] leading-[32px] text-white `}
-              >
+              <div className={`${styles.title} collapse-title  `}>
                 E-2 Visa for employees
               </div>
-              <div
-                className={`${styles.sectionText} collapse-content font-poppins font-normal text-[16px] leading-[24px] text-dimWhite mr-10 `}
-              >
+              <div className={`${styles.subtitle} collapse-content   `}>
                 <div className="my-2">
                   To qualify to bring an employee to the US the employer must:
                 </div>
@@ -355,17 +358,18 @@ const VisaE2 = ({ isMenuShown, darkMode }) => {
             {/* 4 */}
             <div
               tabIndex={0}
-              className="collapse collapse-arrow  feedback-card rounded-box w-full  "
+              className={`collapse collapse-arrow ${
+                darkMode
+                  ? "shadow-sm shadow-white feedback-card "
+                  : "shadow-md shadow-black "
+              }
+   rounded-box w-full  `}
             >
-              <div
-                className={`${styles.sectionText} collapse-title font-poppins font-semibold text-[20px] leading-[32px] text-white `}
-              >
+              <div className={`${styles.title} collapse-title  `}>
                 E-2 Visa for employees with an executive and/or supervisory
                 position
               </div>
-              <div
-                className={`${styles.sectionText} collapse-content font-poppins font-normal text-[16px] leading-[24px] text-dimWhite mr-10 `}
-              >
+              <div className={`${styles.subtitle} collapse-content   `}>
                 <div className="my-2">
                   When evaluating the executive and/or supervisory element, the
                   following factors should be considered:
@@ -413,16 +417,17 @@ const VisaE2 = ({ isMenuShown, darkMode }) => {
             {/* 5 */}
             <div
               tabIndex={0}
-              className="collapse collapse-arrow  feedback-card rounded-box w-full  "
+              className={`collapse collapse-arrow ${
+                darkMode
+                  ? "shadow-sm shadow-white feedback-card "
+                  : "shadow-md shadow-black "
+              }
+   rounded-box w-full  `}
             >
-              <div
-                className={`${styles.sectionText} collapse-title font-poppins font-semibold text-[20px] leading-[32px] text-white `}
-              >
+              <div className={`${styles.title} collapse-title  `}>
                 E-2 Applicant Family
               </div>
-              <div
-                className={`${styles.sectionText} collapse-content font-poppins font-normal text-[16px] leading-[24px] text-dimWhite mr-10 `}
-              >
+              <div className={`${styles.subtitle} collapse-content   `}>
                 <div className="flex  gap-2 ">
                   <div>
                     <GoDot className="text-2xl" />
@@ -466,16 +471,17 @@ const VisaE2 = ({ isMenuShown, darkMode }) => {
             {/* 6 */}
             <div
               tabIndex={0}
-              className="collapse collapse-arrow  feedback-card rounded-box w-full  "
+              className={`collapse collapse-arrow ${
+                darkMode
+                  ? "shadow-sm shadow-white feedback-card "
+                  : "shadow-md shadow-black "
+              }
+   rounded-box w-full  `}
             >
-              <div
-                className={`${styles.sectionText} collapse-title font-poppins font-semibold text-[20px] leading-[32px] text-white `}
-              >
+              <div className={`${styles.title} collapse-title  `}>
                 Spouse and children
               </div>
-              <div
-                className={`${styles.sectionText} collapse-content font-poppins font-normal text-[16px] leading-[24px] text-dimWhite mr-10 `}
-              >
+              <div className={`${styles.subtitle} collapse-content   `}>
                 <div className="my-2">
                   Spouses may apply for work authorization using filing form
                   I-765. If approved, they have no restrictions on where they

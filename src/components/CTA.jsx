@@ -23,9 +23,9 @@ const CTA = ({ darkMode }) => (
     </div>
 
     <div className={`${styles.flexCenter} sm:ml-10 ml-0 sm:mt-0 mt-10`}>
-      <button className={`${styles.button}`}>
-        <Link to="/contact">Get Started</Link>
-      </button>
+      <Link to="/contact">
+        <button className={`${styles.button}`}>Get Started</button>
+      </Link>
     </div>
   </section>
 );

@@ -29,16 +29,17 @@ const VisaEb1 = ({ darkMode, isMenuShown }) => {
             {/* 1 */}
             <div
               tabIndex={0}
-              className="collapse collapse-arrow feedback-card rounded-box w-full  "
+              className={`collapse collapse-arrow ${
+                darkMode
+                  ? "shadow-sm shadow-white feedback-card "
+                  : "shadow-md shadow-black "
+              }
+   rounded-box w-full  `}
             >
-              <div
-                className={`${styles.sectionText} collapse-title font-poppins font-semibold text-[20px] leading-[32px] text-white `}
-              >
+              <div className={`${styles.title} collapse-title  `}>
                 About the EB1 Visa
               </div>
-              <div
-                className={`${styles.sectionText} collapse-content font-poppins font-normal text-[16px] leading-[24px] text-dimWhite mr-10 flex flex-col gap-2  `}
-              >
+              <div className={`${styles.subtitle} collapse-content   `}>
                 <div className="flex flex-col gap-4">
                   <p>
                     The EB-1 Visa is an immigrant visa to the US that is part of
@@ -80,20 +81,21 @@ const VisaEb1 = ({ darkMode, isMenuShown }) => {
             {/* 2 */}
             <div
               tabIndex={0}
-              className="collapse collapse-arrow feedback-card rounded-box w-full  "
+              className={`collapse collapse-arrow ${
+                darkMode
+                  ? "shadow-sm shadow-white feedback-card "
+                  : "shadow-md shadow-black "
+              }
+   rounded-box w-full  `}
             >
-              <div
-                className={`${styles.sectionText} collapse-title font-poppins font-semibold text-[20px] leading-[32px] text-white `}
-              >
+              <div className={`${styles.title} collapse-title  `}>
                 At EB Visa Law we can help you obtain this visa. How will we do
                 it? Well, we guide you with:
               </div>
-              <div
-                className={`${styles.sectionText} collapse-content font-poppins font-normal text-[16px] leading-[24px] text-dimWhite mr-10 `}
-              >
+              <div className={`${styles.subtitle} collapse-content   `}>
                 <div className="flex  gap-2 ">
                   <div className="flex gap-2">
-                    <GoDot className="text-2xl shadow-md " />
+                    <GoDot className="text-2xl  " />
                   </div>
                   <p>Fast and effective advice from the first call</p>
                 </div>
@@ -120,16 +122,17 @@ const VisaEb1 = ({ darkMode, isMenuShown }) => {
             {/* 3 */}
             <div
               tabIndex={0}
-              className="collapse collapse-arrow  feedback-card rounded-box w-full  "
+              className={`collapse collapse-arrow ${
+                darkMode
+                  ? "shadow-sm shadow-white feedback-card "
+                  : "shadow-md shadow-black "
+              }
+   rounded-box w-full  `}
             >
-              <div
-                className={`${styles.sectionText} collapse-title font-poppins font-semibold text-[20px] leading-[32px] text-white `}
-              >
+              <div className={`${styles.title} collapse-title  `}>
                 EB1 Visa Requirements
               </div>
-              <div
-                className={`${styles.sectionText} collapse-content font-poppins font-normal text-[16px] leading-[24px] text-dimWhite mr-10 `}
-              >
+              <div className={`${styles.subtitle} collapse-content   `}>
                 <div className="my-2">
                   To obtain an EB1A Visa, you must prove 3 things:
                 </div>
@@ -266,16 +269,17 @@ const VisaEb1 = ({ darkMode, isMenuShown }) => {
             {/* 4 */}
             <div
               tabIndex={0}
-              className="collapse collapse-arrow feedback-card rounded-box w-full  "
+              className={`collapse collapse-arrow ${
+                darkMode
+                  ? "shadow-sm shadow-white feedback-card "
+                  : "shadow-md shadow-black "
+              }
+   rounded-box w-full  `}
             >
-              <div
-                className={`${styles.sectionText} collapse-title font-poppins font-semibold text-[20px] leading-[32px] text-white `}
-              >
+              <div className={`${styles.title} collapse-title  `}>
                 How to apply for the EB1 Visa
               </div>
-              <div
-                className={`${styles.sectionText} collapse-content font-poppins font-normal text-[16px] leading-[24px] text-dimWhite mr-10 flex flex-col gap-2  `}
-              >
+              <div className={`${styles.subtitle} collapse-content   `}>
                 <div className="flex flex-col gap-4">
                   <p>
                     The EB-1 Visa application process varies depending on the

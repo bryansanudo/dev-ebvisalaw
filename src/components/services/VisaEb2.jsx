@@ -27,16 +27,17 @@ const VisaEb2 = ({ isMenuShown, darkMode }) => {
             {/* 1 */}
             <div
               tabIndex={0}
-              className="collapse collapse-arrow feedback-card rounded-box w-full  "
+              className={`collapse collapse-arrow ${
+                darkMode
+                  ? "shadow-sm shadow-white feedback-card "
+                  : "shadow-md shadow-black "
+              }
+   rounded-box w-full  `}
             >
-              <div
-                className={`${styles.sectionText} collapse-title font-poppins font-semibold text-[20px] leading-[32px] text-white `}
-              >
+              <div className={`${styles.title} collapse-title  `}>
                 Description
               </div>
-              <div
-                className={`${styles.sectionText} collapse-content font-poppins font-normal text-[16px] leading-[24px] text-dimWhite mr-10 flex flex-col gap-2  `}
-              >
+              <div className={`${styles.subtitle} collapse-content   `}>
                 The National Interest Waiver (NIW) is a powerful option for
                 certain highly qualified individuals to obtain a green card in
                 the United States through self-petition. With an approved
@@ -47,16 +48,17 @@ const VisaEb2 = ({ isMenuShown, darkMode }) => {
             {/* 2 */}
             <div
               tabIndex={0}
-              className="collapse collapse-arrow feedback-card rounded-box w-full  "
+              className={`collapse collapse-arrow ${
+                darkMode
+                  ? "shadow-sm shadow-white feedback-card "
+                  : "shadow-md shadow-black "
+              }
+   rounded-box w-full  `}
             >
-              <div
-                className={`${styles.sectionText} collapse-title font-poppins font-semibold text-[20px] leading-[32px] text-white `}
-              >
+              <div className={`${styles.title} collapse-title  `}>
                 Features of the EB2-NIW Visa
               </div>
-              <div
-                className={`${styles.sectionText} collapse-content font-poppins font-normal text-[16px] leading-[24px] text-dimWhite mr-10 flex flex-col gap-2  `}
-              >
+              <div className={`${styles.subtitle} collapse-content   `}>
                 <div className="flex flex-col gap-4">
                   <p>
                     The EB2-NIW is an employment-based visa that does not
@@ -77,17 +79,18 @@ const VisaEb2 = ({ isMenuShown, darkMode }) => {
             {/* 3 */}
             <div
               tabIndex={0}
-              className="collapse collapse-arrow  feedback-card rounded-box w-full  "
+              className={`collapse collapse-arrow ${
+                darkMode
+                  ? "shadow-sm shadow-white feedback-card "
+                  : "shadow-md shadow-black "
+              }
+   rounded-box w-full  `}
             >
-              <div
-                className={`${styles.sectionText} collapse-title font-poppins font-semibold text-[20px] leading-[32px] text-white `}
-              >
+              <div className={`${styles.title} collapse-title  `}>
                 At EB Visa Law we can help you obtain this visa. How will we do
                 it? Well, we guide you with:
               </div>
-              <div
-                className={`${styles.sectionText} collapse-content font-poppins font-normal text-[16px] leading-[24px] text-dimWhite mr-10 `}
-              >
+              <div className={`${styles.subtitle} collapse-content   `}>
                 <div className="flex  gap-2 ">
                   <div>
                     <GoDot className="text-2xl" />
@@ -133,16 +136,17 @@ const VisaEb2 = ({ isMenuShown, darkMode }) => {
             {/* 4 */}
             <div
               tabIndex={0}
-              className="collapse collapse-arrow feedback-card rounded-box w-full  "
+              className={`collapse collapse-arrow ${
+                darkMode
+                  ? "shadow-sm shadow-white feedback-card "
+                  : "shadow-md shadow-black "
+              }
+   rounded-box w-full  `}
             >
-              <div
-                className={`${styles.sectionText} collapse-title font-poppins font-semibold text-[20px] leading-[32px] text-white `}
-              >
+              <div className={`${styles.title} collapse-title  `}>
                 What is EB-2 with national interest exemption?
               </div>
-              <div
-                className={`${styles.sectionText} collapse-content font-poppins font-normal text-[16px] leading-[24px] text-dimWhite mr-10 flex flex-col gap-2  `}
-              >
+              <div className={`${styles.subtitle} collapse-content   `}>
                 An EB2-NIW is an immigrant visa that grants a foreign national
                 permanent legal residence without the requirement of an offer of
                 employment. The job offer requirement does not apply if the
@@ -154,17 +158,18 @@ const VisaEb2 = ({ isMenuShown, darkMode }) => {
             {/* 5 */}
             <div
               tabIndex={0}
-              className="collapse collapse-arrow feedback-card rounded-box w-full  "
+              className={`collapse collapse-arrow ${
+                darkMode
+                  ? "shadow-sm shadow-white feedback-card "
+                  : "shadow-md shadow-black "
+              }
+   rounded-box w-full  `}
             >
-              <div
-                className={`${styles.sectionText} collapse-title font-poppins font-semibold text-[20px] leading-[32px] text-white `}
-              >
+              <div className={`${styles.title} collapse-title  `}>
                 Is there a difference between a regular EB2 and an EB2 with
                 national interest exemption?
               </div>
-              <div
-                className={`${styles.sectionText} collapse-content font-poppins font-normal text-[16px] leading-[24px] text-dimWhite mr-10 flex flex-col gap-2  `}
-              >
+              <div className={`${styles.subtitle} collapse-content   `}>
                 <div className="flex flex-col gap-4">
                   <p>
                     Yes, both are very different in terms of their requirements,
@@ -188,16 +193,17 @@ const VisaEb2 = ({ isMenuShown, darkMode }) => {
             {/* 6 */}
             <div
               tabIndex={0}
-              className="collapse collapse-arrow feedback-card rounded-box w-full  "
+              className={`collapse collapse-arrow ${
+                darkMode
+                  ? "shadow-sm shadow-white feedback-card "
+                  : "shadow-md shadow-black "
+              }
+   rounded-box w-full  `}
             >
-              <div
-                className={`${styles.sectionText} collapse-title font-poppins font-semibold text-[20px] leading-[32px] text-white `}
-              >
+              <div className={`${styles.title} collapse-title  `}>
                 Who can apply for an EB2-NIW?
               </div>
-              <div
-                className={`${styles.sectionText} collapse-content font-poppins font-normal text-[16px] leading-[24px] text-dimWhite mr-10 flex flex-col gap-2  `}
-              >
+              <div className={`${styles.subtitle} collapse-content   `}>
                 <div className="flex flex-col gap-4">
                   <p>
                     Any foreign citizen can apply for an EB2-NIW visa. An
@@ -222,16 +228,17 @@ const VisaEb2 = ({ isMenuShown, darkMode }) => {
             {/* 7 */}
             <div
               tabIndex={0}
-              className="collapse collapse-arrow feedback-card rounded-box w-full  "
+              className={`collapse collapse-arrow ${
+                darkMode
+                  ? "shadow-sm shadow-white feedback-card "
+                  : "shadow-md shadow-black "
+              }
+   rounded-box w-full  `}
             >
-              <div
-                className={`${styles.sectionText} collapse-title font-poppins font-semibold text-[20px] leading-[32px] text-white `}
-              >
+              <div className={`${styles.title} collapse-title  `}>
                 Speed ​​in the process
               </div>
-              <div
-                className={`${styles.sectionText} collapse-content font-poppins font-normal text-[16px] leading-[24px] text-dimWhite mr-10 flex flex-col gap-2  `}
-              >
+              <div className={`${styles.subtitle} collapse-content   `}>
                 <div className="flex flex-col gap-4">
                   <p>
                     Another main benefit of the national interest exemption is
@@ -256,16 +263,17 @@ const VisaEb2 = ({ isMenuShown, darkMode }) => {
             {/* 8 */}
             <div
               tabIndex={0}
-              className="collapse collapse-arrow  feedback-card rounded-box w-full  "
+              className={`collapse collapse-arrow ${
+                darkMode
+                  ? "shadow-sm shadow-white feedback-card "
+                  : "shadow-md shadow-black "
+              }
+   rounded-box w-full  `}
             >
-              <div
-                className={`${styles.sectionText} collapse-title font-poppins font-semibold text-[20px] leading-[32px] text-white `}
-              >
+              <div className={`${styles.title} collapse-title  `}>
                 National interest exemption requirements
               </div>
-              <div
-                className={`${styles.sectionText} collapse-content font-poppins font-normal text-[16px] leading-[24px] text-dimWhite mr-10 `}
-              >
+              <div className={`${styles.subtitle} collapse-content   `}>
                 <div className="my-2">
                   There are 4 main requirements to qualify for EB2 NIW:
                 </div>
