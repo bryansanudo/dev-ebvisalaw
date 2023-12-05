@@ -12,6 +12,7 @@ import {
   Testimonials,
   Hero,
 } from "@/components";
+import Section from "@/components/common/Section";
 
 import Navbar2 from "@/components/Navbar_copy";
 import Services from "@/components/Services";
@@ -38,14 +39,15 @@ const Home = ({ isMenuShown, darkMode }) => {
         <div className={`${styles.boxWidth}`}>
           <Stats />
           <Business darkMode={darkMode} />
+
           <Billing />
+          <div className="absolute z-[0] w-[50%] h-[50%] -left-1/2 bottom-0 rounded-full pink__gradient" />
           <CardDeal />
           <Testimonials darkMode={darkMode} />
           <Practices darkMode={darkMode} />
           <Services darkMode={darkMode} />
           <Advantages darkMode={darkMode} />
           <Timeline darkMode={darkMode} />
-
           <Clients />
         </div>
       </div>
