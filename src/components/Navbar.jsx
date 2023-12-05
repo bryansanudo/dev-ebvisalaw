@@ -13,27 +13,21 @@ const Navbar = ({ darkMode, setDarkMode }) => {
   const links = [
     {
       id: 1,
-      link: "Inicio",
+      link: "Home",
     },
     {
       id: 2,
-      link: "Acerca De",
+      link: "About Us",
     },
-    {
-      id: 3,
-      link: "Servicios",
-    },
+
     {
       id: 4,
-      link: "Casos De Éxito",
+      link: "FAQ",
     },
-    {
-      id: 5,
-      link: "Blog",
-    },
+
     {
       id: 6,
-      link: "Contacto",
+      link: "Contact",
     },
   ];
 
