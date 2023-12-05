@@ -1,55 +1,36 @@
-import { feedback } from "../constants";
 import styles from "../style";
-import FeedbackCard from "./FeedbackCard";
+
 import text from "@/assets/text.jpg";
 import Button from "@/components/Button";
 import Section from "@/components/common/Section";
 
 import shield from "@/assets/Discount.svg";
 import { BiMailSend } from "react-icons/bi";
-
+import { FaStar } from "react-icons/fa";
 const cards = [
   {
     id: 1,
     img: shield,
-    title: "Experts",
-    subtitle:
-      "We have the experience and the method to legalize your immigration status as soon as possible.",
+    title: "Where we are",
+    subtitle: "1401 Brickell Avenue Miami, FL 33131",
   },
   {
     id: 2,
     img: shield,
-    title: "Agile",
-    subtitle:
-      "We design an efficient, easy and understandable process for you.",
+    title: "Attention schedule",
+    subtitle: "Monday to Friday 9AM to 5PM EST",
   },
   {
     id: 3,
     img: shield,
-    title: "Custom",
-    subtitle:
-      "Each case is different, each family, company, and individual needs an ear that understands their particular need and develops it.",
+    title: "Email",
+    subtitle: "info@ebvisalaw.com",
   },
   {
     id: 4,
     img: shield,
-    title: "Comprehensive monitoring",
-    subtitle:
-      "We offer complete and detailed monitoring of the process, from the preparation of the form to its arrival, to ensure that everything is successful.	",
-  },
-  {
-    id: 5,
-    img: shield,
-    title: "Integral Solution",
-    subtitle:
-      "In addition to the immigration process, we offer consulting with specialized financial advisors.",
-  },
-  {
-    id: 6,
-    img: shield,
-    title: "Save of time and money",
-    subtitle:
-      "We help you save time and money with a service that avoids errors that can cause delays and even denial of visas.",
+    title: "Phone",
+    subtitle: "+1 305 851 5995",
   },
 ];
 
@@ -167,7 +148,7 @@ const Contact = ({ isMenuShown, darkMode }) => (
                 </label>
                 <textarea
                   name="Questions"
-                  rows="7"
+                  rows="3"
                   required
                   autoComplete="off"
                   className={`  rounded-[10px] ${
@@ -189,6 +170,7 @@ const Contact = ({ isMenuShown, darkMode }) => (
           <div className="grid md:grid-cols-2 grid-cols-1   rounded-[20px]   md:gap-10 gap-4   w-full  ">
             {cards.map(({ id, img, title, subtitle }) => (
               <div
+                key={id}
                 className={`flex flex-col  px-4 rounded-[20px] items-center justify-center text-center ${
                   darkMode
                     ? "shadow-sm shadow-white border-white "
@@ -196,9 +178,9 @@ const Contact = ({ isMenuShown, darkMode }) => (
                 } `}
               >
                 <div
-                  className={`w-[40px] h-[40px] mb-1 mask mask-hexagon ${styles.flexCenter} bg-dimBlue`}
+                  className={`w-[40px] h-[40px] mb-1 mask mask-hexagon ${styles.flexCenter} bg-primary`}
                 >
-                  <img src={img} className="w-[40px]" alt="" />
+                  <FaStar className="text-white text-xl" />
                 </div>
                 <p className={`${styles.title}`}>{title}</p>
 

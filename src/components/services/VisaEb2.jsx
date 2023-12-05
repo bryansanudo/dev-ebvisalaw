@@ -5,10 +5,11 @@ import opencompany2 from "@/assets/services/opencompany2.jpg";
 import styles from "@/style";
 import { GoDot } from "react-icons/go";
 
-const VisaEb2 = ({ isMenuShown }) => {
+const VisaEb2 = ({ isMenuShown, darkMode }) => {
   return (
     <>
       <Section
+        darkMode={darkMode}
         isMenuShown={isMenuShown}
         title="EB2 Visa"
         subtitle="National Interest Waiver, NIW OR National Interest Waiver:"

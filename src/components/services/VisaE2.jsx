@@ -5,10 +5,11 @@ import opencompany2 from "@/assets/services/opencompany2.jpg";
 import styles from "@/style";
 import { GoDot } from "react-icons/go";
 
-const VisaE2 = ({ isMenuShown }) => {
+const VisaE2 = ({ isMenuShown, darkMode }) => {
   return (
     <>
       <Section
+        darkMode={darkMode}
         isMenuShown={isMenuShown}
         title="E2 Visa (Investor)"
         subtitle="If you are an international investor from an eligible country, you can apply for the E2 visa. Don't miss your opportunity to expand your business in a market as important as the US."

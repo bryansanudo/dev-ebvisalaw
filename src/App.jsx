@@ -62,19 +62,21 @@ const App = () => {
 
           <Route
             path="/services/open_company"
-            element={<OpenCompany isMenuShown={isMenuShown} />}
+            element={
+              <OpenCompany darkMode={darkMode} isMenuShown={isMenuShown} />
+            }
           />
           <Route
             path="/services/visa_eb1"
-            element={<VisaEb1 isMenuShown={isMenuShown} />}
+            element={<VisaEb1 darkMode={darkMode} isMenuShown={isMenuShown} />}
           />
           <Route
             path="/services/visa_eb2"
-            element={<VisaEb2 isMenuShown={isMenuShown} />}
+            element={<VisaEb2 darkMode={darkMode} isMenuShown={isMenuShown} />}
           />
           <Route
             path="/services/visa_e2"
-            element={<VisaE2 isMenuShown={isMenuShown} />}
+            element={<VisaE2 darkMode={darkMode} isMenuShown={isMenuShown} />}
           />
         </Routes>
 

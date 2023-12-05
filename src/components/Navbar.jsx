@@ -16,11 +16,6 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       name: "Home",
       link: "/",
     },
-    {
-      id: 2,
-      name: "About Us",
-      link: "/about-us",
-    },
 
     {
       id: 4,
@@ -51,7 +46,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                 {links.map(({ id, link, name }) => (
                   <li
                     key={id}
-                    className="py-6 text-[18px]   capitalize duration-300 hover:text-primary hover:font-semibold  cursor-pointer"
+                    className="mt-1 text-[18px] capitalize duration-300 hover:text-primary hover:font-semibold  cursor-pointer"
                   >
                     <Link to={link}>{name}</Link>
                   </li>
@@ -60,7 +55,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                   <div className="dropdown dropdown-bottom dropdown-hover">
                     <div
                       tabIndex={0}
-                      className="py-6 text-[18px] flex items-center   capitalize duration-300 hover:text-primary hover:font-semibold  cursor-pointer"
+                      className="mt-1 text-[18px] flex items-center   capitalize duration-300 hover:text-primary hover:font-semibold  cursor-pointer"
                     >
                       <p>Services</p>
                       <div className="cursor-pointer">
@@ -69,50 +64,50 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                         </div>
                       </div>
                     </div>
-                    <ul className="dropdown-content  z-[1]   shadow bg-base-100 w-52">
+                    <ul className="dropdown-content  z-[1]   shadow bg-base-100 dark:bg-accent w-52">
                       <Link to="services/open_company">
-                        <li className="hover:bg-success cursor-pointer  w-full duration-300">
+                        <li className="hover:bg-primary cursor-pointer  w-full duration-300">
                           <p className="px-4 text-[14px]">Open a Company</p>
                         </li>
                       </Link>
                       <Link to="services/visa_eb1">
-                        <li className="hover:bg-success  w-full duration-300">
+                        <li className="hover:bg-primary  w-full duration-300">
                           <p className="px-4 text-[14px]">EB1 VISA</p>
                         </li>
                       </Link>
                       <Link to="services/visa_eb2">
-                        <li className="hover:bg-success  w-full duration-300">
+                        <li className="hover:bg-primary  w-full duration-300">
                           <p className="px-4 text-[14px]">EB2 VISA</p>
                         </li>
                       </Link>
                       <Link to="services/visa_e2">
-                        <li className="hover:bg-success  w-full duration-300">
+                        <li className="hover:bg-primary  w-full duration-300">
                           <p className="px-4 text-[14px]">E2 VISA</p>
                         </li>
                       </Link>
 
-                      {/*   <li className="hover:bg-success  w-full duration-300">
+                      {/*   <li className="hover:bg-primary  w-full duration-300">
                     <p className="px-4 text-[14px]">L1 VISA</p>
                   </li>
-                  <li className="hover:bg-success  w-full duration-300">
+                  <li className="hover:bg-primary  w-full duration-300">
                     <p className="px-4 text-[14px]">VISA 01</p>
                   </li>
-                  <li className="hover:bg-success  w-full duration-300">
+                  <li className="hover:bg-primary  w-full duration-300">
                     <p className="px-4 text-[14px]">Family Requests</p>
                   </li>
-                  <li className="hover:bg-success  w-full duration-300">
+                  <li className="hover:bg-primary  w-full duration-300">
                     <p className="px-4 text-[14px]">Naturalizacion</p>
                   </li>
-                  <li className="hover:bg-success  w-full duration-300">
+                  <li className="hover:bg-primary  w-full duration-300">
                     <p className="px-4 text-[14px]">United States Removal</p>
                   </li>
-                  <li className="hover:bg-success  w-full duration-300">
+                  <li className="hover:bg-primary  w-full duration-300">
                     <p className="px-4 text-[14px]">IE PAROLE VISA</p>
                   </li>
-                  <li className="hover:bg-success  w-full duration-300">
+                  <li className="hover:bg-primary  w-full duration-300">
                     <p className="px-4 text-[14px]">PERM</p>
                   </li>
-                  <li className="hover:bg-success  w-full duration-300">
+                  <li className="hover:bg-primary  w-full duration-300">
                     <p className="px-4 text-[14px]">EAD</p>
                   </li> */}
                     </ul>
@@ -129,12 +124,12 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             </div>
 
             <div className="flex items-center flex-row justify-center gap-2 ">
-              <div className="bg-gray-300 h-6 mr-2 w-[1px] hidden md:flex"></div>
+              <div className="bg-gray-300 h-7 mr-2 w-[1px] hidden md:flex"></div>
               <div onClick={() => setDarkMode(!darkMode)}>
                 {darkMode ? (
-                  <MdWbSunny className="text-2xl cursor-pointer hover:text-primary duration-300" />
+                  <MdWbSunny className="mt-1 text-2xl cursor-pointer hover:text-primary duration-300" />
                 ) : (
-                  <MdNightsStay className="text-2xl cursor-pointer hover:text-primary duration-300" />
+                  <MdNightsStay className="mt-1 text-2xl cursor-pointer hover:text-primary duration-300" />
                 )}
               </div>
 
@@ -157,7 +152,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         </div>
 
         <div
-          className={`fixed w-full  text-white z-10 left-0 h-fit py-12 lg:hidden flex justify-center text-center text-2xl duration-500 ${
+          className={`fixed w-full  dark:text-white z-10 left-0 h-fit py-12 lg:hidden flex justify-center text-center text-2xl duration-500 ${
             isMenuShown
               ? "top-16 rounded-b-2xl bg-gray-900 opacity-95"
               : "top-[-600px]"

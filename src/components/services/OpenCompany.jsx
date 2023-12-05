@@ -3,10 +3,11 @@ import Section from "@/components/common/Section";
 import opencompany from "@/assets/services/opencompany.webp";
 import opencompany2 from "@/assets/services/opencompany2.jpg";
 
-const OpenCompany = ({ isMenuShown }) => {
+const OpenCompany = ({ darkMode, isMenuShown }) => {
   return (
     <>
       <Section
+        darkMode={darkMode}
         isMenuShown={isMenuShown}
         title="Open a Company"
         subtitle="What are the benefits of migrating or expanding your company to

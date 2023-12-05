@@ -27,18 +27,12 @@ const Footer = ({ darkMode }) => {
         </div>
       </aside>
       <nav>
-        <header className={`${styles.title}`}>Services</header>
+        <header className={`${styles.title}`}>Quick Links</header>
         <a className={`${styles.subtitle} hover:font-medium cursor-pointer`}>
           Branding
         </a>
         <a className={`${styles.subtitle} hover:font-medium cursor-pointer`}>
           Design
-        </a>
-        <a className={`${styles.subtitle} hover:font-medium cursor-pointer`}>
-          Marketing
-        </a>
-        <a className={`${styles.subtitle} hover:font-medium cursor-pointer`}>
-          Advertisement
         </a>
       </nav>
       <nav>
@@ -49,12 +43,6 @@ const Footer = ({ darkMode }) => {
         <a className={`${styles.subtitle} hover:font-medium cursor-pointer`}>
           Contact
         </a>
-        <a className={`${styles.subtitle} hover:font-medium cursor-pointer`}>
-          Jobs
-        </a>
-        <a className={`${styles.subtitle} hover:font-medium cursor-pointer`}>
-          Press kit
-        </a>
       </nav>
       <nav>
         <header className={`${styles.title}`}>Legal</header>
@@ -63,9 +51,6 @@ const Footer = ({ darkMode }) => {
         </a>
         <a className={`${styles.subtitle} hover:font-medium cursor-pointer`}>
           Privacy policy
-        </a>
-        <a className={`${styles.subtitle} hover:font-medium cursor-pointer`}>
-          Cookie policy
         </a>
       </nav>
     </footer>
