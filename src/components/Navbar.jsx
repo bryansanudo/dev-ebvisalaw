@@ -159,15 +159,78 @@ const Navbar = ({ darkMode, setDarkMode }) => {
           }`}
         >
           <ul>
-            {links.map(({ id, link }) => (
-              <li
-                onClick={() => setIsMenuShown(!isMenuShown)}
-                key={id}
-                className="p-4 uppercase cursor-pointer duration-300 hover:text-thPrimary"
-              >
-                {link}
-              </li>
+            {links.map(({ id, link, name }) => (
+              <Link key={id} to={link}>
+                <li
+                  onClick={() => setIsMenuShown(!isMenuShown)}
+                  className="p-4 uppercase cursor-pointer duration-300 hover:text-thPrimary"
+                >
+                  {name}
+                </li>
+              </Link>
             ))}
+            <li>
+              <div className="dropdown dropdown-bottom dropdown-hover">
+                <div
+                  tabIndex={0}
+                  className="mt-1 text-[18px] flex items-center   capitalize duration-300 hover:text-primary hover:font-semibold  cursor-pointer"
+                >
+                  <p>Services</p>
+                  <div className="cursor-pointer">
+                    <div className="flex items-center gap-2">
+                      <IoMdArrowDropdown />
+                    </div>
+                  </div>
+                </div>
+                <ul className="dropdown-content  z-[1]   shadow bg-base-100 dark:bg-accent w-52">
+                  <Link to="services/open_company">
+                    <li className="hover:bg-primary cursor-pointer  w-full duration-300">
+                      <p className="px-4 text-[14px]">Open a Company</p>
+                    </li>
+                  </Link>
+                  <Link to="services/visa_eb1">
+                    <li className="hover:bg-primary  w-full duration-300">
+                      <p className="px-4 text-[14px]">EB1 VISA</p>
+                    </li>
+                  </Link>
+                  <Link to="services/visa_eb2">
+                    <li className="hover:bg-primary  w-full duration-300">
+                      <p className="px-4 text-[14px]">EB2 VISA</p>
+                    </li>
+                  </Link>
+                  <Link to="services/visa_e2">
+                    <li className="hover:bg-primary  w-full duration-300">
+                      <p className="px-4 text-[14px]">E2 VISA</p>
+                    </li>
+                  </Link>
+
+                  {/*   <li className="hover:bg-primary  w-full duration-300">
+                    <p className="px-4 text-[14px]">L1 VISA</p>
+                  </li>
+                  <li className="hover:bg-primary  w-full duration-300">
+                    <p className="px-4 text-[14px]">VISA 01</p>
+                  </li>
+                  <li className="hover:bg-primary  w-full duration-300">
+                    <p className="px-4 text-[14px]">Family Requests</p>
+                  </li>
+                  <li className="hover:bg-primary  w-full duration-300">
+                    <p className="px-4 text-[14px]">Naturalizacion</p>
+                  </li>
+                  <li className="hover:bg-primary  w-full duration-300">
+                    <p className="px-4 text-[14px]">United States Removal</p>
+                  </li>
+                  <li className="hover:bg-primary  w-full duration-300">
+                    <p className="px-4 text-[14px]">IE PAROLE VISA</p>
+                  </li>
+                  <li className="hover:bg-primary  w-full duration-300">
+                    <p className="px-4 text-[14px]">PERM</p>
+                  </li>
+                  <li className="hover:bg-primary  w-full duration-300">
+                    <p className="px-4 text-[14px]">EAD</p>
+                  </li> */}
+                </ul>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
