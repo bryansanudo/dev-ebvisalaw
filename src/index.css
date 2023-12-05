@@ -25,6 +25,12 @@
   scroll-behavior: smooth;
 }
 
+@layer utilities {
+  .paused {
+    animation-play-state: paused;
+  }
+}
+
 .nav {
   
 
@@ -37,21 +43,23 @@
 @keyframes enhance-header {
   to{
     background: rgba(255,255,255,.4);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(100px);
     
   }
 }
 
 .text-gradient {
   background: radial-gradient(
-    64.18% 64.18% at 71.16% 35.69%,
-    #def9fa 0.89%,
-    #bef3f5 17.23%,
-    #9dedf0 42.04%,
-    #7de7eb 55.12%,
-    #5ce1e6 71.54%,
-    #33bbcf 100%
-  );
+  ellipse at 71.16% 35.69%,
+  #4d0000 0.89%,
+  #5c0000 15%,
+  #770000 30%,
+  #8a0000 45%,
+  #9e0000 60%,
+  #b20000 75%,
+  #d10000 90%,
+  #ff0000 100%
+);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

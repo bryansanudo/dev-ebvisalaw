@@ -11,8 +11,14 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { MdNightsStay, MdWbSunny } from "react-icons/md";
 
-const Navbar = ({ isMenuShown, setIsMenuShown }) => {
+const Navbar_copy = ({
+  isMenuShown,
+  setIsMenuShown,
+  darkMode,
+  setDarkMode,
+}) => {
   const links = [
     {
       id: 1,
@@ -38,7 +44,7 @@ const Navbar = ({ isMenuShown, setIsMenuShown }) => {
         style={{
           backgroundImage: x,
         }}
-        className={` flex items-center justify-end fixed   h-16 text-black nav z-40  w-full ${styles.paddingX} `}
+        className={` flex items-center justify-end fixed   h-16 dark:text-white text-black nav z-40  w-full ${styles.paddingX} `}
       >
         <div className="   flex justify-end  gap-5 items-center   h-full">
           {isMenuShown ? (
@@ -60,6 +66,13 @@ const Navbar = ({ isMenuShown, setIsMenuShown }) => {
               />
             </Link>
           )}
+          <div onClick={() => setDarkMode(!darkMode)}>
+            {darkMode ? (
+              <MdWbSunny className="text-2xl cursor-pointer hover:text-primary duration-300" />
+            ) : (
+              <MdNightsStay className="text-2xl cursor-pointer hover:text-primary duration-300" />
+            )}
+          </div>
 
           <div
             onClick={() => setIsMenuShown(!isMenuShown)}
@@ -77,7 +90,6 @@ const Navbar = ({ isMenuShown, setIsMenuShown }) => {
             )}
           </div>
         </div>
-        {/* <div className="w-0 sm:w-6 lg:w-60"></div> */}
       </div>
 
       <div
@@ -220,4 +232,4 @@ const Navbar = ({ isMenuShown, setIsMenuShown }) => {
   );
 };
 
-export default Navbar;
+export default Navbar_copy;

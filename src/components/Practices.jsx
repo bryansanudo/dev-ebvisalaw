@@ -37,7 +37,7 @@ const cards = [
   },
 ];
 
-const Practices = () => (
+const Practices = ({ darkMode }) => (
   <section
     id="clients"
     className={`${styles.paddingY} ${styles.flexCenter} flex-col relative `}
@@ -61,7 +61,12 @@ const Practices = () => (
         {cards.map(({ id, img, title, subtitle }) => (
           <div
             key={id}
-            className=" flex  items-center justify-center  gap-4 bg-black-gradient-2 rounded-[20px] box-shadow "
+            className={`flex  items-center justify-center  gap-4 rounded-[20px] ${
+              darkMode
+                ? "shadow-sm shadow-white feedback-card  "
+                : "shadow-md shadow-black"
+            }
+`}
           >
             <div className="w-1/2 hidden sm:block  ">
               <img
@@ -72,14 +77,10 @@ const Practices = () => (
             </div>
 
             <div className="sm:w-1/2 p-6 sm:px-3 sm:py-0">
-              <p className=" font-poppins font-semibold text-[20px] leading-[32px] text-white">
-                {title}
-              </p>
-              <p className="font-poppins font-normal text-[16px] leading-[24px] text-dimWhite">
-                {subtitle}
-              </p>
-              <div className="flex items-center justify-end pt-4">
-                <button className=" font-normal link link-success">
+              <p className={`${styles.title} mb-4`}>{title}</p>
+              <p className={`${styles.subtitle}`}>{subtitle}</p>
+              <div className="flex items-center justify-end pt-4 mr-4">
+                <button className=" font-semibold text-[18px] link link-primary">
                   know more
                 </button>
               </div>

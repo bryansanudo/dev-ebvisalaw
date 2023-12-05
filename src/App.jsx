@@ -6,11 +6,12 @@ import {
   Clients,
   CTA,
   Footer,
-  Navbar,
   Stats,
   Testimonials,
   Hero,
 } from "./components";
+
+import Navbar from "@/components/Navbar";
 
 import Navbar2 from "@/components/Navbar_copy";
 import Services from "@/components/Services";
@@ -33,24 +34,25 @@ import { useState } from "react";
 
 const App = () => {
   const [isMenuShown, setIsMenuShown] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   return (
-    <>
-      <div className="bg-primary w-full overflow-hidden">
-        <div className="">
-          <div className="">
-            <Navbar2
-              isMenuShown={isMenuShown}
-              setIsMenuShown={setIsMenuShown}
-            />
-          </div>
-        </div>
-
+    <div className={darkMode && "dark"}>
+      <Navbar
+        darkMode={darkMode}
+        setDarkMode={setDarkMode}
+        isMenuShown={isMenuShown}
+        setIsMenuShown={setIsMenuShown}
+      />
+      <div className="dark:bg-accent w-full overflow-hidden">
         <Routes>
-          <Route path="/" element={<Home isMenuShown={isMenuShown} />} />
+          <Route
+            path="/"
+            element={<Home darkMode={darkMode} isMenuShown={isMenuShown} />}
+          />
 
           <Route
             path="/contact"
-            element={<Contact isMenuShown={isMenuShown} />}
+            element={<Contact darkMode={darkMode} isMenuShown={isMenuShown} />}
           />
           <Route path="/faq" element={<Faq isMenuShown={isMenuShown} />} />
 
@@ -73,7 +75,7 @@ const App = () => {
         </Routes>
 
         <div
-          className={`bg-primary  ${isMenuShown ? "hidden" : ""}  ${
+          className={`dark:bg-accent  ${isMenuShown ? "hidden" : ""}  ${
             styles.paddingX
           } ${styles.flexCenter}`}
         >
@@ -82,7 +84,7 @@ const App = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

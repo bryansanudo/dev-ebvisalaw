@@ -1,12 +1,13 @@
 import { card } from "../assets";
 import styles, { layout } from "../style";
-import Button from "./Button";
+
 import test from "@/assets/test.png";
 import test2 from "@/assets/test2.png";
 import test3 from "@/assets/test3.png";
 import test4 from "@/assets/test4.png";
 import test5 from "@/assets/test5.png";
 import shield from "@/assets/Shield.svg";
+import { FaStar } from "react-icons/fa";
 
 const cards = [
   {
@@ -31,7 +32,7 @@ const cards = [
   },
 ];
 
-const Services = () => (
+const Services = ({ darkMode }) => (
   <section className={layout.section}>
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
@@ -45,7 +46,7 @@ const Services = () => (
         we can help you reach new horizons in the United States.
       </p>
 
-      <Button styles={`mt-10`} />
+      <button className={`${styles.button}`}>Get Started</button>
     </div>
 
     <div className={layout.sectionImg}>
@@ -53,18 +54,18 @@ const Services = () => (
         {cards.map(({ id, logo, title }) => (
           <div
             key={id}
-            className=" p-6 flex flex-col gap-6  rounded-xl feedback-card box-shadow "
+            className={` ${
+              darkMode
+                ? "shadow-sm shadow-white feedback-card  "
+                : "shadow-md shadow-black"
+            } p-6 flex flex-col gap-6  rounded-xl `}
           >
             <div
-              className={`w-[64px] h-[64px] mask mask-hexagon ${styles.flexCenter} bg-dimBlue`}
+              className={`w-[64px] h-[64px] mask mask-hexagon ${styles.flexCenter} bg-primary`}
             >
-              <img
-                src={logo}
-                alt="star"
-                className="w-[50%] h-[50%] object-contain"
-              />
+              <FaStar className="text-white text-3xl" />
             </div>
-            <p className="font-poppins font-semibold text-[20px] leading-[32px] text-white">
+            <p className="font-poppins font-semibold text-[20px] leading-[32px] dark:text-white">
               {title}
             </p>
           </div>

@@ -1,14 +1,39 @@
 import { clients } from "../constants";
 import styles from "../style";
+import airbnb from "@/assets/airbnb.png";
+import binance from "@/assets/binance.png";
+import coinbase from "@/assets/coinbase.png";
+import dropbox from "@/assets/dropbox.png";
+
+binance, coinbase, dropbox;
 
 const Clients = () => (
-  <section className={`${styles.flexCenter} my-4`}>
-    <div className={`${styles.flexCenter} flex-wrap w-full`}>
-      {clients.map((client) => (
-        <div key={client.id} className={`flex-1 ${styles.flexCenter} sm:min-w-[192px] min-w-[120px] m-5`}>
-          <img src={client.logo} alt="client_logo" className="sm:w-[192px] w-[100px] object-contain" />
-        </div>
-      ))}
+  <section className={`${styles.flexCenter} my-4  `}>
+    <div className="flex overflow-hidden  group ">
+      {/*  <div className="flex space-x-16 animate-loop-scroll group-hover:paused">
+      <img src={airbnb} alt="" />
+      <img src={airbnb} alt="" />
+      <img src={airbnb} alt="" />
+      <img src={airbnb} alt="" />
+      <img src={airbnb} alt="" />
+      <img src={airbnb} alt="" />
+      <img src={airbnb} alt="" />
+      <img src={airbnb} alt="" />
+    </div> */}
+      <div
+        className="flex items-center justify-center space-x-16 animate-loop-scroll group-hover:paused"
+        aria-hidden="true"
+      >
+        <img src={airbnb} className="h-14 object-contain" alt="" />
+        <img src={binance} className="h-14 object-contain" alt="" />
+        <img src={dropbox} className="h-14 object-contain" alt="" />
+        <img src={airbnb} className="h-14 object-contain" alt="" />
+        <img src={binance} className="h-14 object-contain" alt="" />
+        <img src={dropbox} className="h-14 object-contain" alt="" />
+        <img src={airbnb} className="h-14 object-contain" alt="" />
+        <img src={binance} className="h-14 object-contain" alt="" />
+        <img src={dropbox} className="h-14 object-contain" alt="" />
+      </div>
     </div>
   </section>
 );

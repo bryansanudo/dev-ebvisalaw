@@ -1,6 +1,6 @@
 import { card } from "../assets";
 import styles, { layout } from "../style";
-import Button from "./Button";
+
 import test from "@/assets/test.png";
 import test2 from "@/assets/test2.png";
 import test3 from "@/assets/test3.png";
@@ -33,11 +33,11 @@ const CardDeal = () => (
         during your immigration process.
       </p>
 
-      <Button styles={`mt-10`} />
+      <button className={`${styles.button}`}>Get Started</button>
     </div>
 
     <div className={layout.sectionImg}>
-      {/* gradient start */}z
+      {/* gradient start */}
       <div className="absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full blue__gradient" />
       <div className="absolute z-[0] w-[50%] h-[50%] -left-1/2 bottom-0 rounded-full pink__gradient" />
       {/* gradient end */}

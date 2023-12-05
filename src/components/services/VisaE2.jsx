@@ -17,7 +17,7 @@ const VisaE2 = ({ isMenuShown }) => {
           <div className=" flex items-center justify-center  ">
             <img
               src={opencompany}
-              className="object-contain rounded-[20px]  md:mx-0   shadow-lg shadow-white"
+              className="object-contain rounded-[20px]  md:mx-0   shadow-xl shadow-gray-500"
               alt=""
             />
           </div>

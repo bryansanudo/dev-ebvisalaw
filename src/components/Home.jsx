@@ -21,30 +21,30 @@ import Timeline from "@/components/Timeline";
 import Contact from "@/components/Contact";
 import Faq from "@/components/Faq";
 
-const Home = ({ isMenuShown }) => {
+const Home = ({ isMenuShown, darkMode }) => {
   return (
     <>
-      <div className={`bg-primary ${styles.flexStart} `}>
+      <div className={`dark:bg-accent ${styles.flexStart} `}>
         <div className={`${styles.boxWidth}`}>
-          <Hero />
+          <Hero darkMode={darkMode} />
         </div>
       </div>
 
       <div
-        className={`bg-primary  ${isMenuShown ? "hidden" : ""}  ${
+        className={`dark:bg-accent  ${isMenuShown ? "hidden" : ""}  ${
           styles.paddingX
         } ${styles.flexCenter}`}
       >
         <div className={`${styles.boxWidth}`}>
           <Stats />
-          <Business />
+          <Business darkMode={darkMode} />
           <Billing />
           <CardDeal />
-          <Testimonials />
-          <Practices />
-          <Services />
-          <Advantages />
-          <Timeline />
+          <Testimonials darkMode={darkMode} />
+          <Practices darkMode={darkMode} />
+          <Services darkMode={darkMode} />
+          <Advantages darkMode={darkMode} />
+          <Timeline darkMode={darkMode} />
 
           <Clients />
         </div>

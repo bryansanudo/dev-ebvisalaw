@@ -1,59 +1,183 @@
-import { useState } from "react";
+import React, { useState } from "react";
+import { FaBars, FaTimes } from "react-icons/fa";
+import styles from "@/style";
+import Section from "@/components/common/Section";
+import { MdNightsStay, MdWbSunny } from "react-icons/md";
+import logo from "@/assets/logo-gba.png";
+import { Link } from "react-router-dom";
 
-import { close, logo, menu } from "../assets";
-import { navLinks } from "../constants";
+import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
 
-const Navbar = () => {
-  const [active, setActive] = useState("Home");
-  const [toggle, setToggle] = useState(false);
+const Navbar = ({ darkMode, setDarkMode }) => {
+  const [isMenuShown, setIsMenuShown] = useState(false);
+  const links = [
+    {
+      id: 1,
+      link: "Inicio",
+    },
+    {
+      id: 2,
+      link: "Acerca De",
+    },
+    {
+      id: 3,
+      link: "Servicios",
+    },
+    {
+      id: 4,
+      link: "Casos De Éxito",
+    },
+    {
+      id: 5,
+      link: "Blog",
+    },
+    {
+      id: 6,
+      link: "Contacto",
+    },
+  ];
 
   return (
-    <nav className="w-full flex py-6 justify-between items-center navbar">
-      <img src={logo} alt="hoobank" className="w-[124px] h-[32px]" />
+    <div
+      className={` ${styles.paddingX} nav fixed w-full z-40   ${styles.flexCenter}`}
+    >
+      <div className={`${styles.boxWidth}   `}>
+        <div className="w-full  h-20 dark:text-white ">
+          <div className="flex justify-start md:justify-end md:gap-5 items-center  mx-auto  h-full">
+            <div className="mr-auto mt-2 hidden md:flex">
+              {/* <img src={logo} className="w-36" alt="" /> */}
+              <p>logo</p>
+            </div>
+            <div className="hidden lg:flex items-center">
+              <ul className="flex gap-6 ">
+                {links.map(({ id, link }) => (
+                  <li
+                    key={id}
+                    className="py-6 text-[18px]   capitalize duration-300 hover:text-primary hover:font-semibold  cursor-pointer"
+                  >
+                    {link}
+                  </li>
+                ))}
+                <li>
+                  <div className="dropdown dropdown-bottom dropdown-hover">
+                    <div
+                      tabIndex={0}
+                      className="py-6 text-[18px] flex items-center   capitalize duration-300 hover:text-primary hover:font-semibold  cursor-pointer"
+                    >
+                      <p>Services</p>
+                      <div className="cursor-pointer">
+                        <div className="flex items-center gap-2">
+                          <IoMdArrowDropdown />
+                        </div>
+                      </div>
+                    </div>
+                    <ul className="dropdown-content  z-[1]   shadow bg-base-100 w-52">
+                      <Link to="services/open_company">
+                        <li className="hover:bg-success cursor-pointer  w-full duration-300">
+                          <p className="px-4 text-[14px]">Open a Company</p>
+                        </li>
+                      </Link>
+                      <Link to="services/visa_eb1">
+                        <li className="hover:bg-success  w-full duration-300">
+                          <p className="px-4 text-[14px]">EB1 VISA</p>
+                        </li>
+                      </Link>
+                      <Link to="services/visa_eb2">
+                        <li className="hover:bg-success  w-full duration-300">
+                          <p className="px-4 text-[14px]">EB2 VISA</p>
+                        </li>
+                      </Link>
+                      <Link to="services/visa_e2">
+                        <li className="hover:bg-success  w-full duration-300">
+                          <p className="px-4 text-[14px]">E2 VISA</p>
+                        </li>
+                      </Link>
 
-      <ul className="list-none sm:flex hidden justify-end items-center flex-1">
-        {navLinks.map((nav, index) => (
-          <li
-            key={nav.id}
-            className={`font-poppins font-normal cursor-pointer text-[16px] ${
-              active === nav.title ? "text-white" : "text-dimWhite"
-            } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
-            onClick={() => setActive(nav.title)}
-          >
-            <a href={`#${nav.id}`}>{nav.title}</a>
-          </li>
-        ))}
-      </ul>
+                      {/*   <li className="hover:bg-success  w-full duration-300">
+                    <p className="px-4 text-[14px]">L1 VISA</p>
+                  </li>
+                  <li className="hover:bg-success  w-full duration-300">
+                    <p className="px-4 text-[14px]">VISA 01</p>
+                  </li>
+                  <li className="hover:bg-success  w-full duration-300">
+                    <p className="px-4 text-[14px]">Family Requests</p>
+                  </li>
+                  <li className="hover:bg-success  w-full duration-300">
+                    <p className="px-4 text-[14px]">Naturalizacion</p>
+                  </li>
+                  <li className="hover:bg-success  w-full duration-300">
+                    <p className="px-4 text-[14px]">United States Removal</p>
+                  </li>
+                  <li className="hover:bg-success  w-full duration-300">
+                    <p className="px-4 text-[14px]">IE PAROLE VISA</p>
+                  </li>
+                  <li className="hover:bg-success  w-full duration-300">
+                    <p className="px-4 text-[14px]">PERM</p>
+                  </li>
+                  <li className="hover:bg-success  w-full duration-300">
+                    <p className="px-4 text-[14px]">EAD</p>
+                  </li> */}
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
 
-      <div className="sm:hidden flex flex-1 justify-end items-center">
-        <img
-          src={toggle ? close : menu}
-          alt="menu"
-          className="w-[28px] h-[28px] object-contain"
-          onClick={() => setToggle(!toggle)}
-        />
+            <div
+              onClick={() => setIsMenuShown(!isMenuShown)}
+              className="block lg:hidden cursor-pointer mr-4"
+            >
+              {isMenuShown ? <FaTimes size={30} /> : <FaBars size={30} />}
+            </div>
+
+            <div className="flex items-center flex-row justify-center gap-2 ">
+              <div className="bg-gray-300 h-6 mr-2 w-[1px] hidden md:flex"></div>
+              <div onClick={() => setDarkMode(!darkMode)}>
+                {darkMode ? (
+                  <MdWbSunny className="text-2xl cursor-pointer hover:text-primary duration-300" />
+                ) : (
+                  <MdNightsStay className="text-2xl cursor-pointer hover:text-primary duration-300" />
+                )}
+              </div>
+
+              {/*   <a href="https://bryan95-portfolio.vercel.app/">
+                <span className="hover:text-primary duration-300 text-[18px] hover:font-semibold">
+                  ENG
+                </span>
+              </a>
+              <a href="https://bryan95-portfolio-esp.vercel.app/">
+                <span className="hover:text-primary duration-300 text-[18px] hover:font-semibold">
+                  ESP
+                </span>
+              </a> */}
+            </div>
+            <div className="ml-auto md:hidden flex">
+              <img src={logo} className="w-36" alt="" />
+            </div>
+          </div>
+        </div>
 
         <div
-          className={`${
-            !toggle ? "hidden" : "flex"
-          } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
+          className={`fixed w-full  text-white z-10 left-0 h-fit py-12 lg:hidden flex justify-center text-center text-2xl duration-500 ${
+            isMenuShown
+              ? "top-16 rounded-b-2xl bg-gray-900 opacity-95"
+              : "top-[-600px]"
+          }`}
         >
-          <ul className="list-none flex justify-end items-start flex-1 flex-col">
-            {navLinks.map((nav, index) => (
+          <ul>
+            {links.map(({ id, link }) => (
               <li
-                key={nav.id}
-                className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                  active === nav.title ? "text-white" : "text-dimWhite"
-                } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
-                onClick={() => setActive(nav.title)}
+                onClick={() => setIsMenuShown(!isMenuShown)}
+                key={id}
+                className="p-4 uppercase cursor-pointer duration-300 hover:text-thPrimary"
               >
-                <a href={`#${nav.id}`}>{nav.title}</a>
+                {link}
               </li>
             ))}
           </ul>
         </div>
       </div>
-    </nav>
+    </div>
   );
 };
 

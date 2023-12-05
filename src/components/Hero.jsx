@@ -6,8 +6,9 @@ import test2 from "@/assets/test2.png";
 import test3 from "@/assets/test3.png";
 import test4 from "@/assets/test4.png";
 import test5 from "@/assets/test5.png";
+import { FaStar } from "react-icons/fa";
 
-const Hero = () => {
+const Hero = ({ darkMode }) => {
   return (
     <section
       id="home"
@@ -16,22 +17,28 @@ const Hero = () => {
       <div
         className={`flex-1 ${styles.flexStart} flex-col xl:px-0 sm:px-16 px-6`}
       >
-        <div className="flex flex-row items-center py-[6px] px-4 bg-discount-gradient rounded-[10px] mb-2">
-          <img src={discount} alt="discount" className="w-[32px] h-[32px]" />
-          <p className={`${styles.paragraph} ml-2`}>
-            <span className="text-white">Immigration Law Office in the US</span>
+        <div
+          className={`flex flex-row items-center py-[6px] px-4  ${
+            darkMode ? "bg-black-gradient-2" : "bg-black-gradient"
+          } rounded-[10px] mb-2`}
+        >
+          <FaStar className="text-primary" />
+          <p className={`font-normal  text-[18px] leading-[30.8px] ml-2`}>
+            <span className="text-white ">
+              Immigration Law Office in the US
+            </span>
           </p>
         </div>
 
         <div className="flex flex-row justify-between items-center w-full">
-          <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] text-white ss:leading-[100.8px] leading-[75px]">
+          <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] dark:text-white ss:leading-[100.8px] leading-[75px]">
             A Successful
             <br className="sm:block hidden" />{" "}
-            <span className="text-gradient"> Future starts here</span>{" "}
+            <span className="text-gradient "> Future starts here</span>{" "}
           </h1>
-          <div className="ss:flex hidden md:mr-4 mr-0">
+          {/* <div className="ss:flex hidden md:mr-4 mr-0">
             <GetStarted />
-          </div>
+          </div> */}
         </div>
 
         {/*  <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[100.8px] leading-[75px] w-full">
@@ -59,9 +66,9 @@ const Hero = () => {
         {/* gradient end */}
       </div>
 
-      <div className={`ss:hidden ${styles.flexCenter}`}>
+      {/*   <div className={`ss:hidden ${styles.flexCenter}`}>
         <GetStarted />
-      </div>
+      </div> */}
     </section>
   );
 };

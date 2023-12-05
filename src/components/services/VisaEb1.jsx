@@ -19,7 +19,7 @@ const VisaEb1 = ({ isMenuShown }) => {
             {/* <div className="absolute z-[0] w-[50%] h-[50%] -left-1/2 bottom-0 rounded-full pink__gradient" /> */}
             <img
               src={opencompany}
-              className="object-contain rounded-[20px]  md:mx-0   shadow-lg shadow-white"
+              className="object-contain rounded-[20px]  md:mx-0   shadow-xl shadow-gray-500"
               alt=""
             />
           </div>

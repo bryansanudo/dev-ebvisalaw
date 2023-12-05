@@ -5,6 +5,7 @@ import text from "@/assets/text.jpg";
 import Button from "@/components/Button";
 
 import shield from "@/assets/Shield.svg";
+import { FaStar } from "react-icons/fa";
 
 const cards = [
   {
@@ -51,7 +52,7 @@ const cards = [
   },
 ];
 
-const Advantages = () => (
+const Advantages = ({ darkMode }) => (
   <section
     id="clients"
     className={`${styles.paddingY} ${styles.flexCenter} flex-col relative `}
@@ -73,25 +74,22 @@ const Advantages = () => (
         {cards.map(({ id, img, title, subtitle }) => (
           <div
             key={id}
-            className=" flex flex-col  items-start justify-center  md:gap-6 bg-black-gradient-2 rounded-[20px] box-shadow p-8 "
+            className={`flex flex-col  items-start justify-center  md:gap-6 ${
+              darkMode
+                ? "shadow-sm shadow-white feedback-card "
+                : "shadow-md shadow-black"
+            }
+rounded-[20px]  p-8 `}
           >
             <div
-              className={`w-[64px] h-[64px] mask mask-hexagon ${styles.flexCenter} bg-dimBlue`}
+              className={`w-[64px] h-[64px] mask mask-hexagon ${styles.flexCenter} bg-primary`}
             >
-              <img
-                src={img}
-                alt="star"
-                className="w-[50%] h-[50%] object-contain"
-              />
+              <FaStar className="text-white text-3xl" />
             </div>
 
             <div className=" p-6 sm:px-3 sm:py-0">
-              <p className="mb-2 font-poppins font-semibold text-[20px] leading-[32px] text-white">
-                {title}
-              </p>
-              <p className="font-poppins font-normal text-[16px] leading-[24px] text-dimWhite">
-                {subtitle}
-              </p>
+              <p className={`${styles.title}`}>{title}</p>
+              <p className={`${styles.subtitle}`}>{subtitle}</p>
             </div>
           </div>
         ))}

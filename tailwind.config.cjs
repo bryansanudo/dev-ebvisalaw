@@ -1,26 +1,30 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./src/**/*.{js,jsx}"],
-  mode: "jit",
+  darkMode: "class",
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens: {
+        xs: "480px",
+        ss: "620px",
+        sm: "768px",
+        md: "1060px",
+        lg: "1200px",
+        xl: "1700px",
+      },
       colors: {
-        primary: "#00040f",
-        secondary: "#00f6ff",
         dimWhite: "rgba(255, 255, 255, 0.7)",
         dimBlue: "rgba(9, 151, 124, 0.1)",
       },
-      fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
+      animation: {
+        "loop-scroll": "loop-scroll 20s linear infinite",
       },
-    },
-    screens: {
-      xs: "480px",
-      ss: "620px",
-      sm: "768px",
-      md: "1060px",
-      lg: "1200px",
-      xl: "1700px",
+      keyframes: {
+        "loop-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
+      },
     },
   },
   plugins: [require("daisyui")],
@@ -30,9 +34,9 @@ module.exports = {
         mytheme: {
           primary: "#94171A",
 
-          secondary: "#263D72",
+          secondary: "#2E1A47",
 
-          accent: "#000000",
+          accent: "#00040f",
 
           neutral: "#000000",
 
@@ -45,7 +49,6 @@ module.exports = {
           warning: "#94171A",
 
           error: "#F87272",
-          black: "#ffffff",
         },
       },
     ],

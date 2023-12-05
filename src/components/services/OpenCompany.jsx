@@ -15,7 +15,7 @@ const OpenCompany = ({ isMenuShown }) => {
       >
         <div className="w-full flex flex-col gap-6 md:gap-20 mb-20  ">
           <div className="flex flex-col md:flex-row gap-20">
-            <div className="w-full h-full  rounded-[20px] shadow-lg shadow-white ">
+            <div className="w-full h-full  rounded-[20px] shadow-xl shadow-gray-500 ">
               <img
                 src={opencompany}
                 className="object-contain rounded-[20px]"
@@ -69,7 +69,7 @@ font-poppins font-normal text-[16px] leading-[24px] text-dimWhite
                 </p>
               </div>
             </div>
-            <div className="w-full h-full  rounded-[20px] shadow-lg shadow-white   ">
+            <div className="w-full h-full  rounded-[20px] shadow-xl shadow-gray-500   ">
               <img
                 src={opencompany2}
                 className="object-contain rounded-[20px]"

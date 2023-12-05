@@ -4,7 +4,7 @@ import process1 from "@/assets/process/process1.png";
 import shield from "@/assets/Shield.svg";
 import styles from "../style";
 
-const Timeline = () => {
+const Timeline = ({ darkMode }) => {
   return (
     <>
       <section className="max-w-5xl mx-auto py-10 text-white"></section>
@@ -24,11 +24,11 @@ const Timeline = () => {
         </p>
       </div> */}
         </div>
-        <div className="mx-6">
+        <div className="mx-6 ">
           {/* step1 */}
           <div className="flex flex-row">
             <div className="hidden md:flex flex-col items-center ">
-              <div className="w-40 py-5  bg-black-gradient-2 rounded-[20px] box-shadow  mr-4 flex flex-col items-center justify-center">
+              <div className="w-40 py-5  bg-black-gradient-2 rounded-[20px]   mr-4 flex flex-col items-center justify-center">
                 <div className="text-3xl font-black text-white">01</div>
                 <div className="font-poppins font-semibold text-[20px] leading-[32px] text-white">
                   Meeting
@@ -38,7 +38,11 @@ const Timeline = () => {
                 <div className="border-l-4 mr-4 h-full border-gray-300 border-dashed"></div>
               </div>
             </div>
-            <div className="flex-auto border md:border-none rounded-[20px] p-6 md:p-0   feedback-card">
+            <div
+              className={` ${
+                darkMode ? "shadow-sm shadow-white  " : "shadow-md shadow-black"
+              } flex-auto border md:border-none rounded-[20px] p-6 md:p-0   `}
+            >
               <div className="flex md:flex-row flex-col items-center ">
                 <div className="flex-auto  ">
                   <div className="md:hidden font-poppins font-semibold text-[20px] leading-[32px] text-white">
@@ -46,7 +50,7 @@ const Timeline = () => {
                   </div>
 
                   <div className=" flex items-center justify-center h-24 md:mt-2  ">
-                    <p className="font-poppins font-normal text-[16px] leading-[24px] text-dimWhite">
+                    <p className="font-poppins font-normal text-[16px] leading-[24px] dark:text-dimWhite">
                       Let's talk about your goals and understand how we can help
                       you achieve them.
                     </p>
@@ -68,7 +72,7 @@ const Timeline = () => {
           {/* step2 */}
           <div className="flex flex-row-reverse">
             <div className="hidden md:flex flex-col items-center">
-              <div className="w-40 py-5  bg-black-gradient-2 rounded-[20px] box-shadow  mr-4 flex flex-col items-center justify-center">
+              <div className="w-40 py-5  bg-black-gradient-2 rounded-[20px]   mr-4 flex flex-col items-center justify-center">
                 <div className="text-3xl font-black text-white"> 02</div>
                 <div className="mb-2 font-poppins font-semibold text-[20px] leading-[32px] text-white text-center">
                   Profile evaluation
@@ -78,16 +82,21 @@ const Timeline = () => {
                 <div className="border-l-4 ml-4 h-full border-gray-300 border-dashed"></div>
               </div>
             </div>
-            <div className="flex-auto feedback-card mr-4 border md:border-none rounded-[20px]  p-6 md:p-0   ">
+            <div
+              className={`${
+                darkMode ? "shadow-sm shadow-white  " : "shadow-md shadow-black"
+              }
+  flex-auto mr-4 border md:border-none rounded-[20px]  p-6 md:p-0`}
+            >
               <div className="flex md:flex-row flex-col items-center">
                 <div className="flex-auto">
-                  <div className="md:hidden font-poppins font-semibold text-[20px] leading-[32px] text-white">
+                  <div className="md:hidden font-poppins font-semibold text-[20px] leading-[32px] dark:text-white">
                     <span className="font-black">Step 2</span> - Profile
                     evaluation
                   </div>
 
                   <div className="flex items-center justify-center h-36 ">
-                    <p className="font-poppins font-normal text-[16px] leading-[24px] text-dimWhite">
+                    <p className="font-poppins font-normal text-[16px] leading-[24px] dark:text-dimWhite">
                       We will carefully analyze your profile to define the best
                       strategy for your case.
                     </p>
@@ -109,14 +118,19 @@ const Timeline = () => {
           {/* step3 */}
           <div className="flex flex-row">
             <div className="hidden md:flex flex-col items-center">
-              <div className="w-60 py-5  bg-black-gradient-2 rounded-[20px] box-shadow  mr-4 flex flex-col items-center justify-center">
+              <div className="w-60 py-5  bg-black-gradient-2 rounded-[20px] mr-4 flex flex-col items-center justify-center">
                 <div className="text-3xl font-black text-white">03</div>
                 <div className="mb-2 font-poppins font-semibold text-[20px] leading-[32px] text-white text-center">
                   Strategy presentation meeting
                 </div>
               </div>
             </div>
-            <div className="flex-auto feedback-card mr-4 border md:border-none rounded-[20px]  p-6 md:p-0">
+            <div
+              className={`${
+                darkMode ? "shadow-sm shadow-white  " : "shadow-md shadow-black"
+              }
+   flex-auto  mr-4 border md:border-none rounded-[20px]  p-6 md:p-0`}
+            >
               <div className="flex md:flex-row flex-col items-center">
                 <div className="flex-auto">
                   <div
@@ -128,7 +142,7 @@ const Timeline = () => {
                   </div>
 
                   <div className="flex items-center justify-center h-36 md:mt-2 ">
-                    <p className="font-poppins font-normal text-[16px] leading-[24px] text-dimWhite">
+                    <p className="font-poppins font-normal text-[16px] leading-[24px] dark:text-dimWhite">
                       We will present you with a personalized strategy and
                       answer all your questions.
                     </p>
@@ -150,14 +164,19 @@ const Timeline = () => {
           {/* step4 */}
           <div className="flex flex-row-reverse">
             <div className="hidden md:flex flex-col items-center">
-              <div className="w-60 py-5  bg-black-gradient-2 rounded-[20px] box-shadow  mr-4 flex flex-col items-center justify-center">
+              <div className="w-60 py-5  bg-black-gradient-2 rounded-[20px]   mr-4 flex flex-col items-center justify-center">
                 <div className="text-3xl font-black text-white"> 04</div>
                 <div className="font-poppins font-semibold text-[20px] leading-[32px] text-white text-center">
                   Signature of the legal services contract
                 </div>
               </div>
             </div>
-            <div className="flex-auto feedback-card mr-4 border md:border-none rounded-[20px]  p-6 md:p-0   ">
+            <div
+              className={`flex-auto ${
+                darkMode ? "shadow-sm shadow-white  " : "shadow-md shadow-black"
+              }
+    mr-4 border md:border-none rounded-[20px]  p-6 md:p-0 `}
+            >
               <div className="flex md:flex-row flex-col items-center">
                 <div className="flex-auto">
                   <div className="md:hidden font-poppins font-semibold text-[20px] leading-[32px] text-white">
@@ -166,7 +185,7 @@ const Timeline = () => {
                   </div>
 
                   <div className="flex items-center justify-center h-36 ">
-                    <p className="font-poppins font-normal text-[16px] leading-[24px] text-dimWhite">
+                    <p className="font-poppins font-normal text-[16px] leading-[24px] dark:text-dimWhite">
                       Formalizing the Legal Partnership: A Contract Successfully
                       Signed with the Lawyer.
                     </p>
@@ -188,14 +207,19 @@ const Timeline = () => {
           {/* step5 */}
           <div className="flex flex-row">
             <div className="hidden md:flex flex-col items-center">
-              <div className="w-40 py-5  bg-black-gradient-2 rounded-[20px] box-shadow  mr-4 flex flex-col items-center justify-center">
+              <div className="w-40 py-5  bg-black-gradient-2 rounded-[20px]   mr-4 flex flex-col items-center justify-center">
                 <div className="text-3xl font-black text-white">05</div>
                 <div className="font-poppins font-semibold text-[20px] leading-[32px] text-white text-center">
                   Case structuring
                 </div>
               </div>
             </div>
-            <div className="flex-auto feedback-card mr-4 border md:border-none rounded-[20px]  p-6 md:p-0">
+            <div
+              className={`flex-auto ${
+                darkMode ? "shadow-sm shadow-white  " : "shadow-md shadow-black"
+              }
+    mr-4 border md:border-none rounded-[20px]  p-6 md:p-0`}
+            >
               <div className="flex md:flex-row flex-col items-center">
                 <div className="flex-auto">
                   <div className="md:hidden font-poppins font-semibold text-[20px] leading-[32px] text-white">
@@ -204,7 +228,7 @@ const Timeline = () => {
                   </div>
 
                   <div className="flex items-center justify-center h-36 md:mt-2 ">
-                    <p className="font-poppins font-normal text-[16px] leading-[24px] text-dimWhite">
+                    <p className="font-poppins font-normal text-[16px] leading-[24px] dark:text-dimWhite">
                       We will prepare your case with precision, guaranteeing the
                       best chance of success.
                     </p>
@@ -226,14 +250,19 @@ const Timeline = () => {
           {/* step6 */}
           <div className="flex flex-row-reverse">
             <div className="hidden md:flex flex-col items-center">
-              <div className="w-64 py-5  bg-black-gradient-2 rounded-[20px] box-shadow  mr-4 flex flex-col items-center justify-center">
+              <div className="w-64 py-5  bg-black-gradient-2 rounded-[20px]   mr-4 flex flex-col items-center justify-center">
                 <div className="text-3xl font-black text-white"> 06</div>
                 <div className="font-poppins font-semibold text-[20px] leading-[32px] text-white text-center">
                   Presentation of the visa request
                 </div>
               </div>
             </div>
-            <div className="flex-auto feedback-card mr-4 border md:border-none rounded-[20px]  p-6 md:p-0   ">
+            <div
+              className={`flex-auto ${
+                darkMode ? "shadow-sm shadow-white  " : "shadow-md shadow-black"
+              }
+    mr-4 border md:border-none rounded-[20px]  p-6 md:p-0`}
+            >
               <div className="flex md:flex-row flex-col items-center">
                 <div className="flex-auto">
                   <div className="md:hidden font-poppins font-semibold text-[20px] leading-[32px] text-white">
@@ -242,7 +271,7 @@ const Timeline = () => {
                   </div>
 
                   <div className="flex items-center justify-center h-36">
-                    <p className="font-poppins font-normal text-[16px] leading-[24px] text-dimWhite">
+                    <p className="font-poppins font-normal text-[16px] leading-[24px] dark:text-dimWhite">
                       We will send your case following all the necessary
                       deadlines and protocols.
                     </p>
@@ -264,14 +293,19 @@ const Timeline = () => {
           {/* step7 */}
           <div className="flex flex-row">
             <div className="hidden md:flex flex-col items-center">
-              <div className="w-60 py-5  bg-black-gradient-2 rounded-[20px] box-shadow  mr-4 flex flex-col items-center justify-center">
+              <div className="w-60 py-5  bg-black-gradient-2 rounded-[20px]   mr-4 flex flex-col items-center justify-center">
                 <div className="text-3xl font-black text-white">07</div>
                 <div className="font-poppins font-semibold text-[20px] leading-[32px] text-white text-center">
                   Waiting for immigration response
                 </div>
               </div>
             </div>
-            <div className="flex-auto feedback-card mr-4 border md:border-none rounded-[20px]  p-6 md:p-0">
+            <div
+              className={`flex-auto ${
+                darkMode ? "shadow-sm shadow-white  " : "shadow-md shadow-black"
+              }
+   mr-4 border md:border-none rounded-[20px]  p-6 md:p-0`}
+            >
               <div className="flex md:flex-row flex-col items-center">
                 <div className="flex-auto">
                   <div className="md:hidden font-poppins font-semibold text-[20px] leading-[32px] text-white">
@@ -280,7 +314,7 @@ const Timeline = () => {
                   </div>
 
                   <div className="flex items-center justify-center h-36 md:mt-2 ">
-                    <p className="font-poppins font-normal text-[16px] leading-[24px] text-dimWhite">
+                    <p className="font-poppins font-normal text-[16px] leading-[24px] dark:text-dimWhite">
                       We will follow your process closely and keep you informed.
                     </p>
                   </div>
@@ -301,14 +335,19 @@ const Timeline = () => {
           {/* step8 */}
           <div className="flex flex-row-reverse">
             <div className="hidden md:flex flex-col items-center">
-              <div className="w-40 py-5  bg-black-gradient-2 rounded-[20px] box-shadow  mr-4 flex flex-col items-center justify-center">
+              <div className="w-40 py-5  bg-black-gradient-2 rounded-[20px]   mr-4 flex flex-col items-center justify-center">
                 <div className="text-3xl font-black text-white">08</div>
                 <div className="font-poppins font-semibold text-[20px] leading-[32px] text-white text-center">
                   Everything ready!
                 </div>
               </div>
             </div>
-            <div className="flex-auto feedback-card mr-4 border md:border-none rounded-[20px]  p-6 md:p-0">
+            <div
+              className={`flex-auto ${
+                darkMode ? "shadow-sm shadow-white  " : "shadow-md shadow-black"
+              }
+    mr-4 border md:border-none rounded-[20px]  p-6 md:p-0`}
+            >
               <div className="flex md:flex-row flex-col items-center">
                 <div className="flex-auto">
                   <div className="md:hidden font-poppins font-semibold text-[20px] leading-[32px] text-white">
@@ -317,7 +356,7 @@ const Timeline = () => {
                   </div>
 
                   <div className="flex items-center justify-center h-36 md:mt-2 md:mx-10 ">
-                    <p className="font-poppins font-normal text-[16px] leading-[24px] text-dimWhite">
+                    <p className="font-poppins font-normal text-[16px] leading-[24px] dark:text-dimWhite">
                       Now it's time to go! If approved, your process will be
                       finalized and you will receive everything you need for
                       your trip
