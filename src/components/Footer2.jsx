@@ -1,7 +1,7 @@
 import React from "react";
 import Section from "@/components/common/Section";
 import styles from "@/style";
-import logo from "@/assets/logo-gba.png";
+
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 
