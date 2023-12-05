@@ -49,6 +49,7 @@ const Home = ({ isMenuShown, darkMode }) => {
           <Advantages darkMode={darkMode} />
           <Timeline darkMode={darkMode} />
           <Clients />
+          <CTA darkMode={darkMode} />
         </div>
       </div>
     </>

@@ -8,6 +8,7 @@ import test4 from "@/assets/test4.png";
 import test5 from "@/assets/test5.png";
 import shield from "@/assets/Shield.svg";
 import { FaStar } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const cards = [
   {
@@ -46,7 +47,9 @@ const Services = ({ darkMode }) => (
         we can help you reach new horizons in the United States.
       </p>
 
-      <button className={`${styles.button}`}>Get Started</button>
+      <button className={`${styles.button}`}>
+        <Link to="/contact">Get Started</Link>
+      </button>
     </div>
 
     <div className={layout.sectionImg}>

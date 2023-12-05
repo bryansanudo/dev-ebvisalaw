@@ -13,21 +13,25 @@ const Navbar = ({ darkMode, setDarkMode }) => {
   const links = [
     {
       id: 1,
-      link: "Home",
+      name: "Home",
+      link: "/",
     },
     {
       id: 2,
-      link: "About Us",
+      name: "About Us",
+      link: "/about-us",
     },
 
     {
       id: 4,
-      link: "FAQ",
+      name: "FAQ",
+      link: "/faq",
     },
 
     {
       id: 6,
-      link: "Contact",
+      name: "Contact",
+      link: "/contact",
     },
   ];
 
@@ -44,12 +48,12 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             </div>
             <div className="hidden lg:flex items-center">
               <ul className="flex gap-6 ">
-                {links.map(({ id, link }) => (
+                {links.map(({ id, link, name }) => (
                   <li
                     key={id}
                     className="py-6 text-[18px]   capitalize duration-300 hover:text-primary hover:font-semibold  cursor-pointer"
                   >
-                    {link}
+                    <Link to={link}>{name}</Link>
                   </li>
                 ))}
                 <li>

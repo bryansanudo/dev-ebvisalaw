@@ -1,8 +1,8 @@
-import styles from "../style";
+import styles from "@/style";
 import logo from "@/assets/law-logo-black.png";
 import { footerLinks, socialMedia } from "../constants";
 
-const Footer = () => (
+const Footer2 = () => (
   <section
     className={`${styles.flexCenter} ${styles.paddingY} ${styles.paddingX} flex-col  `}
   >
@@ -62,4 +62,4 @@ const Footer = () => (
   </section>
 );
 
-export default Footer;
+export default Footer2;

@@ -26,6 +26,7 @@ import OpenCompany from "@/components/services/OpenCompany";
 import VisaEb1 from "@/components/services/VisaEb1";
 import VisaEb2 from "@/components/services/VisaEb2";
 import VisaE2 from "@/components/services/VisaE2";
+import Footer2 from "@/components/Footer2";
 
 import Contact from "@/components/Contact";
 
@@ -54,7 +55,10 @@ const App = () => {
             path="/contact"
             element={<Contact darkMode={darkMode} isMenuShown={isMenuShown} />}
           />
-          <Route path="/faq" element={<Faq isMenuShown={isMenuShown} />} />
+          <Route
+            path="/faq"
+            element={<Faq darkMode={darkMode} isMenuShown={isMenuShown} />}
+          />
 
           <Route
             path="/services/open_company"
@@ -80,7 +84,7 @@ const App = () => {
           } ${styles.flexCenter}`}
         >
           <div className={`${styles.boxWidth}`}>
-            <CTA darkMode={darkMode} />
+            <Footer2 />
           </div>
         </div>
       </div>

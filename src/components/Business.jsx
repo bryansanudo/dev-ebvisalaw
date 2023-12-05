@@ -2,6 +2,7 @@ import { features } from "../constants";
 import styles, { layout } from "../style";
 
 import { FaStar } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const FeatureCard = ({ icon, title, content, index, darkMode }) => (
   <div
@@ -41,7 +42,9 @@ const Business = ({ darkMode }) => (
         the legal landscape.
       </p>
 
-      <button className={`${styles.button} `}>Get Started</button>
+      <button className={`${styles.button}`}>
+        <Link to="/contact">Get Started</Link>
+      </button>
     </div>
 
     <div className={`${layout.sectionImg} flex-col`}>

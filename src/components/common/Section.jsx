@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "@/style";
+import CTA from "@/components/CTA";
 
-const Section = ({ children, isMenuShown, title, subtitle }) => {
+const Section = ({ children, isMenuShown, title, subtitle, darkMode }) => {
   return (
     <>
       <div
@@ -22,6 +23,7 @@ const Section = ({ children, isMenuShown, title, subtitle }) => {
           </div>
 
           {children}
+          <CTA darkMode={darkMode} />
         </div>
       </div>
     </>
