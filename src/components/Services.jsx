@@ -57,7 +57,7 @@ const Services = ({ darkMode }) => (
             className={` ${
               darkMode
                 ? "shadow-sm shadow-white feedback-card  "
-                : "shadow-md shadow-black"
+                : "shadow-md shadow-black hover:scale-105 duration-500"
             } p-6 flex flex-col gap-6  rounded-xl `}
           >
             <div

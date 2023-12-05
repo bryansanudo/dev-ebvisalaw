@@ -80,7 +80,7 @@ const App = () => {
           } ${styles.flexCenter}`}
         >
           <div className={`${styles.boxWidth}`}>
-            <CTA />
+            <CTA darkMode={darkMode} />
           </div>
         </div>
       </div>

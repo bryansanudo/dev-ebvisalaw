@@ -7,7 +7,7 @@ const FeedbackCard = ({ content, name, title, img, darkMode }) => (
     className={`flex justify-between flex-col px-10 py-12 rounded-[20px]  max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 ${
       darkMode
         ? "shadow-sm shadow-white feedback-card  "
-        : "shadow-md shadow-black"
+        : "shadow-md shadow-black hover:scale-105 duration-500"
     }
 `}
   >

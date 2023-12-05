@@ -10,7 +10,7 @@ const FeatureCard = ({ icon, title, content, index, darkMode }) => (
     } ${
       darkMode
         ? "shadow-sm shadow-white feedback-card  "
-        : "shadow-md shadow-black"
+        : "shadow-md shadow-black hover:scale-105 duration-500"
     } `}
   >
     <div

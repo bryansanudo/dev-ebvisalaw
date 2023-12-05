@@ -1,14 +1,20 @@
 import styles from "../style";
 
-const CTA = () => (
+const CTA = ({ darkMode }) => (
   <section
-    className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} sm:flex-row flex-col bg-black-gradient-2 rounded-[20px] box-shadow`}
+    className={`${styles.flexCenter} ${styles.marginY} ${
+      styles.padding
+    } sm:flex-row flex-col ${
+      darkMode ? " bg-black-gradient-2 " : "shadow-md shadow-black "
+    } rounded-[20px] `}
   >
     <div className="flex-1 flex flex-col">
-      <h2 className={`${styles.heading2} text-white`}>
+      <h2 className={`${styles.heading2} dark:text-white`}>
         Explore our Legal Hub Today!
       </h2>
-      <p className={`${styles.paragraph} text-dimWhite max-w-[470px] mt-5`}>
+      <p
+        className={`${styles.paragraph} dark:text-dimWhite max-w-[470px] mt-5`}
+      >
         Unleash the full potential of your practice with a comprehensive suite
         of tools. Navigate the legal realm seamlessly and expand your influence
         across borders.
