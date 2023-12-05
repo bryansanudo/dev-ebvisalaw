@@ -3,7 +3,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import styles from "@/style";
 import Section from "@/components/common/Section";
 import { MdNightsStay, MdWbSunny } from "react-icons/md";
-import logo from "@/assets/logo-gba.png";
+
 import { Link } from "react-router-dom";
 
 import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
@@ -152,7 +152,8 @@ const Navbar = ({ darkMode, setDarkMode }) => {
               </a> */}
             </div>
             <div className="ml-auto md:hidden flex">
-              <img src={logo} className="w-36" alt="" />
+              {/* <img src={logo} className="w-36" alt="" /> */}
+              <p>logo</p>
             </div>
           </div>
         </div>
