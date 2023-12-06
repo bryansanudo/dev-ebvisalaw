@@ -3,6 +3,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import styles from "@/style";
 import Section from "@/components/common/Section";
 import { MdNightsStay, MdWbSunny } from "react-icons/md";
+import logovisa from "@/assets/logo-visa.png";
 
 import { Link } from "react-router-dom";
 
@@ -38,8 +39,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         <div className="w-full  h-20 dark:text-white ">
           <div className="flex justify-start md:justify-end md:gap-5 items-center  mx-auto  h-full">
             <div className="mr-auto mt-2 hidden md:flex">
-              {/* <img src={logo} className="w-36" alt="" /> */}
-              <p>logo</p>
+              <img src={logovisa} className="w-20" alt="" />
             </div>
             <div className="hidden lg:flex items-center">
               <ul className="flex gap-6 ">
