@@ -22,12 +22,12 @@ import Timeline from "@/components/Timeline";
 import Contact from "@/components/Contact";
 import Faq from "@/components/Faq";
 
-const Home = ({ isMenuShown, darkMode }) => {
+const Home = ({ blue, isMenuShown, darkMode }) => {
   return (
     <>
       <div className={`dark:bg-accent mt-24 ${styles.flexStart} `}>
         <div className={`${styles.boxWidth}`}>
-          <Hero darkMode={darkMode} />
+          <Hero blue={blue} darkMode={darkMode} />
         </div>
       </div>
 
@@ -37,19 +37,19 @@ const Home = ({ isMenuShown, darkMode }) => {
         } ${styles.flexCenter}`}
       >
         <div className={`${styles.boxWidth}`}>
-          <Stats />
-          <Business darkMode={darkMode} />
+          <Stats blue={blue} />
+          <Business blue={blue} darkMode={darkMode} />
 
-          <Billing />
+          <Billing blue={blue} />
           <div className="absolute z-[0] w-[50%] h-[50%] -left-1/2 bottom-0 rounded-full pink__gradient" />
-          <CardDeal />
-          <Testimonials darkMode={darkMode} />
-          <Practices darkMode={darkMode} />
-          <Services darkMode={darkMode} />
-          <Advantages darkMode={darkMode} />
-          <Timeline darkMode={darkMode} />
-          <Clients />
-          <CTA darkMode={darkMode} />
+          <CardDeal blue={blue} />
+          <Testimonials blue={blue} darkMode={darkMode} />
+          <Practices darkMode={darkMode} blue={blue} />
+          <Services darkMode={darkMode} blue={blue} />
+          <Advantages darkMode={darkMode} blue={blue} />
+          <Timeline darkMode={darkMode} blue={blue} />
+          <Clients blue={blue} />
+          <CTA darkMode={darkMode} blue={blue} />
         </div>
       </div>
     </>

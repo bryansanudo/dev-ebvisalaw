@@ -6,7 +6,7 @@ import test3 from "@/assets/test3.png";
 import test4 from "@/assets/test4.png";
 import test5 from "@/assets/test5.png";
 
-const Billing = () => (
+const Billing = ({ blue }) => (
   <section id="product" className={layout.sectionReverse}>
     <div className={layout.sectionImgReverse}>
       <img

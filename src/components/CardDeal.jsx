@@ -8,7 +8,7 @@ import test4 from "@/assets/test4.png";
 import test5 from "@/assets/test5.png";
 import { Link } from "react-router-dom";
 
-const CardDeal = () => (
+const CardDeal = ({ blue }) => (
   <section className={layout.section}>
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
@@ -35,7 +35,13 @@ const CardDeal = () => (
       </p>
 
       <Link to="/contact">
-        <button className={`${styles.button}`}>Get Started</button>
+        <button
+          className={`${styles.button} ${
+            blue ? "bg-primary " : "  bg-secondary "
+          }`}
+        >
+          Get Started
+        </button>
       </Link>
     </div>
 

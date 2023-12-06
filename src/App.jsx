@@ -36,9 +36,12 @@ import { useState } from "react";
 const App = () => {
   const [isMenuShown, setIsMenuShown] = useState(false);
   const [darkMode, setDarkMode] = useState(true);
+  const [blue, setBlue] = useState(true);
   return (
     <div className={darkMode && "dark"}>
       <Navbar
+        blue={blue}
+        setBlue={setBlue}
         darkMode={darkMode}
         setDarkMode={setDarkMode}
         isMenuShown={isMenuShown}
@@ -48,35 +51,67 @@ const App = () => {
         <Routes>
           <Route
             path="/"
-            element={<Home darkMode={darkMode} isMenuShown={isMenuShown} />}
+            element={
+              <Home blue={blue} darkMode={darkMode} isMenuShown={isMenuShown} />
+            }
           />
 
           <Route
             path="/contact"
-            element={<Contact darkMode={darkMode} isMenuShown={isMenuShown} />}
+            element={
+              <Contact
+                blue={blue}
+                darkMode={darkMode}
+                isMenuShown={isMenuShown}
+              />
+            }
           />
           <Route
             path="/faq"
-            element={<Faq darkMode={darkMode} isMenuShown={isMenuShown} />}
+            element={
+              <Faq blue={blue} darkMode={darkMode} isMenuShown={isMenuShown} />
+            }
           />
 
           <Route
             path="/services/open_company"
             element={
-              <OpenCompany darkMode={darkMode} isMenuShown={isMenuShown} />
+              <OpenCompany
+                blue={blue}
+                darkMode={darkMode}
+                isMenuShown={isMenuShown}
+              />
             }
           />
           <Route
             path="/services/visa_eb1"
-            element={<VisaEb1 darkMode={darkMode} isMenuShown={isMenuShown} />}
+            element={
+              <VisaEb1
+                blue={blue}
+                darkMode={darkMode}
+                isMenuShown={isMenuShown}
+              />
+            }
           />
           <Route
             path="/services/visa_eb2"
-            element={<VisaEb2 darkMode={darkMode} isMenuShown={isMenuShown} />}
+            element={
+              <VisaEb2
+                blue={blue}
+                darkMode={darkMode}
+                isMenuShown={isMenuShown}
+              />
+            }
           />
           <Route
             path="/services/visa_e2"
-            element={<VisaE2 darkMode={darkMode} isMenuShown={isMenuShown} />}
+            element={
+              <VisaE2
+                blue={blue}
+                darkMode={darkMode}
+                isMenuShown={isMenuShown}
+              />
+            }
           />
         </Routes>
 
@@ -86,7 +121,7 @@ const App = () => {
           } ${styles.flexCenter}`}
         >
           <div className={`${styles.boxWidth}`}>
-            <Footer2 />
+            <Footer2 blue={blue} />
           </div>
         </div>
       </div>

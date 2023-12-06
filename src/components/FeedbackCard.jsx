@@ -2,7 +2,7 @@ import { quotes } from "../assets";
 import { RiDoubleQuotesL } from "react-icons/ri";
 import styles from "@/style";
 
-const FeedbackCard = ({ content, name, title, img, darkMode }) => (
+const FeedbackCard = ({ content, name, title, img, darkMode, blue }) => (
   <div
     className={`flex justify-between flex-col px-10 py-12 rounded-[20px]  max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 ${
       darkMode
@@ -11,7 +11,9 @@ const FeedbackCard = ({ content, name, title, img, darkMode }) => (
     }
 `}
   >
-    <RiDoubleQuotesL className="text-primary text-5xl" />
+    <RiDoubleQuotesL
+      className={`text-5xl ${blue ? "text-primary " : " text-secondary "} `}
+    />
     <p className="font-poppins font-normal text-[18px] leading-[32.4px] dark:text-white my-10">
       {content}
     </p>

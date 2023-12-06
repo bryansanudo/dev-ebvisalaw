@@ -33,7 +33,7 @@ const cards = [
   },
 ];
 
-const Services = ({ darkMode }) => (
+const Services = ({ darkMode, blue }) => (
   <section className={layout.section}>
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
@@ -48,7 +48,13 @@ const Services = ({ darkMode }) => (
       </p>
 
       <Link to="/contact">
-        <button className={`${styles.button}`}>Get Started</button>
+        <button
+          className={`${styles.button} ${
+            blue ? "bg-primary " : "  bg-secondary "
+          }`}
+        >
+          Get Started
+        </button>
       </Link>
     </div>
 
@@ -64,7 +70,9 @@ const Services = ({ darkMode }) => (
             } p-6 flex flex-col gap-6  rounded-xl `}
           >
             <div
-              className={`w-[64px] h-[64px] mask mask-hexagon ${styles.flexCenter} bg-primary`}
+              className={`w-[64px] h-[64px] mask mask-hexagon ${
+                styles.flexCenter
+              } ${blue ? "bg-primary " : "  bg-secondary "}`}
             >
               <FaStar className="text-white text-3xl" />
             </div>

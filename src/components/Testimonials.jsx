@@ -2,7 +2,7 @@ import { feedback } from "../constants";
 import styles from "../style";
 import FeedbackCard from "./FeedbackCard";
 
-const Testimonials = ({ darkMode }) => (
+const Testimonials = ({ darkMode, blue }) => (
   <section
     id="clients"
     className={`${styles.paddingY} ${styles.flexCenter} flex-col relative `}
@@ -21,7 +21,7 @@ const Testimonials = ({ darkMode }) => (
 
     <div className="flex flex-wrap sm:justify-start justify-center w-full feedback-container relative z-[1]">
       {feedback.map((card) => (
-        <FeedbackCard key={card.id} {...card} darkMode={darkMode} />
+        <FeedbackCard key={card.id} {...card} darkMode={darkMode} blue={blue} />
       ))}
     </div>
   </section>

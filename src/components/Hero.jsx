@@ -8,7 +8,7 @@ import test4 from "@/assets/test4.png";
 import test5 from "@/assets/test5.png";
 import { FaStar } from "react-icons/fa";
 
-const Hero = ({ darkMode }) => {
+const Hero = ({ blue, darkMode }) => {
   return (
     <section
       id="home"
@@ -22,7 +22,9 @@ const Hero = ({ darkMode }) => {
             darkMode ? "bg-black-gradient-2" : "bg-black-gradient"
           } rounded-[10px] mb-2`}
         >
-          <FaStar className="text-primary" />
+          <FaStar
+            className={`${blue ? "text-primary " : "  text-secondary "}`}
+          />
           <p className={`font-normal  text-[18px] leading-[30.8px] ml-2`}>
             <span className="text-white ">
               Immigration Law Office in the US
@@ -34,10 +36,9 @@ const Hero = ({ darkMode }) => {
           <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] dark:text-white ss:leading-[100.8px] leading-[75px]">
             A Successful
             <br className="sm:block hidden" />{" "}
-            <span className="text-graadient text-primary ">
-              {" "}
+            <span className={`${blue ? "text-primary " : "  text-secondary "}`}>
               Future starts here
-            </span>{" "}
+            </span>
           </h1>
           {/* <div className="ss:flex hidden md:mr-4 mr-0">
             <GetStarted />

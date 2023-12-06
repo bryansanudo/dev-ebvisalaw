@@ -52,7 +52,7 @@ const cards = [
   },
 ];
 
-const Advantages = ({ darkMode }) => (
+const Advantages = ({ darkMode, blue }) => (
   <section
     id="clients"
     className={`${styles.paddingY} ${styles.flexCenter} flex-col relative `}
@@ -82,7 +82,9 @@ const Advantages = ({ darkMode }) => (
 rounded-[20px]  p-8 `}
           >
             <div
-              className={`w-[64px] h-[64px] mask mask-hexagon ${styles.flexCenter} bg-primary`}
+              className={`w-[64px] h-[64px] mask mask-hexagon ${
+                styles.flexCenter
+              } ${blue ? "bg-primary " : "  bg-secondary "}`}
             >
               <FaStar className="text-white text-3xl" />
             </div>

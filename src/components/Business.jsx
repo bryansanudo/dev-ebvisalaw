@@ -4,7 +4,7 @@ import styles, { layout } from "../style";
 import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const FeatureCard = ({ icon, title, content, index, darkMode }) => (
+const FeatureCard = ({ icon, title, content, index, darkMode, blue }) => (
   <div
     className={`flex items-center flex-row p-6 rounded-[20px] ${
       index !== features.length - 1 ? "mb-6" : "mb-0"
@@ -15,7 +15,9 @@ const FeatureCard = ({ icon, title, content, index, darkMode }) => (
     } `}
   >
     <div
-      className={`w-[64px] h-[64px] mask mask-hexagon ${styles.flexCenter} bg-primary`}
+      className={`w-[64px] h-[64px] mask mask-hexagon ${styles.flexCenter} ${
+        blue ? "bg-primary " : "  bg-secondary "
+      }`}
     >
       {/*  <img src={icon} alt="star" className="w-[50%] h-[50%] object-contain" /> */}
       <FaStar className="text-white text-3xl" />
@@ -27,7 +29,7 @@ const FeatureCard = ({ icon, title, content, index, darkMode }) => (
   </div>
 );
 
-const Business = ({ darkMode }) => (
+const Business = ({ darkMode, blue }) => (
   <section id="features" className={layout.section}>
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
@@ -43,7 +45,13 @@ const Business = ({ darkMode }) => (
       </p>
 
       <Link to="/contact">
-        <button className={`${styles.button}`}>Get Started</button>
+        <button
+          className={`${styles.button} ${
+            blue ? "bg-primary " : "  bg-secondary "
+          }`}
+        >
+          Get Started
+        </button>
       </Link>
     </div>
 
@@ -54,6 +62,7 @@ const Business = ({ darkMode }) => (
           {...feature}
           index={index}
           darkMode={darkMode}
+          blue={blue}
         />
       ))}
     </div>

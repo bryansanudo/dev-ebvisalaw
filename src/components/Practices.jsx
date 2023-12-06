@@ -37,7 +37,7 @@ const cards = [
   },
 ];
 
-const Practices = ({ darkMode }) => (
+const Practices = ({ darkMode, blue }) => (
   <section
     id="clients"
     className={`${styles.paddingY} ${styles.flexCenter} flex-col relative `}
@@ -80,7 +80,11 @@ const Practices = ({ darkMode }) => (
               <p className={`${styles.title} mb-4`}>{title}</p>
               <p className={`${styles.subtitle}`}>{subtitle}</p>
               <div className="flex items-center justify-end pt-4 mr-4">
-                <button className=" font-semibold text-[18px] link link-primary">
+                <button
+                  className={`font-semibold text-[18px] link  ${
+                    blue ? "link-primary" : "link-secondary "
+                  }`}
+                >
                   know more
                 </button>
               </div>
