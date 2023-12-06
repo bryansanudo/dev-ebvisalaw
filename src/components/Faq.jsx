@@ -6,6 +6,7 @@ import Button from "@/components/Button";
 
 import shield from "@/assets/Shield.svg";
 import Section from "@/components/common/Section";
+import CTA from "@/components/CTA";
 
 const faq = {
   en: {
@@ -168,39 +169,64 @@ const questions = [
 ];
 
 const Faq = ({ isMenuShown, darkMode }) => (
-  <Section
-    darkMode={darkMode}
-    isMenuShown={isMenuShown}
-    title="Frequent Questions"
+  <div
+    className={`dark:bg-accent mt-28  ${isMenuShown ? "hidden" : ""}  ${
+      styles.paddingX
+    } ${styles.flexCenter}`}
   >
-    <section id="clients" className={`${styles.flexCenter} flex-col relative `}>
-      <div className="w-full flex justify-between items-center md:flex-row flex-col  relative z-[1]">
-        {/* <div className="w-full md:mt-0 mt-6">
+    <div className={`${styles.boxWidth} `}>
+      <div className="md:absolute z-[0] w-[55%] h-[60%] -right-[50%] rounded-full blue__gradient bottom-40" />
+      <div className="absolute z-[0] w-[50%] h-[50%] -left-1/2 bottom-0 rounded-full pink__gradient" />
+      <div className="w-full flex justify-between items-center flex-col sm:mb-16 mb-6 relative z-[1]">
+        <h2 className={`${styles.heading2} text-gradient mr-4`}>
+          Frequently Asked Questions
+        </h2>
+        <div className="w-full md:mt-0 mt-6">
+          <p className={`${styles.paragraph} text-left max-w-[600px] mb-2`}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nihil
+            itaque assumenda doloremque! Officiis quo dolorum non illo omnis, at
+            consequuntur possimus consectetur sapiente asperiores sed voluptatum
+            reiciendis debitis eveniet.
+          </p>
+        </div>
+      </div>
+      <section
+        id="clients"
+        className={`${styles.flexCenter} flex-col relative `}
+      >
+        <div className="w-full flex justify-between items-center md:flex-row flex-col  relative z-[1]">
+          {/* <div className="w-full md:mt-0 mt-6">
         <p className={`${styles.paragraph} text-left max-w-[450px]`}>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab esse
           suscipit ipsum laudantium cupiditate voluptatibus
         </p>
       </div> */}
-      </div>
+        </div>
 
-      <div className="flex flex-col items-center justify-center  my-10  w-full  ">
-        {questions.map(({ id, question, answer }) => (
-          <div
-            key={id}
-            tabIndex={0}
-            className={`${
-              darkMode ? "shadow-sm shadow-white  " : "shadow-md shadow-black "
-            } collapse collapse-arrow  rounded-box w-full`}
-          >
-            <div className={`${styles.title} collapse-title `}>{question}</div>
-            <div className={`${styles.subtitle} collapse-content  `}>
-              <p>{answer}</p>
+        <div className="flex flex-col items-center justify-center  my-10  w-full  ">
+          {questions.map(({ id, question, answer }) => (
+            <div
+              key={id}
+              tabIndex={0}
+              className={`${
+                darkMode
+                  ? "shadow-sm shadow-white  "
+                  : "shadow-md shadow-black "
+              } collapse collapse-arrow  rounded-box w-full`}
+            >
+              <div className={`${styles.title} collapse-title `}>
+                {question}
+              </div>
+              <div className={`${styles.subtitle} collapse-content  `}>
+                <p>{answer}</p>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-    </section>
-  </Section>
+          ))}
+        </div>
+      </section>
+      <CTA darkMode={darkMode} />
+    </div>
+  </div>
 );
 
 export default Faq;
