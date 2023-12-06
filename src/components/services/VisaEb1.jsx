@@ -5,12 +5,13 @@ import opencompany2 from "@/assets/services/opencompany2.jpg";
 import styles from "@/style";
 import { GoDot } from "react-icons/go";
 
-const VisaEb1 = ({ darkMode, isMenuShown }) => {
+const VisaEb1 = ({ darkMode, isMenuShown, blue }) => {
   return (
     <>
       <Section
         darkMode={darkMode}
         isMenuShown={isMenuShown}
+        blue={blue}
         title="EB1 Visa"
         subtitle="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa illo animi non cumque odio recusandae eveniet saepe fugit quisquam numquam, at tempora quis nam rem quas quasi blanditiis dolore perferendis?"
       >

@@ -34,7 +34,7 @@ const cards = [
   },
 ];
 
-const Contact = ({ isMenuShown, darkMode }) => (
+const Contact = ({ isMenuShown, darkMode, blue }) => (
   <div
     className={`dark:bg-accent mt-28  ${isMenuShown ? "hidden" : ""}  ${
       styles.paddingX
@@ -45,7 +45,9 @@ const Contact = ({ isMenuShown, darkMode }) => (
       <div className="absolute z-[0] w-[50%] h-[50%] -left-1/2 bottom-0 rounded-full pink__gradient" />
       <div className="w-full flex justify-between items-center flex-col sm:mb-16 mb-6 relative z-[1]">
         <h2
-          className={`${styles.heading2} dark:text-primary text-primary mr-4`}
+          className={`${styles.heading2} ${
+            blue ? "dark:text-primary " : " dark:text-secondary "
+          }  mr-4`}
         >
           Contact Us
         </h2>
@@ -154,7 +156,9 @@ const Contact = ({ isMenuShown, darkMode }) => (
               </div>
 
               <button
-                className={`btn btn-primary font-semibold dark:text-white  text-[16px] leading-[23.4px] ml-2 `}
+                className={`btn  font-semibold dark:text-white  text-[16px] leading-[23.4px] ml-2 ${
+                  blue ? "btn-primary " : " btn-secondary "
+                } `}
               >
                 Submit
               </button>
@@ -172,7 +176,9 @@ const Contact = ({ isMenuShown, darkMode }) => (
                 } `}
               >
                 <div
-                  className={`w-[40px] h-[40px] mb-1 mask mask-hexagon ${styles.flexCenter} bg-primary`}
+                  className={`w-[40px] h-[40px] mb-1 mask mask-hexagon ${
+                    styles.flexCenter
+                  } ${blue ? "bg-primary " : "  bg-secondary "} `}
                 >
                   <FaStar className="text-white text-xl" />
                 </div>

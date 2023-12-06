@@ -168,7 +168,7 @@ const questions = [
   },
 ];
 
-const Faq = ({ isMenuShown, darkMode }) => (
+const Faq = ({ isMenuShown, darkMode, blue }) => (
   <div
     className={`dark:bg-accent mt-28  ${isMenuShown ? "hidden" : ""}  ${
       styles.paddingX
@@ -179,7 +179,11 @@ const Faq = ({ isMenuShown, darkMode }) => (
       <div className="absolute z-[0] w-[50%] h-[50%] -left-1/2 bottom-0 rounded-full pink__gradient" />
       <div className="w-full flex justify-between items-center flex-col sm:mb-16 mb-6 relative z-[1]">
         <h2
-          className={`${styles.heading2} text-primary dark:text-primary mr-4`}
+          className={`${styles.heading2} ${
+            blue
+              ? "text-primary dark:text-primary "
+              : "  text-secondary dark:text-secondary "
+          }  mr-4`}
         >
           Frequently Asked Questions
         </h2>
@@ -226,7 +230,7 @@ const Faq = ({ isMenuShown, darkMode }) => (
           ))}
         </div>
       </section>
-      <CTA darkMode={darkMode} />
+      <CTA darkMode={darkMode} blue={blue} />
     </div>
   </div>
 );

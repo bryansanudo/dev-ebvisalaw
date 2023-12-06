@@ -5,10 +5,11 @@ import opencompany2 from "@/assets/services/opencompany2.jpg";
 import styles from "@/style";
 import { GoDot } from "react-icons/go";
 
-const VisaE2 = ({ isMenuShown, darkMode }) => {
+const VisaE2 = ({ isMenuShown, darkMode, blue }) => {
   return (
     <>
       <Section
+        blue={blue}
         darkMode={darkMode}
         isMenuShown={isMenuShown}
         title="XXXX Visa"

@@ -3,7 +3,14 @@ import styles from "@/style";
 import CTA from "@/components/CTA";
 import opencompany from "@/assets/services/opencompany.webp";
 import { GoDot } from "react-icons/go";
-const Section = ({ children, isMenuShown, title, subtitle, darkMode }) => {
+const Section = ({
+  children,
+  isMenuShown,
+  title,
+  subtitle,
+  darkMode,
+  blue,
+}) => {
   return (
     <>
       <div
@@ -16,7 +23,11 @@ const Section = ({ children, isMenuShown, title, subtitle, darkMode }) => {
           <div className="absolute z-[0] w-[50%] h-[50%] -left-1/2 bottom-0 rounded-full pink__gradient" />
           <div className="w-full flex justify-between items-center flex-col sm:mb-16 mb-6 relative z-[1]">
             <h2
-              className={`${styles.heading2} text-primary dark:text-primary mr-4`}
+              className={`${styles.heading2} ${
+                blue
+                  ? "text-primary dark:text-primary "
+                  : "  text-secondary dark:text-secondary "
+              }  mr-4`}
             >
               {title}
             </h2>
@@ -322,7 +333,7 @@ const Section = ({ children, isMenuShown, title, subtitle, darkMode }) => {
               </div>
             </div>
           </div>
-          <CTA darkMode={darkMode} />
+          <CTA darkMode={darkMode} blue={blue} />
         </div>
       </div>
     </>
