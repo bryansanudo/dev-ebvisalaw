@@ -60,7 +60,7 @@ const Contact = ({ isMenuShown, darkMode }) => (
           <form className=" w-full">
             <div
               className={`flex   ${
-                darkMode ? "shadow-md shadow-white  " : "shadow-xl shadow-black"
+                darkMode ? "shadow-sm shadow-white  " : "shadow-md shadow-black"
               } rounded-[20px]  flex-col md:gap-8 gap-4 md:p-10 p-6  w-full h-full mb-4 `}
             >
               <div className="flex flex-col md:flex-row items-center  justify-center gap-4">
@@ -76,9 +76,7 @@ const Contact = ({ isMenuShown, darkMode }) => (
                     name="Name"
                     autoComplete="off"
                     className={` h-10 rounded-[10px] ${
-                      darkMode
-                        ? "shadow-sm shadow-white border-white "
-                        : " border-black  "
+                      darkMode ? " " : " border-black  "
                     }   bg-dimWhite border outline-none text-black font-normal text-[16px] leading-[24px]  w-full pl-4 mt-2`}
                   />
                 </div>
@@ -94,9 +92,7 @@ const Contact = ({ isMenuShown, darkMode }) => (
                     name="Last Name"
                     autoComplete="off"
                     className={` h-10 rounded-[10px] ${
-                      darkMode
-                        ? "shadow-sm shadow-white border-white "
-                        : " border-black  "
+                      darkMode ? " " : " border-black  "
                     }   bg-dimWhite border outline-none text-black font-normal text-[16px] leading-[24px]  w-full pl-4 mt-2`}
                   />
                 </div>
@@ -114,9 +110,7 @@ const Contact = ({ isMenuShown, darkMode }) => (
                     name="Name"
                     autoComplete="off"
                     className={` h-10 rounded-[10px] ${
-                      darkMode
-                        ? "shadow-sm shadow-white border-white "
-                        : " border-black  "
+                      darkMode ? " " : " border-black  "
                     }   bg-dimWhite border outline-none text-black font-normal text-[16px] leading-[24px]  w-full pl-4 mt-2`}
                   />
                 </div>
@@ -132,9 +126,7 @@ const Contact = ({ isMenuShown, darkMode }) => (
                     name="Last Name"
                     autoComplete="off"
                     className={` h-10 rounded-[10px] ${
-                      darkMode
-                        ? "shadow-sm shadow-white border-white "
-                        : " border-black  "
+                      darkMode ? " " : " border-black  "
                     }   bg-dimWhite border outline-none text-black font-normal text-[16px] leading-[24px]  w-full pl-4 mt-2`}
                   />
                 </div>
@@ -152,9 +144,7 @@ const Contact = ({ isMenuShown, darkMode }) => (
                   required
                   autoComplete="off"
                   className={`  rounded-[10px] ${
-                    darkMode
-                      ? "shadow-sm shadow-white border-white "
-                      : " border-black  "
+                    darkMode ? " " : " border-black  "
                   }   bg-dimWhite border outline-none text-black font-normal text-[16px] leading-[24px]  w-full pl-4 py-2 mt-2`}
                 />
               </div>

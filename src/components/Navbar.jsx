@@ -65,11 +65,11 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                       </div>
                     </div>
                     <ul className="dropdown-content  z-[1]   shadow bg-base-100 dark:bg-accent w-52">
-                      <Link to="services/open_company">
+                      {/* <Link to="services/open_company">
                         <li className="hover:bg-primary cursor-pointer  w-full duration-300">
                           <p className="px-4 text-[14px]">Open a Company</p>
                         </li>
-                      </Link>
+                      </Link> */}
                       <Link to="services/visa_eb1">
                         <li className="hover:bg-primary  w-full duration-300">
                           <p className="px-4 text-[14px]">EB1 VISA</p>
@@ -83,6 +83,22 @@ const Navbar = ({ darkMode, setDarkMode }) => {
                       <Link to="services/visa_e2">
                         <li className="hover:bg-primary  w-full duration-300">
                           <p className="px-4 text-[14px]">E2 VISA</p>
+                        </li>
+                      </Link>
+                      {/* divider */}
+                      <Link to="services/visa_e2">
+                        <li className="hover:bg-primary  w-full duration-300">
+                          <p className="px-4 text-[14px]">xxxx VISA</p>
+                        </li>
+                      </Link>
+                      <Link to="services/visa_e2">
+                        <li className="hover:bg-primary  w-full duration-300">
+                          <p className="px-4 text-[14px]">xxxx VISA</p>
+                        </li>
+                      </Link>
+                      <Link to="services/visa_e2">
+                        <li className="hover:bg-primary  w-full duration-300">
+                          <p className="px-4 text-[14px]">xxxx VISA</p>
                         </li>
                       </Link>
 

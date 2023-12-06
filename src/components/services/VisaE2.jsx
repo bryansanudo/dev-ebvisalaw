@@ -11,8 +11,8 @@ const VisaE2 = ({ isMenuShown, darkMode }) => {
       <Section
         darkMode={darkMode}
         isMenuShown={isMenuShown}
-        title="E2 Visa (Investor)"
-        subtitle="If you are an international investor from an eligible country, you can apply for the E2 visa. Don't miss your opportunity to expand your business in a market as important as the US."
+        title="XXXX Visa"
+        subtitle="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa illo animi non cumque odio recusandae eveniet saepe fugit quisquam numquam, at tempora quis nam rem quas quasi blanditiis dolore perferendis?"
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-20   ">
           <div className=" flex items-center justify-center  ">

@@ -12,7 +12,7 @@ const VisaEb2 = ({ isMenuShown, darkMode }) => {
         darkMode={darkMode}
         isMenuShown={isMenuShown}
         title="EB2 Visa"
-        subtitle="National Interest Waiver, NIW OR National Interest Waiver:"
+        subtitle="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa illo animi non cumque odio recusandae eveniet saepe fugit quisquam numquam, at tempora quis nam rem quas quasi blanditiis dolore perferendis?"
       >
         <div className="grid grid-cols-1 md:grid-cols-3 gap-20   ">
           <div className=" flex items-center justify-center  ">
