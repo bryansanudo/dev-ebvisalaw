@@ -15,7 +15,11 @@ const Billing = ({ blue }) => (
         className="w-[100%] h-[100%] relative z-[5]"
       />
 
-      <div className="absolute z-[0] w-[60%] h-[60%] -left-[50%] rounded-full blue__gradient bottom-20" />
+      <div
+        className={`${
+          blue ? " blue__gradient" : "sblue__gradient   "
+        } absolute z-[0] w-[60%] h-[60%] -left-[50%] rounded-full  bottom-20`}
+      />
     </div>
 
     <div className={layout.sectionInfo}>

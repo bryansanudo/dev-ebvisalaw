@@ -41,7 +41,11 @@ const Home = ({ blue, isMenuShown, darkMode }) => {
           <Business blue={blue} darkMode={darkMode} />
 
           <Billing blue={blue} />
-          <div className="absolute z-[0] w-[50%] h-[50%] -left-1/2 bottom-0 rounded-full pink__gradient" />
+          <div
+            className={`${
+              blue ? " pink__gradient" : "spink__gradient   "
+            } absolute z-[0] w-[50%] h-[50%] -left-1/2 bottom-0 rounded-full `}
+          />
           <CardDeal blue={blue} />
           <Testimonials blue={blue} darkMode={darkMode} />
           <Practices darkMode={darkMode} blue={blue} />

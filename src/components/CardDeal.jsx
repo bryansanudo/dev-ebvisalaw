@@ -47,8 +47,11 @@ const CardDeal = ({ blue }) => (
 
     <div className={layout.sectionImg}>
       {/* gradient start */}
-      <div className="absolute z-[3] -right-1/2 top-0 w-[50%] h-[50%] rounded-full blue__gradient" />
-      <div className="absolute z-[0] w-[40%] h-[40%] -left-1/2 bottom-0 rounded-full pink__gradient" />
+      <div
+        className={`${
+          blue ? " blue__gradient" : "sblue__gradient   "
+        } absolute z-[3] -right-1/2 top-0 w-[50%] h-[50%] rounded-full `}
+      />
 
       {/*   <div className="absolute z-[0] w-[50%] h-[50%] -left-1/2 bottom-0 rounded-full blue__gradient" /> */}
       {/* gradient end */}

@@ -64,9 +64,21 @@ const Hero = ({ blue, darkMode }) => {
         />
 
         {/* gradient start */}
-        <div className="absolute z-[0] w-[40%] h-[35%] top-0 blue__gradient" />
-        <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
-        <div className="absolute z-[0] w-[50%] h-[50%] right-20 bottom-20 blue__gradient" />
+        <div
+          className={`${
+            blue ? " blue__gradient" : "sblue__gradient   "
+          } absolute z-[0] w-[40%] h-[35%] top-0`}
+        />
+        <div
+          className={`${
+            blue ? " white__gradient" : "swhite__gradient   "
+          } absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40`}
+        />
+        <div
+          className={`${
+            blue ? " blue__gradient" : "sblue__gradient   "
+          } absolute z-[0] w-[50%] h-[50%] right-20 bottom-20`}
+        />
 
         {/* gradient end */}
       </div>

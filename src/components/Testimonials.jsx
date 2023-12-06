@@ -7,7 +7,11 @@ const Testimonials = ({ darkMode, blue }) => (
     id="clients"
     className={`${styles.paddingY} ${styles.flexCenter} flex-col relative `}
   >
-    <div className="absolute z-[0] w-[30%] h-[60%] -left-[50%] rounded-full blue__gradient bottom-40" />
+    <div
+      className={` ${
+        blue ? " blue__gradient" : "sblue__gradient   "
+      } absolute z-[0] w-[35%] h-[60%] -left-[50%] rounded-full  bottom-40`}
+    />
 
     <div className="w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]">
       <h2 className={styles.heading2}>Client Testimonials</h2>
