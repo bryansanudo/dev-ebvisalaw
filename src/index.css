@@ -49,7 +49,7 @@
 }
 
 .text-gradient {
-  background: radial-gradient(
+  /* background: radial-gradient(
   ellipse at 71.16% 35.69%,
   #4d0000 0.89%,
   #5c0000 15%,
@@ -58,8 +58,22 @@
   #9e0000 60%,
   #b20000 75%,
   #d10000 90%,
-  #ff0000 100%
+  #ff0000 100% 
+  
+  );
+  */
+ background: radial-gradient(
+  ellipse at 71.16% 35.69%,
+  #00b7ed 0.89%,   /* Tonos más claros de azul */
+  #006b8f 15%,
+  #006b8f 30%,
+  #006b8f 45%,
+  #006b8f 60%,    /* Tonos más oscuros de azul */
+  #006b8f 75%,
+  #002031 90%,
+  #002031 100%
 );
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -160,7 +174,7 @@
   background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
   filter: blur(123px);
 } */
-.blue__gradient {
+/* .blue__gradient {
   background: linear-gradient(180deg, rgba(196, 68, 68, 0.8) 0%, #8C0D0F 100%);
   filter: blur(123px);
 }
@@ -168,6 +182,16 @@
 .pink__gradient {
   background: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
   filter: blur(900px);
+} */
+
+.pink__gradient {
+  background: linear-gradient(180deg, rgba(37, 62, 83, 0.8) 0%, #253E53 100%);
+filter: blur(123px);
+}
+
+.blue__gradient {
+  background: linear-gradient(180deg, rgba(216, 181, 124, 0.8) 0%, #D8B57C 100%);
+filter: blur(123px);
 }
 
 .white__gradient {

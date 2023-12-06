@@ -30,7 +30,11 @@ const Section = ({ children, isMenuShown, title, subtitle, darkMode }) => {
               {/* <div className="absolute z-[0] w-[50%] h-[50%] -left-1/2 bottom-0 rounded-full pink__gradient" /> */}
               <img
                 src={opencompany}
-                className="object-contain rounded-[20px]  md:mx-0   shadow-xl shadow-gray-500"
+                className={`object-contain rounded-[20px]  md:mx-0    ${
+                  darkMode
+                    ? "shadow-md shadow-white  "
+                    : "shadow-md shadow-black"
+                }`}
                 alt=""
               />
             </div>

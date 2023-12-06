@@ -39,7 +39,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
         <div className="w-full  h-20 dark:text-white ">
           <div className="flex justify-start md:justify-end md:gap-5 items-center  mx-auto  h-full">
             <div className="mr-auto mt-2 hidden md:flex">
-              <img src={logovisa} className="w-20" alt="" />
+              <img src={logovisa} className="w-16" alt="" />
             </div>
             <div className="hidden lg:flex items-center">
               <ul className="flex gap-6 ">
@@ -162,7 +162,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             </div>
             <div className="ml-auto md:hidden flex">
               {/* <img src={logo} className="w-36" alt="" /> */}
-              <p>logo</p>
+              <img src={logovisa} className="w-16" alt="" />
             </div>
           </div>
         </div>
