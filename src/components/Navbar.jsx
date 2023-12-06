@@ -197,11 +197,11 @@ const Navbar = ({ darkMode, setDarkMode, blue, setBlue }) => {
               <div className="flex gap-2 ">
                 <div
                   onClick={handleBlue}
-                  className="h-4 w-4 bg-primary cursor-pointer"
+                  className="h-4 w-4 border-gray-300 border-2 bg-primary cursor-pointer"
                 ></div>
                 <div
                   onClick={handleRed}
-                  className="h-4 w-4 bg-secondary cursor-pointer"
+                  className="h-4 w-4 border-gray-300 border-2 bg-secondary cursor-pointer"
                 ></div>
               </div>
 
@@ -235,7 +235,7 @@ const Navbar = ({ darkMode, setDarkMode, blue, setBlue }) => {
               <Link key={id} to={link}>
                 <li
                   onClick={() => setIsMenuShown(!isMenuShown)}
-                  className="mt-1 text-[18px] capitalize duration-300 hover:text-black hover:font-semibold  cursor-pointer text-left"
+                  className="mt-1 text-[18px] capitalize duration-300 hover:scale-105 text-white hover:font-semibold  cursor-pointer text-left"
                 >
                   {name}
                 </li>
@@ -245,7 +245,7 @@ const Navbar = ({ darkMode, setDarkMode, blue, setBlue }) => {
               <div className="dropdown dropdown-bottom dropdown-hover">
                 <div
                   tabIndex={0}
-                  className="mt-1 text-[18px] flex items-center   capitalize duration-300 hover:text-black hover:font-semibold  cursor-pointer"
+                  className="mt-1 text-[18px] flex items-center   capitalize duration-300 hover:scale-105 text-white hover:font-semibold  cursor-pointer"
                 >
                   <p>Services</p>
                   <div className="cursor-pointer">
