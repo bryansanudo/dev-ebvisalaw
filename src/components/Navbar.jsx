@@ -64,12 +64,21 @@ const Navbar = ({ darkMode, setDarkMode, blue, setBlue }) => {
       <div className={`${styles.boxWidth}   `}>
         <div className="w-full  h-20 dark:text-white ">
           <div className="flex justify-start  md:justify-end md:gap-5 items-center  mx-auto  h-full">
-            <div className="mr-auto  hidden md:flex">
+            <div className="mr-auto gap-2  hidden md:flex items-center jc">
               <img
                 src={blue ? logoBlue : logoRed}
                 className="w-14  object-contain"
                 alt=""
               />
+              <p
+                className={` ${
+                  blue
+                    ? "from-primary to-[#d8b57c]"
+                    : "from-secondary to-gray-800"
+                } text-[48px] tangerine  text-transparent bg-clip-text  bg-gradient-to-t   `}
+              >
+                Visa Law
+              </p>
             </div>
             <div className="hidden lg:flex items-center">
               <ul className="flex gap-6 ">
