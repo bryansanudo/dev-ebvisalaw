@@ -221,7 +221,7 @@ const Navbar = ({ darkMode, setDarkMode, blue, setBlue }) => {
                 </span>
               </a> */}
             </div>
-            <div className="ml-auto gap-2  md:idden flex items-end">
+            <div className="ml-auto gap-2  md:hidden flex items-end">
               <img
                 src={darkMode ? logoRedWhite : logoRedBlack}
                 className="w-14  object-contain"
