@@ -1,5 +1,5 @@
 import styles from "@/style";
-import logo from "@/assets/law-logo-black.png";
+
 import { footerLinks, socialMedia } from "../constants";
 
 const Footer2 = () => (
@@ -8,7 +8,7 @@ const Footer2 = () => (
   >
     <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full `}>
       <div className="flex-[1] flex flex-col justify-start mr-10 ">
-        <img src={logo} alt="hoobank" className="w-60 object-contain" />
+        {/* <img src={logo} alt="hoobank" className="w-60 object-contain" /> */}
         <p className={`${styles.paragraph} max-w-[300px] text-black `}>
           A new way to make the process easy, reliable and secure.
         </p>
