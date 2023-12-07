@@ -12,6 +12,7 @@ import {
 } from "./components";
 
 import Navbar from "@/components/Navbar";
+import { FaArrowUp } from "react-icons/fa";
 
 import Navbar2 from "@/components/Navbar_copy";
 import Services from "@/components/Services";
@@ -103,9 +104,17 @@ const App = () => {
           } ${styles.flexCenter}`}
         >
           <div className={`${styles.boxWidth}`}>
-            <Footer2 blue={blue} />
+            <Footer2 darkMode={darkMode} blue={blue} />
           </div>
         </div>
+      </div>
+      <div
+        onClick={() => window.scrollTo(0, 0)}
+        className={`fixed flex items-center justify-center hover:scale-110 duration-700 rounded-full w-8 h-8   z-[100] right-3 bottom-3  cursor-pointer 
+          ${blue ? "bg-primary" : "bg-secondary"}
+         `}
+      >
+        <FaArrowUp className="animate-pulse text-white" />
       </div>
     </div>
   );

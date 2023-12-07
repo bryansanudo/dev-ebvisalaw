@@ -7,6 +7,8 @@ import logoBlue from "@/assets/logo-blue.png";
 import logoRed from "@/assets/logo-red.png";
 
 import { Link } from "react-router-dom";
+import logoRedBlack from "@/assets/logo-red-black.png";
+import logoRedWhite from "@/assets/logo-red-white.png";
 
 import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
 
@@ -57,25 +59,25 @@ const Navbar = ({ darkMode, setDarkMode, blue, setBlue }) => {
 
   return (
     <div
-      className={` ${styles.paddingX}  fixed w-full z-50 ${
-        isMenuShown ? "bg-accent" : "nav"
+      className={` ${styles.paddingX}  absolute w-full z-50 ${
+        isMenuShown ? "" : ""
       }  ${styles.flexCenter}  `}
     >
       <div className={`${styles.boxWidth}   `}>
         <div className="w-full  h-20 dark:text-white ">
           <div className="flex justify-start  md:justify-end md:gap-5 items-center  mx-auto  h-full">
-            <div className="mr-auto gap-2  hidden md:flex items-center jc">
+            <div className="mr-auto gap-2  hidden md:flex items-end">
               <img
-                src={blue ? logoBlue : logoRed}
+                src={darkMode ? logoRedWhite : logoRedBlack}
                 className="w-14  object-contain"
                 alt=""
               />
               <p
                 className={` ${
-                  blue
-                    ? "from-primary to-[#d8b57c]"
-                    : "from-secondary to-gray-700"
-                } text-[48px] tangerine  text-transparent bg-clip-text  bg-gradient-to-r   `}
+                  darkMode
+                    ? "from-secondary to-white"
+                    : "from-secondary to-black"
+                } text-[38px] tangerine  text-transparent bg-clip-text  bg-gradient-to-r   `}
               >
                 Visa Law
               </p>
@@ -219,9 +221,21 @@ const Navbar = ({ darkMode, setDarkMode, blue, setBlue }) => {
                 </span>
               </a> */}
             </div>
-            <div className="ml-auto md:hidden flex">
-              {/* <img src={logo} className="w-36" alt="" /> */}
-              <img src={blue ? logoBlue : logoRed} className="w-14" alt="" />
+            <div className="ml-auto gap-2  md:idden flex items-end">
+              <img
+                src={darkMode ? logoRedWhite : logoRedBlack}
+                className="w-14  object-contain"
+                alt=""
+              />
+              <p
+                className={` ${
+                  darkMode
+                    ? "from-secondary to-white"
+                    : "from-secondary to-black"
+                } text-[38px] tangerine  text-transparent bg-clip-text  bg-gradient-to-r   `}
+              >
+                Visa Law
+              </p>
             </div>
           </div>
         </div>

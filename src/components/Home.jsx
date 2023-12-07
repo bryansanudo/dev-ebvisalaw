@@ -21,6 +21,8 @@ import Advantages from "@/components/Advantages";
 import Timeline from "@/components/Timeline";
 import Contact from "@/components/Contact";
 import Faq from "@/components/Faq";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaArrowUp } from "react-icons/fa";
 
 const Home = ({ blue, isMenuShown, darkMode }) => {
   return (
