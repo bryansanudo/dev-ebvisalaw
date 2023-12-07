@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import logoBlack from "@/assets/law-logo-black.png";
-import logoWhite from "@/assets/law-logo-white.png";
+
 import Footer from "@/components/Footer";
 import styles from "../style";
 import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
