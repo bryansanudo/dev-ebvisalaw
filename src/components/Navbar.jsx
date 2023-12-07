@@ -3,7 +3,8 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import styles from "@/style";
 import Section from "@/components/common/Section";
 import { MdNightsStay, MdWbSunny } from "react-icons/md";
-import logovisa from "@/assets/B-01.png";
+import logoBlue from "@/assets/logo-blue.png";
+import logoRed from "@/assets/logo-red.png";
 
 import { Link } from "react-router-dom";
 
@@ -57,14 +58,18 @@ const Navbar = ({ darkMode, setDarkMode, blue, setBlue }) => {
   return (
     <div
       className={` ${styles.paddingX}  fixed w-full z-50 ${
-        isMenuShown ? "bg-primary" : "nav"
+        isMenuShown ? "bg-accent" : "nav"
       }  ${styles.flexCenter}  `}
     >
       <div className={`${styles.boxWidth}   `}>
         <div className="w-full  h-20 dark:text-white ">
           <div className="flex justify-start  md:justify-end md:gap-5 items-center  mx-auto  h-full">
             <div className="mr-auto  hidden md:flex">
-              <img src={logovisa} className="w-40 object-contain" alt="" />
+              <img
+                src={blue ? logoBlue : logoRed}
+                className="w-14  object-contain"
+                alt=""
+              />
             </div>
             <div className="hidden lg:flex items-center">
               <ul className="flex gap-6 ">
@@ -159,7 +164,11 @@ const Navbar = ({ darkMode, setDarkMode, blue, setBlue }) => {
               onClick={() => setIsMenuShown(!isMenuShown)}
               className="block lg:hidden cursor-pointer mr-4"
             >
-              {isMenuShown ? <FaTimes size={30} /> : <FaBars size={30} />}
+              {isMenuShown ? (
+                <FaTimes className="text-gray-500" size={30} />
+              ) : (
+                <FaBars className="text-gray-500" size={30} />
+              )}
             </div>
 
             <div className="flex items-center flex-row justify-center gap-2 ">
@@ -167,13 +176,13 @@ const Navbar = ({ darkMode, setDarkMode, blue, setBlue }) => {
               <div onClick={() => setDarkMode(!darkMode)}>
                 {darkMode ? (
                   <MdWbSunny
-                    className={`mt-1 text-2xl cursor-pointer duration-300 ${
+                    className={`mt-1 text-2xl text-gray-500 md:text-white cursor-pointer duration-300 ${
                       blue ? "hover:text-primary " : "  hover:text-secondary "
                     } `}
                   />
                 ) : (
                   <MdNightsStay
-                    className={`mt-1 text-2xl cursor-pointer duration-300 ${
+                    className={`mt-1 text-2xl text-gray-500 md:text-black cursor-pointer duration-300 ${
                       blue ? "hover:text-primary " : "  hover:text-secondary "
                     } `}
                   />
@@ -203,7 +212,7 @@ const Navbar = ({ darkMode, setDarkMode, blue, setBlue }) => {
             </div>
             <div className="ml-auto md:hidden flex">
               {/* <img src={logo} className="w-36" alt="" /> */}
-              <img src={logovisa} className="w-16" alt="" />
+              <img src={blue ? logoBlue : logoRed} className="w-14" alt="" />
             </div>
           </div>
         </div>
@@ -211,7 +220,7 @@ const Navbar = ({ darkMode, setDarkMode, blue, setBlue }) => {
         <div
           className={`fixed w-full  dark:text-white z-[50] left-0 h-fit py-12 lg:hidden flex justify-center text-center text-2xl duration-500 ${
             isMenuShown
-              ? "top-16 rounded-b-2xl bg-primary opacity-95"
+              ? "top-20 rounded-b-2xl bg-accent opacity-100"
               : "top-[-600px]"
           }`}
         >
@@ -220,74 +229,12 @@ const Navbar = ({ darkMode, setDarkMode, blue, setBlue }) => {
               <Link key={id} to={link}>
                 <li
                   onClick={() => setIsMenuShown(!isMenuShown)}
-                  className="mt-1 text-[18px] capitalize duration-300 hover:scale-105 text-white hover:font-semibold  cursor-pointer text-left"
+                  className="mt-1 text-[18px] capitalize duration-300 hover:scale-105 text-white hover:font-semibold  cursor-pointer "
                 >
                   {name}
                 </li>
               </Link>
             ))}
-            <li>
-              <div className="dropdown dropdown-bottom dropdown-hover">
-                <div
-                  tabIndex={0}
-                  className="mt-1 text-[18px] flex items-center   capitalize duration-300 hover:scale-105 text-white hover:font-semibold  cursor-pointer"
-                >
-                  <p>Services</p>
-                  <div className="cursor-pointer">
-                    <div className="flex items-center gap-2">
-                      <IoMdArrowDropdown />
-                    </div>
-                  </div>
-                </div>
-                <ul className="dropdown-content  z-[1]   shadow bg-base-100 dark:bg-accent w-52">
-                  <Link to="services/open_company">
-                    <li className="hover:bg-primary cursor-pointer  w-full duration-300">
-                      <p className="px-4 text-[14px]">Open a Company</p>
-                    </li>
-                  </Link>
-                  <Link to="services/visa_eb1">
-                    <li className="hover:bg-primary  w-full duration-300">
-                      <p className="px-4 text-[14px]">EB1 VISA</p>
-                    </li>
-                  </Link>
-                  <Link to="services/visa_eb2">
-                    <li className="hover:bg-primary  w-full duration-300">
-                      <p className="px-4 text-[14px]">EB2 VISA</p>
-                    </li>
-                  </Link>
-                  <Link to="services/visa_e2">
-                    <li className="hover:bg-primary  w-full duration-300">
-                      <p className="px-4 text-[14px]">E2 VISA</p>
-                    </li>
-                  </Link>
-
-                  {/*   <li className="hover:bg-primary  w-full duration-300">
-                    <p className="px-4 text-[14px]">L1 VISA</p>
-                  </li>
-                  <li className="hover:bg-primary  w-full duration-300">
-                    <p className="px-4 text-[14px]">VISA 01</p>
-                  </li>
-                  <li className="hover:bg-primary  w-full duration-300">
-                    <p className="px-4 text-[14px]">Family Requests</p>
-                  </li>
-                  <li className="hover:bg-primary  w-full duration-300">
-                    <p className="px-4 text-[14px]">Naturalizacion</p>
-                  </li>
-                  <li className="hover:bg-primary  w-full duration-300">
-                    <p className="px-4 text-[14px]">United States Removal</p>
-                  </li>
-                  <li className="hover:bg-primary  w-full duration-300">
-                    <p className="px-4 text-[14px]">IE PAROLE VISA</p>
-                  </li>
-                  <li className="hover:bg-primary  w-full duration-300">
-                    <p className="px-4 text-[14px]">PERM</p>
-                  </li>
-                  <li className="hover:bg-primary  w-full duration-300">
-                    <p className="px-4 text-[14px]">EAD</p>
-                  </li> */}
-                </ul>
-              </div>
-            </li>
           </ul>
         </div>
       </div>

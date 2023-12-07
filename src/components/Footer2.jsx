@@ -4,14 +4,16 @@ import styles from "@/style";
 
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
-import logovisa from "@/assets/logo-visa.png";
+import logoBlue from "@/assets/logo-blue.png";
+import logoRed from "@/assets/logo-red.png";
+
 const Footer = ({ darkMode, blue }) => {
   return (
     <footer className="footer justify-between  border-t p-6 mb-10 ">
       <aside className="flex flex-col items-center justify-center">
         <div>
           {/* <img src={logo} alt="" /> */}
-          <img src={logovisa} className="w-16" alt="" />
+          <img src={blue ? logoBlue : logoRed} className="w-14" alt="" />
         </div>
         <div className="flex items-center justify-center gap-2 mt-2">
           <div
