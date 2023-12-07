@@ -41,7 +41,7 @@ const Footer = ({ darkMode, blue }) => {
             <p
               className={` ${
                 darkMode ? "from-secondary to-white" : "from-secondary to-black"
-              } text-[38px] tangerine  text-transparent bg-clip-text  bg-gradient-to-r   `}
+              } text-[38px] tangerine  text-transparent bg-clip-text mb-2 py-2   bg-gradient-to-r   `}
             >
               Visa Law
             </p>
