@@ -4,7 +4,6 @@ import styles from "@/style";
 import Section from "@/components/common/Section";
 import { MdNightsStay, MdWbSunny } from "react-icons/md";
 import logoBlue from "@/assets/logo-blue.png";
-import logoRed from "@/assets/logo-red.png";
 
 import { Link } from "react-router-dom";
 import logoRedBlack from "@/assets/logo-red-black.png";
@@ -59,28 +58,49 @@ const Navbar = ({ darkMode, setDarkMode, blue, setBlue }) => {
 
   return (
     <div
-      className={` ${styles.paddingX}  absolute w-full z-50 ${
-        isMenuShown ? "" : ""
-      }  ${styles.flexCenter}  `}
+      className={` ${styles.paddingX} ${
+        isMenuShown ? "bg-accent" : ""
+      }  absolute w-full z-50 ${isMenuShown ? "" : ""}  ${styles.flexCenter}  `}
     >
       <div className={`${styles.boxWidth}   `}>
-        <div className="w-full  h-20 dark:text-white ">
-          <div className="flex justify-start  md:justify-end md:gap-5 items-center  mx-auto  h-full">
+        <div className="w-full   h-20 dark:text-white ">
+          <div className="flex justify-start   md:justify-end md:gap-5 items-center  mx-auto  h-full">
             <div className="mr-auto gap-2  hidden md:flex items-end">
-              <img
-                src={darkMode ? logoRedWhite : logoRedBlack}
-                className="w-14  object-contain"
-                alt=""
-              />
-              <p
-                className={` ${
-                  darkMode
-                    ? "from-secondary to-white"
-                    : "from-secondary to-black"
-                } text-[38px] tangerine  text-transparent bg-clip-text  bg-gradient-to-r   `}
-              >
-                Visa Law
-              </p>
+              {blue ? (
+                <>
+                  <img
+                    src={darkMode ? logoBlue : logoBlue}
+                    className="w-14  object-contain"
+                    alt=""
+                  />
+                  <p
+                    className={` ${
+                      darkMode
+                        ? "from-primary to-[#d8b57c]"
+                        : "from-primary to-[#d8b57c]"
+                    } text-[38px] tangerine  text-transparent bg-clip-text  bg-gradient-to-r   `}
+                  >
+                    Visa Law
+                  </p>
+                </>
+              ) : (
+                <>
+                  <img
+                    src={darkMode ? logoRedWhite : logoRedBlack}
+                    className="w-14  object-contain"
+                    alt=""
+                  />
+                  <p
+                    className={` ${
+                      darkMode
+                        ? "from-secondary to-white"
+                        : "from-secondary to-black"
+                    } text-[38px] tangerine  text-transparent bg-clip-text  bg-gradient-to-r   `}
+                  >
+                    Visa Law
+                  </p>
+                </>
+              )}
             </div>
             <div className="hidden lg:flex items-center">
               <ul className="flex gap-6 ">
@@ -222,26 +242,47 @@ const Navbar = ({ darkMode, setDarkMode, blue, setBlue }) => {
               </a> */}
             </div>
             <div className="ml-auto gap-2  md:hidden flex items-end">
-              <img
-                src={darkMode ? logoRedWhite : logoRedBlack}
-                className="w-14  object-contain"
-                alt=""
-              />
-              <p
-                className={` ${
-                  darkMode
-                    ? "from-secondary to-white"
-                    : "from-secondary to-black"
-                } text-[38px] tangerine  text-transparent bg-clip-text  bg-gradient-to-r   `}
-              >
-                Visa Law
-              </p>
+              {blue ? (
+                <>
+                  <img
+                    src={darkMode ? logoBlue : logoBlue}
+                    className="w-14  object-contain"
+                    alt=""
+                  />
+                  <p
+                    className={` ${
+                      darkMode
+                        ? "from-primary to-[#d8b57c]"
+                        : "from-primary to-[#d8b57c]"
+                    } text-[38px] tangerine  text-transparent bg-clip-text  bg-gradient-to-r   `}
+                  >
+                    Visa Law
+                  </p>
+                </>
+              ) : (
+                <>
+                  <img
+                    src={darkMode ? logoRedWhite : logoRedBlack}
+                    className="w-14  object-contain"
+                    alt=""
+                  />
+                  <p
+                    className={` ${
+                      darkMode
+                        ? "from-secondary to-white"
+                        : "from-secondary to-black"
+                    } text-[38px] tangerine  text-transparent bg-clip-text  bg-gradient-to-r   `}
+                  >
+                    Visa Law
+                  </p>
+                </>
+              )}
             </div>
           </div>
         </div>
 
         <div
-          className={`fixed w-full  dark:text-white z-[50] left-0 h-fit py-12 lg:hidden flex justify-center text-center text-2xl duration-500 ${
+          className={`absolute w-full  dark:text-white z-[50] left-0 h-fit py-12 lg:hidden flex justify-center text-center text-2xl duration-500 ${
             isMenuShown
               ? "top-20 rounded-b-2xl bg-accent opacity-100"
               : "top-[-600px]"

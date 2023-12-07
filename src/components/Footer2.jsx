@@ -14,18 +14,39 @@ const Footer = ({ darkMode, blue }) => {
   return (
     <footer className="footer justify-between  border-t p-6 mb-10 ">
       <div className="flex items-end  gap-2 ">
-        <img
-          src={darkMode ? logoRedWhite : logoRedBlack}
-          className="w-14  object-contain"
-          alt=""
-        />
-        <p
-          className={` ${
-            darkMode ? "from-secondary to-white" : "from-secondary to-black"
-          } text-[38px] tangerine  text-transparent bg-clip-text mb-2 py-2 bg-gradient-to-r   `}
-        >
-          Visa Law
-        </p>
+        {blue ? (
+          <>
+            <img
+              src={darkMode ? logoBlue : logoBlue}
+              className="w-14  object-contain"
+              alt=""
+            />
+            <p
+              className={` ${
+                darkMode
+                  ? "from-primary to-[#d8b57c]"
+                  : "from-primary to-[#d8b57c]"
+              } text-[38px] tangerine  text-transparent bg-clip-text mb-2 py-2  bg-gradient-to-r   `}
+            >
+              Visa Law
+            </p>
+          </>
+        ) : (
+          <>
+            <img
+              src={darkMode ? logoRedWhite : logoRedBlack}
+              className="w-14  object-contain"
+              alt=""
+            />
+            <p
+              className={` ${
+                darkMode ? "from-secondary to-white" : "from-secondary to-black"
+              } text-[38px] tangerine  text-transparent bg-clip-text  bg-gradient-to-r   `}
+            >
+              Visa Law
+            </p>
+          </>
+        )}
       </div>
       <aside className="flex flex-col items-center justify-center">
         {/*   <div className="flex items-center justify-center gap-2 mt-2">
