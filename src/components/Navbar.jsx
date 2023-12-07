@@ -74,8 +74,8 @@ const Navbar = ({ darkMode, setDarkMode, blue, setBlue }) => {
                 className={` ${
                   blue
                     ? "from-primary to-[#d8b57c]"
-                    : "from-secondary to-gray-800"
-                } text-[48px] tangerine  text-transparent bg-clip-text  bg-gradient-to-t   `}
+                    : "from-secondary to-gray-700"
+                } text-[48px] tangerine  text-transparent bg-clip-text  bg-gradient-to-r   `}
               >
                 Visa Law
               </p>
