@@ -5,35 +5,32 @@ import text from "@/assets/text.jpg";
 import Button from "@/components/Button";
 
 import shield from "@/assets/Shield.svg";
+import { Link } from "react-router-dom";
 
 const cards = [
   {
     id: 1,
     img: text,
-    title: "EB1",
+    title: "EB-1 Visa",
     subtitle:
-      "The EB1 Visa is a Green Card based on preferential employment, for individuals with extraordinary abilities.",
+      "The EB-1 visa is designed for priority workers who possess extraordinary abilities, outstanding achievements, or hold high-level executive or managerial positions in multinational companies. ",
+    link: "/eb1",
   },
   {
     id: 2,
     img: text,
-    title: "EB2 NIW",
+    title: "EB-2 Visa",
     subtitle:
-      "Talented people well positioned in their profession can apply for a green card without having a job offer.",
+      "The EB-2 visa is for professionals with advanced degrees or exceptional abilities in their respective fields. It aims to attract individuals with a high level of expertise, contributing to the advancement of their industries.",
+    link: "/eb2",
   },
   {
     id: 3,
     img: text,
-    title: "L1",
+    title: "EB-3 Visa",
     subtitle:
-      "A temporary visa for the transfer of executives, managers or specialized employees to work.",
-  },
-  {
-    id: 4,
-    img: text,
-    title: "E2",
-    subtitle:
-      "Temporary visa for foreign investors who wish to successfully manage and operate a company in the United States.	",
+      "The EB-3 visa is designed to address the diverse needs of the U.S. labor market by providing avenues for skilled workers, professionals, and other workers.",
+    link: "/eb3",
   },
 ];
 
@@ -62,7 +59,7 @@ const Practices = ({ darkMode, blue }) => (
 
     <div className="flex flex-wrap sm:justify-start justify-center w-full  relative z-[1]">
       <div className="grid md:grid-cols-2 grid-cols-1  w-full md:gap-20 gap-6 ">
-        {cards.map(({ id, img, title, subtitle }) => (
+        {cards.map(({ id, img, title, subtitle, link }) => (
           <div
             key={id}
             className={`flex  items-center justify-center  gap-4 rounded-[20px] ${
@@ -89,7 +86,7 @@ const Practices = ({ darkMode, blue }) => (
                     blue ? "link-primary" : "link-secondary "
                   }`}
                 >
-                  know more
+                  <Link to={link}>know more</Link>
                 </button>
               </div>
             </div>

@@ -17,9 +17,24 @@ const Navbar = ({ darkMode, setDarkMode, blue, setBlue }) => {
       name: "Home",
       link: "/",
     },
-
+    {
+      id: 2,
+      name: "EB-1 ",
+      link: "/eb1",
+    },
+    {
+      id: 3,
+      name: "EB-2 ",
+      link: "/eb2",
+    },
     {
       id: 4,
+      name: "EB-3 ",
+      link: "/eb3",
+    },
+
+    {
+      id: 5,
       name: "FAQ",
       link: "/faq",
     },
@@ -56,14 +71,14 @@ const Navbar = ({ darkMode, setDarkMode, blue, setBlue }) => {
                 {links.map(({ id, link, name }) => (
                   <li
                     key={id}
-                    className={`mt-1 text-[18px] capitalize duration-300  hover:font-semibold  cursor-pointer ${
+                    className={`mt-1 text-[18px]  capitalize duration-300    cursor-pointer ${
                       blue ? "hover:text-primary " : "  hover:text-secondary "
                     }`}
                   >
                     <Link to={link}>{name}</Link>
                   </li>
                 ))}
-                <li>
+                {/* <li>
                   <div className="dropdown dropdown-bottom dropdown-hover">
                     <div
                       tabIndex={0}
@@ -79,11 +94,6 @@ const Navbar = ({ darkMode, setDarkMode, blue, setBlue }) => {
                       </div>
                     </div>
                     <ul className="dropdown-content  z-[1]   shadow bg-base-100 dark:bg-accent w-52">
-                      {/* <Link to="services/open_company">
-                        <li className="hover:bg-primary cursor-pointer  w-full duration-300">
-                          <p className="px-4 text-[14px]">Open a Company</p>
-                        </li>
-                      </Link> */}
                       <Link to="services/visa_eb1">
                         <li
                           className={`w-full duration-300 ${
@@ -111,62 +121,37 @@ const Navbar = ({ darkMode, setDarkMode, blue, setBlue }) => {
                           <p className="px-4 text-[14px]">E2 VISA</p>
                         </li>
                       </Link>
-                      {/* divider */}
-                      <Link to="services/visa_e2">
-                        <li
-                          className={`w-full duration-300 ${
-                            blue ? "hover:bg-primary " : "  hover:bg-secondary "
-                          }`}
-                        >
-                          <p className="px-4 text-[14px]">xxxx VISA</p>
-                        </li>
-                      </Link>
-                      <Link to="services/visa_e2">
-                        <li
-                          className={`w-full duration-300 ${
-                            blue ? "hover:bg-primary " : "  hover:bg-secondary "
-                          }`}
-                        >
-                          <p className="px-4 text-[14px]">xxxx VISA</p>
-                        </li>
-                      </Link>
-                      <Link to="services/visa_e2">
-                        <li
-                          className={`w-full duration-300 ${
-                            blue ? "hover:bg-primary " : "  hover:bg-secondary "
-                          }`}
-                        >
-                          <p className="px-4 text-[14px]">xxxx VISA</p>
-                        </li>
-                      </Link>
 
-                      {/*   <li className="hover:bg-primary  w-full duration-300">
-                    <p className="px-4 text-[14px]">L1 VISA</p>
-                  </li>
-                  <li className="hover:bg-primary  w-full duration-300">
-                    <p className="px-4 text-[14px]">VISA 01</p>
-                  </li>
-                  <li className="hover:bg-primary  w-full duration-300">
-                    <p className="px-4 text-[14px]">Family Requests</p>
-                  </li>
-                  <li className="hover:bg-primary  w-full duration-300">
-                    <p className="px-4 text-[14px]">Naturalizacion</p>
-                  </li>
-                  <li className="hover:bg-primary  w-full duration-300">
-                    <p className="px-4 text-[14px]">United States Removal</p>
-                  </li>
-                  <li className="hover:bg-primary  w-full duration-300">
-                    <p className="px-4 text-[14px]">IE PAROLE VISA</p>
-                  </li>
-                  <li className="hover:bg-primary  w-full duration-300">
-                    <p className="px-4 text-[14px]">PERM</p>
-                  </li>
-                  <li className="hover:bg-primary  w-full duration-300">
-                    <p className="px-4 text-[14px]">EAD</p>
-                  </li> */}
+                      <Link to="services/visa_e2">
+                        <li
+                          className={`w-full duration-300 ${
+                            blue ? "hover:bg-primary " : "  hover:bg-secondary "
+                          }`}
+                        >
+                          <p className="px-4 text-[14px]">xxxx VISA</p>
+                        </li>
+                      </Link>
+                      <Link to="services/visa_e2">
+                        <li
+                          className={`w-full duration-300 ${
+                            blue ? "hover:bg-primary " : "  hover:bg-secondary "
+                          }`}
+                        >
+                          <p className="px-4 text-[14px]">xxxx VISA</p>
+                        </li>
+                      </Link>
+                      <Link to="services/visa_e2">
+                        <li
+                          className={`w-full duration-300 ${
+                            blue ? "hover:bg-primary " : "  hover:bg-secondary "
+                          }`}
+                        >
+                          <p className="px-4 text-[14px]">xxxx VISA</p>
+                        </li>
+                      </Link>
                     </ul>
                   </div>
-                </li>
+                </li> */}
               </ul>
             </div>
 

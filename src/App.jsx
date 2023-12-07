@@ -30,6 +30,10 @@ import Footer2 from "@/components/Footer2";
 
 import Contact from "@/components/Contact";
 
+import Eb1 from "@/components/visas/eb1/Eb1";
+import Eb2 from "@/components/visas/eb2/Eb2";
+import Eb3 from "@/components/visas/eb3/Eb3";
+
 import { Routes, Route, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
@@ -74,43 +78,21 @@ const App = () => {
           />
 
           <Route
-            path="/services/open_company"
+            path="/eb1"
             element={
-              <OpenCompany
-                blue={blue}
-                darkMode={darkMode}
-                isMenuShown={isMenuShown}
-              />
+              <Eb1 blue={blue} darkMode={darkMode} isMenuShown={isMenuShown} />
             }
           />
           <Route
-            path="/services/visa_eb1"
+            path="/eb2"
             element={
-              <VisaEb1
-                blue={blue}
-                darkMode={darkMode}
-                isMenuShown={isMenuShown}
-              />
+              <Eb2 blue={blue} darkMode={darkMode} isMenuShown={isMenuShown} />
             }
           />
           <Route
-            path="/services/visa_eb2"
+            path="/eb3"
             element={
-              <VisaEb2
-                blue={blue}
-                darkMode={darkMode}
-                isMenuShown={isMenuShown}
-              />
-            }
-          />
-          <Route
-            path="/services/visa_e2"
-            element={
-              <VisaE2
-                blue={blue}
-                darkMode={darkMode}
-                isMenuShown={isMenuShown}
-              />
+              <Eb3 blue={blue} darkMode={darkMode} isMenuShown={isMenuShown} />
             }
           />
         </Routes>
