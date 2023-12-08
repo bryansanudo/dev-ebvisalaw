@@ -33,7 +33,12 @@ import Contact from "@/components/Contact";
 import Eb1a from "@/components/visas/eb1/eb1a/Eb1a";
 import Eb1b from "@/components/visas/eb1/eb1b/Eb1b";
 import Eb1c from "@/components/visas/eb1/eb1c/Eb1c";
+
 import Eb2 from "@/components/visas/eb2/Eb2";
+
+import Eb3a from "@/components/visas/eb3/eb3a/Eb3a";
+import Eb3b from "@/components/visas/eb3/eb3b/Eb3b";
+import Eb3c from "@/components/visas/eb3/eb3c/Eb3c";
 
 import { Routes, Route, useNavigate } from "react-router-dom";
 import { useState } from "react";
@@ -78,6 +83,7 @@ const App = () => {
             }
           />
 
+          {/* eb1 */}
           <Route
             path="/eb1a"
             element={
@@ -96,10 +102,30 @@ const App = () => {
               <Eb1c blue={blue} darkMode={darkMode} isMenuShown={isMenuShown} />
             }
           />
+          {/* eb2 */}
           <Route
             path="/eb2"
             element={
               <Eb2 blue={blue} darkMode={darkMode} isMenuShown={isMenuShown} />
+            }
+          />
+          {/* eb3 */}
+          <Route
+            path="/eb3a"
+            element={
+              <Eb3a blue={blue} darkMode={darkMode} isMenuShown={isMenuShown} />
+            }
+          />
+          <Route
+            path="/eb3b"
+            element={
+              <Eb3b blue={blue} darkMode={darkMode} isMenuShown={isMenuShown} />
+            }
+          />
+          <Route
+            path="/eb3c"
+            element={
+              <Eb3c blue={blue} darkMode={darkMode} isMenuShown={isMenuShown} />
             }
           />
         </Routes>

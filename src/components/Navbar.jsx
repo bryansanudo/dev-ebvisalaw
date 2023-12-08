@@ -52,23 +52,7 @@ const Navbar = ({ darkMode, setDarkMode, blue, setBlue }) => {
       link: "/eb1c",
     },
   ];
-  const eb2 = [
-    {
-      id: 1,
-      name: "EB-2A",
-      link: "/eb2a",
-    },
-    {
-      id: 2,
-      name: "EB-2B",
-      link: "/eb2b",
-    },
-    {
-      id: 3,
-      name: "EB-2C",
-      link: "/eb2c",
-    },
-  ];
+
   const eb3 = [
     {
       id: 1,
