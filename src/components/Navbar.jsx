@@ -101,7 +101,7 @@ const Navbar = ({ darkMode, setDarkMode, blue, setBlue }) => {
       }  absolute w-full z-50 ${isMenuShown ? "" : ""}  ${styles.flexCenter}  `}
     >
       <div className={`${styles.boxWidth}   `}>
-        <div className="w-full   h-20 dark:text-white ">
+        <div className="w-full h-20 dark:text-white ">
           <div className="flex justify-start   md:justify-end md:gap-5 items-center  mx-auto  h-full">
             <div className="mr-auto gap-2  hidden md:flex items-end">
               {blue ? (

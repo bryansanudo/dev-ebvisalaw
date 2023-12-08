@@ -31,6 +31,7 @@ import Footer2 from "@/components/Footer2";
 
 import Contact from "@/components/Contact";
 import Eb1a from "@/components/visas/eb1/eb1a/Eb1a";
+import Eb1b from "@/components/visas/eb1/eb1b/Eb1b";
 
 import { Routes, Route, useNavigate } from "react-router-dom";
 import { useState } from "react";
@@ -79,6 +80,12 @@ const App = () => {
             path="/eb1a"
             element={
               <Eb1a blue={blue} darkMode={darkMode} isMenuShown={isMenuShown} />
+            }
+          />
+          <Route
+            path="/eb1b"
+            element={
+              <Eb1b blue={blue} darkMode={darkMode} isMenuShown={isMenuShown} />
             }
           />
         </Routes>

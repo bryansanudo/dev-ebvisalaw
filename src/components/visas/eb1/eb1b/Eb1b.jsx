@@ -9,7 +9,7 @@ import Requirements from "./Requirements";
 import Application from "./Application";
 import { useState } from "react";
 
-const Eb1a = ({ darkMode, isMenuShown, blue }) => {
+const Eb1b = ({ darkMode, isMenuShown, blue }) => {
   const [x, setX] = useState(0);
   const listaItems = [
     { text: "Benefits", component: <Benefits darkMode={darkMode} /> },
@@ -25,8 +25,8 @@ const Eb1a = ({ darkMode, isMenuShown, blue }) => {
         darkMode={darkMode}
         isMenuShown={isMenuShown}
         blue={blue}
-        title="EB-1A (Extraordinary Ability)"
-        subtitle="The EB-1A visa is for individuals with extraordinary abilities in sciences, arts, education, business, or athletics. Extraordinary ability is proven through sustained national or international acclaim, with evidence of significant contributions to the field."
+        title="EB-1B (Outstanding Professors and Researchers)"
+        subtitle="The EB-1B visa targets internationally recognized professors and researchers. Applicants must showcase outstanding achievements in their academic or research careers, including a minimum of three years of experience."
       >
         <div className="w-full flex flex-col gap-6 md:gap-20 mb-20  ">
           <div className="flex flex-col md:flex-row gap-20">
@@ -48,12 +48,12 @@ const Eb1a = ({ darkMode, isMenuShown, blue }) => {
                   today's entrepreneur
                 </h2> */}
                 <p className={`${styles.subtitle}`}>
-                  The EB-1A Visa, also known as the Extraordinary Ability Visa,
-                  is an immigrant visa category within the United States
-                  immigration system. This visa is designed for individuals who
-                  possess extraordinary abilities in their field, such as the
-                  sciences, arts, education, business, or athletics. Here's a
-                  rundown of the key aspects of the EB-1A Visa
+                  The EB-1B Visa, categorized as the Outstanding Professor or
+                  Researcher Visa, is a pathway within the United States
+                  immigration system tailored for individuals in academia or
+                  research who have demonstrated outstanding achievements.
+                  Here's an organized breakdown of the key elements of the EB-1B
+                  Visa
                 </p>
               </div>
             </div>
@@ -61,7 +61,7 @@ const Eb1a = ({ darkMode, isMenuShown, blue }) => {
 
           <div className="w-full">
             <ul
-              className={`${styles.title} border p-4 rounded-xl flex justify-center gap-20 mb-20`}
+              className={`${styles.title} border rounded-xl p-4 flex justify-center gap-20 mb-20`}
             >
               {listaItems.map((item, index) => (
                 <li
@@ -87,12 +87,11 @@ const Eb1a = ({ darkMode, isMenuShown, blue }) => {
                 </h2> */}
 
                 <p className={`${styles.subtitle}`}>
-                  In summary, the EB-1A Visa offers numerous benefits, including
-                  the absence of a job offer requirement, permanent residency,
-                  and a potentially shorter processing time. However, meeting
-                  the stringent requirements and providing compelling evidence
-                  of extraordinary ability are essential for a successful
-                  application.
+                  In summary, the EB-1B Visa provides several advantages, such
+                  as the absence of a job offer requirement and a potentially
+                  faster processing time. However, meeting the stringent
+                  requirements related to outstanding achievements and providing
+                  compelling evidence is crucial for a successful application.
                 </p>
               </div>
             </div>
@@ -114,4 +113,4 @@ const Eb1a = ({ darkMode, isMenuShown, blue }) => {
   );
 };
 
-export default Eb1a;
+export default Eb1b;
