@@ -11,27 +11,24 @@ import { Link } from "react-router-dom";
 const CardDeal = ({ blue }) => (
   <section className={layout.section}>
     <div className={layout.sectionInfo}>
-      <h2 className={styles.heading2}>
-        Who will help You <br className="sm:block hidden" />
-      </h2>
+      <h2 className={styles.heading2}>Your Immigration Ally at EB Visa Law</h2>
       <p className={`${styles.paragraph} max-w-[450px] mt-5`}>
-        Founding partner of EB Visa Law, which manages the corporate immigration
-        law firm. He brings significant immigration law experience to the firm,
-        allowing him to create unique approaches to achieve our clients'
-        objectives.
+        Meet the dedicated team at EB Visa Law, led by our experienced founding
+        partner. With a strong background in immigration law, our team is
+        committed to creating unique strategies to achieve the goals of our
+        clients.
       </p>
       <p className={`${styles.paragraph} max-w-[450px] mt-5`}>
-        He has unique experience representing internationally recognized
-        individuals seeking legal permanent residence in the United States and
-        seeking the EB-1 visa intended for those with extraordinary abilities in
-        science, arts, education, business or athletics.
+        Our focus extends to representing internationally recognized
+        individuals, guiding them through the complexities of legal permanent
+        residence and securing EB-1 visas for those with extraordinary abilities
+        in science, arts, education, business, or athletics.
       </p>
       <p className={`${styles.paragraph} max-w-[450px] mt-5`}>
-        Joaquin knows and understands the ups and downs of this process, having
-        himself emigrated to the US from Panama, and therefore knows social
-        diversity and its characteristics, which gives him the ability to relate
-        to and understand clients' concerns, expectations and difficulties.
-        during your immigration process.
+        Benefit from our team's deep understanding of the immigration process
+        and its nuances. We are here to relate to and comprehend your concerns,
+        expectations, and difficulties throughout your immigration journey,
+        ensuring a smooth and successful experience.
       </p>
 
       <Link to="/contact">

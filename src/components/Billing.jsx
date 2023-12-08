@@ -24,14 +24,13 @@ const Billing = ({ blue }) => (
 
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
-        A successful <br className="sm:block hidden" />
-        future starts here
+        Achieve Your Professional Future with Us
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        We have alliances with the best financial advisors, which has made it
-        possible for hundreds of entrepreneurs and migrants from many parts of
-        the world to open their company in the United States in a legal and
-        agile manner.
+        Start your journey to success here. Our expertise has facilitated
+        hundreds of entrepreneurs and migrants from around the world in legally
+        and efficiently establishing their presence in the United States for
+        employment-based opportunities.
       </p>
 
       {/*  <div className="flex flex-row flex-wrap sm:mt-10 mt-6">

@@ -33,15 +33,12 @@ const Business = ({ darkMode, blue }) => (
   <section id="features" className={layout.section}>
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
-        You focus on your practice, we'll
-        <br className="sm:block hidden" />
-        manage the finances.
+        Your Immigration Journey, Our Legal Expertise
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Our team of skilled attorneys provides comprehensive legal consultation
-        and services. We specialize in areas such as contract law, intellectual
-        property, and litigation. Let us guide you through the complexities of
-        the legal landscape.
+        Navigate employment-based immigration effortlessly with our skilled
+        attorneys. From visas to green cards, we've got you covered for a smooth
+        journey to your U.S. professional goals.
       </p>
 
       <Link to="/contact">

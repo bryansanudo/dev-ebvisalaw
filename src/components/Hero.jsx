@@ -34,10 +34,10 @@ const Hero = ({ blue, darkMode }) => {
 
         <div className="flex flex-row justify-between items-center w-full">
           <h1 className="flex-1 font-poppins font-semibold ss:text-[72px] text-[52px] dark:text-white ss:leading-[100.8px] leading-[75px]">
-            A Successful
+            Embarking on Your
             <br className="sm:block hidden" />{" "}
             <span className={`${blue ? "text-primary " : "  text-secondary "}`}>
-              Future starts here
+              Immigration Journey to a Bright Tomorrow
             </span>
           </h1>
           {/* <div className="ss:flex hidden md:mr-4 mr-0">
@@ -49,8 +49,7 @@ const Hero = ({ blue, darkMode }) => {
           With Expertise
         </h1> */}
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          Your opportunity for success in the United States is closer than you
-          imagine.
+          Navigating the Pathways to Success in the United States.
         </p>
       </div>
 
