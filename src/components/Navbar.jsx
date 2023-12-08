@@ -142,17 +142,14 @@ const Navbar = ({ darkMode, setDarkMode, blue, setBlue }) => {
             </div>
             <div className="hidden lg:flex items-center">
               <ul className="flex gap-6 ">
-                {/* home */}
-                {links.map(({ id, link, name }) => (
-                  <li
-                    key={id}
-                    className={`mt-1 text-[18px]  capitalize duration-300    cursor-pointer ${
-                      blue ? "hover:text-primary " : "  hover:text-secondary "
-                    }`}
-                  >
-                    <Link to={link}>{name}</Link>
-                  </li>
-                ))}
+                <li
+                  className={`mt-1 text-[18px]  capitalize duration-300    cursor-pointer ${
+                    blue ? "hover:text-primary " : "  hover:text-secondary "
+                  }`}
+                >
+                  <Link to="/">Home</Link>
+                </li>
+
                 {/* visa eb1 */}
                 <li>
                   <div className="dropdown dropdown-bottom dropdown-hover">
@@ -187,37 +184,12 @@ const Navbar = ({ darkMode, setDarkMode, blue, setBlue }) => {
                   </div>
                 </li>
                 {/* visa eb2 */}
-                <li>
-                  <div className="dropdown dropdown-bottom dropdown-hover">
-                    <div
-                      tabIndex={0}
-                      className={`mt-1 text-[18px] flex items-center   capitalize duration-300  hover:font-semibold  cursor-pointer ${
-                        blue ? "hover:text-primary " : "  hover:text-secondary "
-                      }`}
-                    >
-                      <p>Visa EB-2</p>
-                      <div className="cursor-pointer">
-                        <div className="flex items-center gap-2">
-                          <IoMdArrowDropdown />
-                        </div>
-                      </div>
-                    </div>
-                    <ul className="dropdown-content  z-[1]   shadow bg-base-100 dark:bg-accent w-52">
-                      {eb2.map(({ id, link, name }) => (
-                        <Link key={id} to={link}>
-                          <li
-                            className={`w-full duration-300 ${
-                              blue
-                                ? "hover:bg-primary "
-                                : "  hover:bg-secondary "
-                            }`}
-                          >
-                            <p className="px-4 text-[14px]">{name}</p>
-                          </li>
-                        </Link>
-                      ))}
-                    </ul>
-                  </div>
+                <li
+                  className={`mt-1 text-[18px]  capitalize duration-300    cursor-pointer ${
+                    blue ? "hover:text-primary " : "  hover:text-secondary "
+                  }`}
+                >
+                  <Link to="/eb2">Visa EB-2</Link>
                 </li>
                 {/* visa eb3 */}
                 <li>

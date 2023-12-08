@@ -39,7 +39,7 @@ const Home = ({ blue, isMenuShown, darkMode }) => {
         } ${styles.flexCenter}`}
       >
         <div className={`${styles.boxWidth}`}>
-          <Stats blue={blue} />
+          {/*  <Stats blue={blue} /> */}
           <Business blue={blue} darkMode={darkMode} />
 
           <Billing blue={blue} />
@@ -49,7 +49,7 @@ const Home = ({ blue, isMenuShown, darkMode }) => {
             } absolute z-[0] w-[50%] h-[50%] -left-1/2 bottom-0 rounded-full `}
           />
           <CardDeal blue={blue} />
-          <Testimonials blue={blue} darkMode={darkMode} />
+          {/*  <Testimonials blue={blue} darkMode={darkMode} /> */}
           <Practices darkMode={darkMode} blue={blue} />
           <Services darkMode={darkMode} blue={blue} />
           <Advantages darkMode={darkMode} blue={blue} />
