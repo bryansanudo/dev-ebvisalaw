@@ -83,7 +83,9 @@ const Navbar = ({ darkMode, setDarkMode, blue, setBlue }) => {
     <div
       className={` ${styles.paddingX} ${
         isMenuShown ? "bg-accent" : ""
-      }  absolute w-full z-50 ${isMenuShown ? "" : ""}  ${styles.flexCenter}  `}
+      }  absolute w-full z-50 ${isMenuShown ? "" : ""}  ${
+        styles.flexCenter
+      }   `}
     >
       <div className={`${styles.boxWidth}   `}>
         <div className="w-full h-20 dark:text-white ">
@@ -116,7 +118,7 @@ const Navbar = ({ darkMode, setDarkMode, blue, setBlue }) => {
                   <p
                     className={` ${
                       darkMode ? "text-white" : "text-black"
-                    } text-[38px] tangerine       `}
+                    } text-[30px] tangerine       `}
                   >
                     Visa Law
                   </p>
