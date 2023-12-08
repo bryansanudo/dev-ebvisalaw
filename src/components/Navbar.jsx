@@ -13,28 +13,15 @@ import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
 
 const Navbar = ({ darkMode, setDarkMode, blue, setBlue }) => {
   const [isMenuShown, setIsMenuShown] = useState(false);
+
   const links = [
     {
       id: 1,
       name: "Home",
       link: "/",
     },
-    {
-      id: 2,
-      name: "EB-1 ",
-      link: "/eb1",
-    },
-    {
-      id: 3,
-      name: "EB-2 ",
-      link: "/eb2",
-    },
-    {
-      id: 4,
-      name: "EB-3 ",
-      link: "/eb3",
-    },
-
+  ];
+  const links2 = [
     {
       id: 5,
       name: "FAQ",
@@ -48,6 +35,57 @@ const Navbar = ({ darkMode, setDarkMode, blue, setBlue }) => {
     },
   ];
 
+  const eb1 = [
+    {
+      id: 1,
+      name: "EB-1A",
+      link: "/eb1a",
+    },
+    {
+      id: 2,
+      name: "EB-1B",
+      link: "/eb1b",
+    },
+    {
+      id: 3,
+      name: "EB-1C",
+      link: "/eb1c",
+    },
+  ];
+  const eb2 = [
+    {
+      id: 1,
+      name: "EB-2A",
+      link: "/eb2a",
+    },
+    {
+      id: 2,
+      name: "EB-2B",
+      link: "/eb2b",
+    },
+    {
+      id: 3,
+      name: "EB-2C",
+      link: "/eb2c",
+    },
+  ];
+  const eb3 = [
+    {
+      id: 1,
+      name: "EB-3A",
+      link: "/eb3a",
+    },
+    {
+      id: 2,
+      name: "EB-3B",
+      link: "/eb3b",
+    },
+    {
+      id: 3,
+      name: "EB-3C",
+      link: "/eb3c",
+    },
+  ];
   const handleBlue = () => {
     setBlue(true);
   };
@@ -104,6 +142,7 @@ const Navbar = ({ darkMode, setDarkMode, blue, setBlue }) => {
             </div>
             <div className="hidden lg:flex items-center">
               <ul className="flex gap-6 ">
+                {/* home */}
                 {links.map(({ id, link, name }) => (
                   <li
                     key={id}
@@ -114,7 +153,8 @@ const Navbar = ({ darkMode, setDarkMode, blue, setBlue }) => {
                     <Link to={link}>{name}</Link>
                   </li>
                 ))}
-                {/* <li>
+                {/* visa eb1 */}
+                <li>
                   <div className="dropdown dropdown-bottom dropdown-hover">
                     <div
                       tabIndex={0}
@@ -122,7 +162,7 @@ const Navbar = ({ darkMode, setDarkMode, blue, setBlue }) => {
                         blue ? "hover:text-primary " : "  hover:text-secondary "
                       }`}
                     >
-                      <p>Services</p>
+                      <p>Visa EB-1</p>
                       <div className="cursor-pointer">
                         <div className="flex items-center gap-2">
                           <IoMdArrowDropdown />
@@ -130,64 +170,100 @@ const Navbar = ({ darkMode, setDarkMode, blue, setBlue }) => {
                       </div>
                     </div>
                     <ul className="dropdown-content  z-[1]   shadow bg-base-100 dark:bg-accent w-52">
-                      <Link to="services/visa_eb1">
-                        <li
-                          className={`w-full duration-300 ${
-                            blue ? "hover:bg-primary " : "  hover:bg-secondary "
-                          }`}
-                        >
-                          <p className="px-4 text-[14px]">EB1 VISA</p>
-                        </li>
-                      </Link>
-                      <Link to="services/visa_eb2">
-                        <li
-                          className={`w-full duration-300 ${
-                            blue ? "hover:bg-primary " : "  hover:bg-secondary "
-                          }`}
-                        >
-                          <p className="px-4 text-[14px]">EB2 VISA</p>
-                        </li>
-                      </Link>
-                      <Link to="services/visa_e2">
-                        <li
-                          className={`w-full duration-300 ${
-                            blue ? "hover:bg-primary " : "  hover:bg-secondary "
-                          }`}
-                        >
-                          <p className="px-4 text-[14px]">E2 VISA</p>
-                        </li>
-                      </Link>
-
-                      <Link to="services/visa_e2">
-                        <li
-                          className={`w-full duration-300 ${
-                            blue ? "hover:bg-primary " : "  hover:bg-secondary "
-                          }`}
-                        >
-                          <p className="px-4 text-[14px]">xxxx VISA</p>
-                        </li>
-                      </Link>
-                      <Link to="services/visa_e2">
-                        <li
-                          className={`w-full duration-300 ${
-                            blue ? "hover:bg-primary " : "  hover:bg-secondary "
-                          }`}
-                        >
-                          <p className="px-4 text-[14px]">xxxx VISA</p>
-                        </li>
-                      </Link>
-                      <Link to="services/visa_e2">
-                        <li
-                          className={`w-full duration-300 ${
-                            blue ? "hover:bg-primary " : "  hover:bg-secondary "
-                          }`}
-                        >
-                          <p className="px-4 text-[14px]">xxxx VISA</p>
-                        </li>
-                      </Link>
+                      {eb1.map(({ id, link, name }) => (
+                        <Link key={id} to={link}>
+                          <li
+                            className={`w-full duration-300 ${
+                              blue
+                                ? "hover:bg-primary "
+                                : "  hover:bg-secondary "
+                            }`}
+                          >
+                            <p className="px-4 text-[14px]">{name}</p>
+                          </li>
+                        </Link>
+                      ))}
                     </ul>
                   </div>
-                </li> */}
+                </li>
+                {/* visa eb2 */}
+                <li>
+                  <div className="dropdown dropdown-bottom dropdown-hover">
+                    <div
+                      tabIndex={0}
+                      className={`mt-1 text-[18px] flex items-center   capitalize duration-300  hover:font-semibold  cursor-pointer ${
+                        blue ? "hover:text-primary " : "  hover:text-secondary "
+                      }`}
+                    >
+                      <p>Visa EB-2</p>
+                      <div className="cursor-pointer">
+                        <div className="flex items-center gap-2">
+                          <IoMdArrowDropdown />
+                        </div>
+                      </div>
+                    </div>
+                    <ul className="dropdown-content  z-[1]   shadow bg-base-100 dark:bg-accent w-52">
+                      {eb2.map(({ id, link, name }) => (
+                        <Link key={id} to={link}>
+                          <li
+                            className={`w-full duration-300 ${
+                              blue
+                                ? "hover:bg-primary "
+                                : "  hover:bg-secondary "
+                            }`}
+                          >
+                            <p className="px-4 text-[14px]">{name}</p>
+                          </li>
+                        </Link>
+                      ))}
+                    </ul>
+                  </div>
+                </li>
+                {/* visa eb3 */}
+                <li>
+                  <div className="dropdown dropdown-bottom dropdown-hover">
+                    <div
+                      tabIndex={0}
+                      className={`mt-1 text-[18px] flex items-center   capitalize duration-300  hover:font-semibold  cursor-pointer ${
+                        blue ? "hover:text-primary " : "  hover:text-secondary "
+                      }`}
+                    >
+                      <p>Visa EB-3</p>
+                      <div className="cursor-pointer">
+                        <div className="flex items-center gap-2">
+                          <IoMdArrowDropdown />
+                        </div>
+                      </div>
+                    </div>
+                    <ul className="dropdown-content  z-[1]   shadow bg-base-100 dark:bg-accent w-52">
+                      {eb3.map(({ id, link, name }) => (
+                        <Link key={id} to={link}>
+                          <li
+                            className={`w-full duration-300 ${
+                              blue
+                                ? "hover:bg-primary "
+                                : "  hover:bg-secondary "
+                            }`}
+                          >
+                            <p className="px-4 text-[14px]">{name}</p>
+                          </li>
+                        </Link>
+                      ))}
+                    </ul>
+                  </div>
+                </li>
+
+                {/* faq contact */}
+                {links2.map(({ id, link, name }) => (
+                  <li
+                    key={id}
+                    className={`mt-1 text-[18px]  capitalize duration-300    cursor-pointer ${
+                      blue ? "hover:text-primary " : "  hover:text-secondary "
+                    }`}
+                  >
+                    <Link to={link}>{name}</Link>
+                  </li>
+                ))}
               </ul>
             </div>
 
@@ -229,17 +305,6 @@ const Navbar = ({ darkMode, setDarkMode, blue, setBlue }) => {
                   className="h-4 w-4 border-gray-300 border-2 bg-secondary cursor-pointer"
                 ></div>
               </div>
-
-              {/*   <a href="https://bryan95-portfolio.vercel.app/">
-                <span className="hover:text-primary duration-300 text-[18px] hover:font-semibold">
-                  ENG
-                </span>
-              </a>
-              <a href="https://bryan95-portfolio-esp.vercel.app/">
-                <span className="hover:text-primary duration-300 text-[18px] hover:font-semibold">
-                  ESP
-                </span>
-              </a> */}
             </div>
             <div className="ml-auto gap-2  md:hidden flex items-end">
               {blue ? (

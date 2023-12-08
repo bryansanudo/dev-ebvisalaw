@@ -30,10 +30,7 @@ import VisaE2 from "@/components/services/VisaE2";
 import Footer2 from "@/components/Footer2";
 
 import Contact from "@/components/Contact";
-
-import Eb1 from "@/components/visas/eb1/Eb1";
-import Eb2 from "@/components/visas/eb2/Eb2";
-import Eb3 from "@/components/visas/eb3/Eb3";
+import Eb1a from "@/components/visas/eb1/eb1a/Eb1a";
 
 import { Routes, Route, useNavigate } from "react-router-dom";
 import { useState } from "react";
@@ -79,21 +76,9 @@ const App = () => {
           />
 
           <Route
-            path="/eb1"
+            path="/eb1a"
             element={
-              <Eb1 blue={blue} darkMode={darkMode} isMenuShown={isMenuShown} />
-            }
-          />
-          <Route
-            path="/eb2"
-            element={
-              <Eb2 blue={blue} darkMode={darkMode} isMenuShown={isMenuShown} />
-            }
-          />
-          <Route
-            path="/eb3"
-            element={
-              <Eb3 blue={blue} darkMode={darkMode} isMenuShown={isMenuShown} />
+              <Eb1a blue={blue} darkMode={darkMode} isMenuShown={isMenuShown} />
             }
           />
         </Routes>

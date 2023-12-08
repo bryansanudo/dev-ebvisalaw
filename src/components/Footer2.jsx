@@ -72,18 +72,18 @@ const Footer = ({ darkMode, blue }) => {
       </aside>
       <nav>
         <header className={`${styles.title}`}>Quick Links</header>
-        <a className={`${styles.subtitle} hover:font-medium cursor-pointer`}>
+        <div className={`${styles.subtitle} hover:font-medium cursor-pointer`}>
           <Link to="/eb1">EB-1</Link>
-        </a>
-        <a className={`${styles.subtitle} hover:font-medium cursor-pointer`}>
+        </div>
+        <div className={`${styles.subtitle} hover:font-medium cursor-pointer`}>
           <Link to="/eb2">EB-2</Link>
-        </a>
-        <a className={`${styles.subtitle} hover:font-medium cursor-pointer`}>
+        </div>
+        <div className={`${styles.subtitle} hover:font-medium cursor-pointer`}>
           <Link to="/eb3">EB-3</Link>
-        </a>
-        <a className={`${styles.subtitle} hover:font-medium cursor-pointer`}>
+        </div>
+        <div className={`${styles.subtitle} hover:font-medium cursor-pointer`}>
           <Link to="/faq">FAQ</Link>
-        </a>
+        </div>
       </nav>
 
       <nav>

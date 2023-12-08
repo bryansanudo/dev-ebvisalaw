@@ -40,7 +40,9 @@ const Section = ({
               {title}
             </h2>
             <div className="w-full md:mt-0 mt-6">
-              <p className={`${styles.paragraph} text-left max-w-[600px] mb-2`}>
+              <p
+                className={`${styles.paragraph} text-left max-w-[1000px] mb-2`}
+              >
                 {subtitle}
               </p>
             </div>
