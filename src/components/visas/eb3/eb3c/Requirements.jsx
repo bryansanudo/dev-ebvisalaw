@@ -4,27 +4,25 @@ const Requirements = ({ darkMode }) => {
   return (
     <section className="flex flex-col gap-6">
       <div>
-        <h2 className={`${styles.title}`}>Managerial or Executive Role</h2>
+        <h2 className={`${styles.title}`}>Unskilled Worker Qualifications</h2>
         <p className={`${styles.subtitle}`}>
-          Applicants must hold a managerial or executive position within the
-          multinational company, involving significant decision-making
-          authority.
+          Applicants must possess skills that require less than two years of
+          training or experience in the respective field.
         </p>
       </div>
       <div>
-        <h2 className={`${styles.title}`}>One Year of Employment</h2>
+        <h2 className={`${styles.title}`}>Job Offer from U.S. Employer</h2>
         <p className={`${styles.subtitle}`}>
-          The applicant must have been employed with the multinational company
-          for at least one continuous year in the three years preceding the
-          transfer to the U.S.
+          A U.S. employer must offer a permanent, full-time job to the
+          applicant, demonstrating the need for the specific skills they bring.
         </p>
       </div>
       <div>
-        <h2 className={`${styles.title}`}>Relationship Between Entities</h2>
+        <h2 className={`${styles.title}`}>Labor Certification Process</h2>
         <p className={`${styles.subtitle}`}>
-          There must be a qualifying relationship between the U.S. office and
-          the foreign entity, typically involving parent, subsidiary, affiliate,
-          or branch relationships.
+          The U.S. employer must obtain a labor certification from the
+          Department of Labor, verifying the shortage of qualified U.S. workers
+          for the position.
         </p>
       </div>
     </section>

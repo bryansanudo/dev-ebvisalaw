@@ -4,21 +4,19 @@ const Benefits = ({ darkMode }) => {
   return (
     <section className="flex flex-col gap-6">
       <div>
-        <h2 className={`${styles.title}`}>
-          No Job Offer or Labor Certification Required
-        </h2>
+        <h2 className={`${styles.title}`}>Professionals Category</h2>
         <p className={`${styles.subtitle}`}>
-          Similar to the EB-1A Visa, the EB-1B Visa does not mandate a specific
-          job offer from a U.S. employer, providing applicants with flexibility
-          in the application process.
+          The EB-3B Visa is specifically for "Professionals," encompassing
+          individuals with less than two years of training or experience in a
+          designated field
         </p>
       </div>
       <div>
         <h2 className={`${styles.title}`}>Permanent Residency</h2>
         <p className={`${styles.subtitle}`}>
-          Successful approval of the EB-1B Visa leads to the grant of permanent
-          residency, allowing recipients to reside and work in the United States
-          indefinitely.
+          Successful approval of the EB-3B Visa results in the granting of
+          permanent residency, allowing recipients to reside and work in the
+          United States indefinitely.
         </p>
       </div>
       <div>
@@ -29,22 +27,11 @@ const Benefits = ({ darkMode }) => {
         </p>
       </div>
       <div>
-        <h2 className={`${styles.title}`}>
-          {" "}
-          Potentially Faster Processing Time
-        </h2>
+        <h2 className={`${styles.title}`}> Labor Certification Required</h2>
         <p className={`${styles.subtitle}`}>
-          The EB-1B Visa is often considered advantageous due to its potentially
-          faster processing time, offering an expedited pathway to permanent
-          residency.
-        </p>
-      </div>
-      <div>
-        <h2 className={`${styles.title}`}>No Numerical Cap</h2>
-        <p className={`${styles.subtitle}`}>
-          Similar to the EB-1A Visa, there is no specific numerical cap on the
-          EB-1B Visa, distinguishing it from certain other employment-based
-          categories.
+          Similar to the EB-3A Visa, applicants typically need to undergo the
+          labor certification process, where their U.S. employer verifies the
+          unavailability of qualified U.S. workers for the position.
         </p>
       </div>
     </section>

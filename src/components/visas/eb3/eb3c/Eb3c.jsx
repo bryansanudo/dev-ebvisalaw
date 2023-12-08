@@ -25,7 +25,7 @@ const Eb3c = ({ darkMode, isMenuShown, blue }) => {
         darkMode={darkMode}
         isMenuShown={isMenuShown}
         blue={blue}
-        title="EB-3C (Other Workers)"
+        title="EB-3C (Unskilled Workers)"
         subtitle="The EB-3C visa is for unskilled workers with less than two years of job experience or training. This category addresses the need for workers in positions that do not require advanced skills or education."
       >
         <div className="w-full flex flex-col gap-6 md:gap-20 mb-20  ">
@@ -48,11 +48,12 @@ const Eb3c = ({ darkMode, isMenuShown, blue }) => {
                   today's entrepreneur
                 </h2> */}
                 <p className={`${styles.subtitle}`}>
-                  The EB-1C Visa, classified as the Multinational Manager or
-                  Executive Visa, is a distinctive immigration option within the
-                  United States for managers or executives of multinational
-                  companies seeking to transfer to a U.S. office. Here's a
-                  structured breakdown of the key components of the EB-1C Visa
+                  The EB-3C Visa is designed for unskilled workers seeking
+                  employment-based immigration to the United States. This
+                  subcategory falls under the broader EB-3 visa classification,
+                  which also includes EB-3A for skilled workers and EB-3B for
+                  professionals. Here's a detailed breakdown of the key aspects
+                  of the EB-3C Visa
                 </p>
               </div>
             </div>
@@ -86,12 +87,11 @@ const Eb3c = ({ darkMode, isMenuShown, blue }) => {
                 </h2> */}
 
                 <p className={`${styles.subtitle}`}>
-                  In summary, the EB-1C Visa offers advantages such as
-                  intra-company transfer, permanent residency, and potential
-                  expedited processing. Meeting the specific requirements,
-                  including the managerial or executive role and the
-                  relationship between entities, is crucial for a successful
-                  application.
+                  In summary, the EB-3C Visa is tailored for unskilled workers
+                  seeking permanent employment in the United States. Meeting the
+                  specific requirements, including unskilled worker
+                  qualifications and the labor certification process, is crucial
+                  for a successful application.
                 </p>
               </div>
             </div>

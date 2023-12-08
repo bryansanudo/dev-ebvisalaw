@@ -4,18 +4,19 @@ const Benefits = ({ darkMode }) => {
   return (
     <section className="flex flex-col gap-6">
       <div>
-        <h2 className={`${styles.title}`}>Intra-Company Transfer</h2>
+        <h2 className={`${styles.title}`}>Unskilled Workers Category</h2>
         <p className={`${styles.subtitle}`}>
-          The EB-1C Visa facilitates the intra-company transfer of multinational
-          managers or executives to a U.S.-based office.
+          The EB-3C Visa is specifically tailored for individuals classified as
+          "Other Workers," encompassing those with less than two years of
+          training or experience in a designated field.
         </p>
       </div>
       <div>
         <h2 className={`${styles.title}`}>Permanent Residency</h2>
         <p className={`${styles.subtitle}`}>
-          Successful approval of the EB-1C Visa leads to the grant of permanent
-          residency, allowing recipients to live and work in the United States
-          indefinitely.
+          Successful approval of the EB-3C Visa results in the granting of
+          permanent residency, allowing recipients to reside and work in the
+          United States indefinitely.
         </p>
       </div>
       <div>
@@ -26,19 +27,12 @@ const Benefits = ({ darkMode }) => {
         </p>
       </div>
       <div>
-        <h2 className={`${styles.title}`}> Expedited Processing</h2>
+        <h2 className={`${styles.title}`}> Labor Certification Required</h2>
         <p className={`${styles.subtitle}`}>
-          The EB-1C Visa is often processed more expeditiously compared to some
-          other immigrant visa categories, offering a quicker pathway to
-          permanent residency
-        </p>
-      </div>
-      <div>
-        <h2 className={`${styles.title}`}>No Numerical Cap</h2>
-        <p className={`${styles.subtitle}`}>
-          Similar to the EB-1A and EB-1B Visas, there is no specific numerical
-          cap on the EB-1C Visa, distinguishing it from certain other
-          employment-based categories.
+          Similar to other EB-3 subcategories, applicants typically need to
+          undergo the labor certification process. This involves the U.S.
+          employer verifying the unavailability of qualified U.S. workers for
+          the position.
         </p>
       </div>
     </section>

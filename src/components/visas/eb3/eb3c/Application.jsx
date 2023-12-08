@@ -6,16 +6,17 @@ const Application = ({ darkMode }) => {
       <div>
         <h2 className={`${styles.title}`}>Documentation</h2>
         <p className={`${styles.subtitle}`}>
-          Comprehensive documentation showcasing the managerial or executive
-          role, as well as the relationship between the U.S. and foreign
-          entities, is crucial.
+          Thorough documentation supporting the applicant's qualifications, job
+          offer, and the labor certification process is crucial. This may
+          include educational credentials, work experience, and job offer
+          letters.
         </p>
       </div>
       <div>
         <h2 className={`${styles.title}`}>Form I-140 Petition</h2>
         <p className={`${styles.subtitle}`}>
-          The applicant or their U.S. employer must file a Form I-140 petition
-          with the U.S. Citizenship and Immigration Services (USCIS).
+          The U.S. employer must file a Form I-140 petition on behalf of the
+          applicant with the U.S. Citizenship and Immigration Services (USCIS).
         </p>
       </div>
       <div>

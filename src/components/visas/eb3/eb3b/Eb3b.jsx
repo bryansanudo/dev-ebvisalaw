@@ -48,12 +48,14 @@ const Eb3b = ({ darkMode, isMenuShown, blue }) => {
                   today's entrepreneur
                 </h2> */}
                 <p className={`${styles.subtitle}`}>
-                  The EB-1B Visa, categorized as the Outstanding Professor or
-                  Researcher Visa, is a pathway within the United States
-                  immigration system tailored for individuals in academia or
-                  research who have demonstrated outstanding achievements.
-                  Here's an organized breakdown of the key elements of the EB-1B
-                  Visa
+                  The EB-3B Visa, falling within the employment-based visa
+                  category, is tailored for individuals classified as
+                  "Professionals" This category is designed for those with U.S.
+                  baccalaureate or foreign equivalent degree, and that a
+                  baccalaureate degree is the normal requirement for entry into
+                  the occupation, offering an avenue for employment-based
+                  immigration to the United States. Here's a structured
+                  breakdown of the key aspects of the EB-3B Visa
                 </p>
               </div>
             </div>
@@ -87,11 +89,12 @@ const Eb3b = ({ darkMode, isMenuShown, blue }) => {
                 </h2> */}
 
                 <p className={`${styles.subtitle}`}>
-                  In summary, the EB-1B Visa provides several advantages, such
-                  as the absence of a job offer requirement and a potentially
-                  faster processing time. However, meeting the stringent
-                  requirements related to outstanding achievements and providing
-                  compelling evidence is crucial for a successful application.
+                  In summary, the EB-3B Visa is designed for "Professionals"
+                  with a U.S. baccalaureate or foreign equivalent degree. While
+                  it provides benefits such as permanent residency and a path to
+                  U.S. citizenship, meeting the specific requirements, including
+                  professional qualifications and the labor certification
+                  process, is crucial for a successful application.
                 </p>
               </div>
             </div>

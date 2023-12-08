@@ -6,23 +6,24 @@ const Application = ({ darkMode }) => {
       <div>
         <h2 className={`${styles.title}`}>Documentation</h2>
         <p className={`${styles.subtitle}`}>
-          Thorough documentation supporting the claim of outstanding
-          achievements is crucial, including publications, awards, and
-          recommendation letters.
+          Thorough documentation supporting the applicant's qualifications, job
+          offer, and the labor certification process is crucial. This may
+          include educational credentials, work experience, and job offer
+          letters.
         </p>
       </div>
       <div>
         <h2 className={`${styles.title}`}>Form I-140 Petition</h2>
         <p className={`${styles.subtitle}`}>
-          The applicant or their U.S. employer must file a Form I-140 petition
-          with the U.S. Citizenship and Immigration Services (USCIS).
+          The U.S. employer must file a Form I-140 petition on behalf of the
+          applicant with the U.S. Citizenship and Immigration Services (USCIS).
         </p>
       </div>
       <div>
-        <h2 className={`${styles.title}`}>Premium Processing Option</h2>
+        <h2 className={`${styles.title}`}>Priority Date</h2>
         <p className={`${styles.subtitle}`}>
-          Expedited processing is available through the premium processing
-          option for those willing to pay an additional fee.
+          The priority date, established when the Form I-140 is filed,
+          determines the applicant's place in the queue for visa processing.
         </p>
       </div>
       <div>
