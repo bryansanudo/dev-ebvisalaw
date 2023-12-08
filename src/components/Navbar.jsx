@@ -8,6 +8,7 @@ import logoBlue from "@/assets/logo-blue.png";
 import { Link } from "react-router-dom";
 import logoRedBlack from "@/assets/logo-red-black.png";
 import logoRedWhite from "@/assets/logo-red-white.png";
+import logoWhite from "@/assets/logo-white.png";
 
 import { IoMdArrowDropdown, IoMdArrowDropup } from "react-icons/io";
 
@@ -87,11 +88,11 @@ const Navbar = ({ darkMode, setDarkMode, blue, setBlue }) => {
       <div className={`${styles.boxWidth}   `}>
         <div className="w-full h-20 dark:text-white ">
           <div className="flex justify-start   md:justify-end md:gap-5 items-center  mx-auto  h-full">
-            <div className="mr-auto gap-2  hidden md:flex items-end">
+            <div className="mr-auto    hidden md:flex items-end">
               {blue ? (
                 <>
                   <img
-                    src={darkMode ? logoBlue : logoBlue}
+                    src={darkMode ? logoWhite : logoBlue}
                     className="w-14  object-contain"
                     alt=""
                   />
@@ -106,22 +107,20 @@ const Navbar = ({ darkMode, setDarkMode, blue, setBlue }) => {
                   </p>
                 </>
               ) : (
-                <>
+                <div className="flex items-end ">
                   <img
-                    src={darkMode ? logoRedWhite : logoRedBlack}
-                    className="w-14  object-contain"
+                    src={darkMode ? logoWhite : logoRedBlack}
+                    className="w-14 object-contain"
                     alt=""
                   />
                   <p
                     className={` ${
-                      darkMode
-                        ? "from-secondary to-white"
-                        : "from-secondary to-black"
-                    } text-[38px] tangerine  text-transparent bg-clip-text  bg-gradient-to-r   `}
+                      darkMode ? "text-white" : "text-black"
+                    } text-[38px] tangerine       `}
                   >
                     Visa Law
                   </p>
-                </>
+                </div>
               )}
             </div>
             <div className="hidden lg:flex items-center">

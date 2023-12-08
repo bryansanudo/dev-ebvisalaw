@@ -50,7 +50,7 @@ const Home = ({ blue, isMenuShown, darkMode }) => {
           />
           <CardDeal blue={blue} />
           {/*  <Testimonials blue={blue} darkMode={darkMode} /> */}
-          <Practices darkMode={darkMode} blue={blue} />
+          {/* <Practices darkMode={darkMode} blue={blue} /> */}
           <Services darkMode={darkMode} blue={blue} />
           <Advantages darkMode={darkMode} blue={blue} />
           <Timeline darkMode={darkMode} blue={blue} />

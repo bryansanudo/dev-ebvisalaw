@@ -13,7 +13,7 @@ const cards = [
     img: text,
     title: "EB-1 Visa",
     subtitle:
-      "The EB-1 visa is designed for priority workers who possess extraordinary abilities, outstanding achievements, or hold high-level executive or managerial positions in multinational companies. ",
+      "Designed for those with extraordinary abilities, outstanding professors, researchers, and certain executives or managers, the EB-1 Visa is a preferred option that doesn't require labor certification. ",
     link: "/eb1",
   },
   {
@@ -21,7 +21,7 @@ const cards = [
     img: text,
     title: "EB-2 Visa",
     subtitle:
-      "The EB-2 visa is for professionals with advanced degrees or exceptional abilities in their respective fields. It aims to attract individuals with a high level of expertise, contributing to the advancement of their industries.",
+      "Split into subcategories, EB-3 covers skilled workers (EB-3A), professionals (EB-3B), and unskilled workers (EB-3C). This visa accommodates diverse skill levels, providing pathways for individuals with varying qualifications seeking employment-based immigration.",
     link: "/eb2",
   },
   {
@@ -58,11 +58,11 @@ const Practices = ({ darkMode, blue }) => (
     </div>
 
     <div className="flex flex-wrap sm:justify-start justify-center w-full  relative z-[1]">
-      <div className="grid md:grid-cols-2 grid-cols-1  w-full md:gap-20 gap-6 ">
+      <div className="grid grid-cols-1  w-full md:gap-20 gap-6 ">
         {cards.map(({ id, img, title, subtitle, link }) => (
           <div
             key={id}
-            className={`flex  items-center justify-center  gap-4 rounded-[20px] ${
+            className={`flex   items-center   gap-4 rounded-[20px] ${
               darkMode
                 ? "shadow-sm shadow-white feedback-card  "
                 : "shadow-md shadow-black"
@@ -73,7 +73,7 @@ const Practices = ({ darkMode, blue }) => (
               <img
                 src={img}
                 alt="star"
-                className=" w-[100%]  object-cover  rounded-tl-[20px] rounded-tr-[20px] sm:rounded-bl-[20px] sm:rounded-tr-[0px]"
+                className=" w-[100%] h-[200px]  object-contain  rounded-tl-[20px] rounded-tr-[20px] sm:rounded-bl-[20px] sm:rounded-tr-[0px]"
               />
             </div>
 
